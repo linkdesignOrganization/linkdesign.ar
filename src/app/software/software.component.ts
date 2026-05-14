@@ -603,13 +603,13 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
 
     return {
       ...baseOptions,
-      maxDistance: 18,
+      maxDistance: 17,
       mouseControls: false,
-      points: 7,
-      scale: 0.92,
-      scaleMobile: 0.78,
-      size: 0.68,
-      spacing: 17,
+      points: 6,
+      scale: 0.9,
+      scaleMobile: 0.8,
+      size: 0.6,
+      spacing: 18,
       touchControls: false
     };
   }
