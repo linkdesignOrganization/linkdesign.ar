@@ -1,0 +1,125 @@
+.logonav {
+  font-family: "HKGrotesk-ExtraBold";
+  font-size: 23pt;
+  color: white;
+  transition: color 0.15s ease 0s;
+}
+
+.nav-icon {
+  width: 45px;
+  height: 45px;
+  color: white;
+  transition: color 0.15s ease 0s;
+}
+
+.lang-switch {
+  font-family: "HKGrotesk-ExtraBold";
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+}
+
+.lang-switch .lang-option {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.lang-switch .lang-option.active {
+  opacity: 1;
+}
+
+
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#wrapper {
+  text-align: left;
+  letter-spacing: 0.5em;
+}
+
+.sub {
+  color: rgb(100,220,220);
+
+}
+
+@mixin glitchCopy {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch {
+  font-family: "HKGrotesk-italic";
+  position: relative;
+  color: white;
+  font-size: 2.6em;
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+
+  &::before{
+    @include glitchCopy;
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+
+  &::after {
+    @include glitchCopy;
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+  }
+}
+
+@keyframes glitch-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+@keyframes glitch-anim2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+@keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .glitch {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logonav {
+    font-size: 20pt;
+  }
+}
+

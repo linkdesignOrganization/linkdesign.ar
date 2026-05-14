@@ -1,0 +1,155 @@
+# LINK DESIGN
+
+Last updated: 2026-02-22
+Primary site: https://linkdesign.cr/
+Sitemap: https://linkdesign.cr/sitemap.xml
+
+## ES
+
+### Quienes somos
+LINK DESIGN es un estudio de desarrollo web y software en Costa Rica. Diseñamos y desarrollamos soluciones digitales para empresas, pymes y marcas que necesitan resultados medibles, rendimiento y escalabilidad.
+
+### Propuesta de valor
+- Convertimos necesidades de negocio en productos digitales claros, rapidos y mantenibles.
+- Combinamos estrategia, UX/UI, desarrollo y lanzamiento en un flujo de trabajo unificado.
+- Priorizamos sitios y aplicaciones utiles para el negocio, no solo estetica.
+
+### Diferenciadores
+- Desarrollo a medida sin plantillas genericas.
+- Sin dependencia de plugins de terceros como base del producto.
+- Arquitecturas enfocadas en velocidad, SEO tecnico y escalabilidad.
+- Integraciones con servicios cloud, analitica y herramientas comerciales.
+
+### Servicios y rutas canónicas
+- Desarrollo corporativo: https://linkdesign.cr/corporate
+- Web Lab creativo: https://linkdesign.cr/weblab
+- Software interno a medida: https://linkdesign.cr/software
+- Contacto y discovery: https://linkdesign.cr/contact
+
+### Como trabajamos
+- Discovery y analisis del contexto del cliente.
+- Definicion funcional y de experiencia.
+- Diseño UX/UI orientado a conversion y claridad operativa.
+- Desarrollo, integracion y validacion.
+- Lanzamiento, medicion y soporte.
+
+### Sectores con experiencia
+Salud, legal, alimentos, bienestar, tecnologia, finanzas, agroindustria, transporte, contabilidad, bienes raices, arquitectura, mantenimiento.
+
+### Empresas con las que hemos trabajado (portafolio activo)
+- Asembis | Salud | https://asembis.org/
+  Clinica medica especializada en servicios accesibles y de alta calidad. La estrategia digital enfatiza su variedad de servicios y compromiso social.
+- Imperio | Alimentos | https://arrozimperio.net/
+  Marca lider en Costa Rica con mas de 55 anios de experiencia, enfocada en alimentos esenciales para hogares.
+- AAEC | Legal | https://aaec.org/
+  Asociacion de in-house counsel en Centroamerica. Se diseno una experiencia digital para conectar miembros y oportunidades regionales.
+- Nano | Bienestar | https://nano.cr/
+  Especialistas en aromatizacion y aromaterapia. El enfoque digital destaca variedad de productos, accesibilidad y servicio.
+- CEWTEC | Tecnologia | https://www.cewtec.com/
+  Especialistas en seguridad de la informacion y transformacion digital para instituciones y empresas.
+- AMAG | Moda | https://amagnr.com/home/inicio
+  Marca de diseño de moda con inspiracion en naturaleza, mujer e historia; el trabajo digital resalta creatividad y expansion.
+- CEFSA | Finanzas | https://cefsa.cr/
+  Consultora en soluciones financieras estrategicas; el enfoque digital destaca precision y experiencia.
+- Tierra Fertil | Agroindustria | https://zacatetierrafertil.com/
+  Productores y distribuidores de zacate de calidad con enfoque en adaptabilidad y necesidades diversas.
+- Psicoyng | Salud | https://psicoyng.com/
+  Clinica de psicologia con enfoque en acceso claro y confiable a servicios profesionales.
+- Promaca | Alimentos | https://www.promacaltda.com/
+  Empresa costarricense con mas de 30 anios de experiencia en harinas y semolas de maiz y arroz.
+- TUPSA | Transporte | https://tupsa.com/
+  Transporte interurbano enfocado en calidad, cobertura y acceso simple a informacion para pasajeros.
+- Pasto Arca | Agroindustria | https://yellow-water-0de5f8f0f.2.azurestaticapps.net
+  Plataforma de tutorias en linea con experiencia digital orientada a comodidad y flexibilidad.
+- CIMED | Legal | https://witty-rock-0c57b0910.1.azurestaticapps.net
+  Centro privado de mediacion y conciliacion enfocado en procesos accesibles y efectivos.
+- Escritorio | Contabilidad | https://green-island-0403db310.5.azurestaticapps.net/
+  Despacho contable con enfoque en calidad y servicio personalizado.
+- Haus | Bienes Raices | https://haus-297eca.webflow.io/
+  Experiencia digital orientada a transmitir exclusividad, estilo y propuesta inmobiliaria.
+- Espaciocr | Arquitectura | https://espaciocr-com.webflow.io/
+  Estudio de arquitectura con enfoque contemporaneo, funcional y sostenible.
+- Punto Cero | Mantenimiento | https://victorious-desert-032f8750f.1.azurestaticapps.net/
+  Operacion HVAC por suscripcion para empresas, con reportes por sede y continuidad operativa.
+- Altura Raiz | Arquitectura | https://wonderful-smoke-00f5c7f0f.6.azurestaticapps.net/
+  Estudio de diseño arquitectonico y construccion con direccion integral de concepto a ejecucion.
+
+### Contacto
+- Email: hola@linkdesign.cr
+- WhatsApp: +50672325943
+- Ubicacion: San Jose, Costa Rica
+
+## EN
+
+### Who we are
+LINK DESIGN is a web and software development studio in Costa Rica. We design and build digital solutions for companies, SMBs, and brands that need measurable outcomes, performance, and long-term scalability.
+
+### Value proposition
+- We turn business needs into clear, fast, maintainable digital products.
+- We combine strategy, UX/UI, engineering, and launch in one workflow.
+- We prioritize business utility and operational clarity, not just visual output.
+
+### Differentiators
+- Fully custom development without generic templates.
+- No plugin-heavy foundations.
+- Architectures focused on speed, technical SEO, and scalability.
+- Integrations with cloud services, analytics, and commercial tools.
+
+### Services and canonical routes
+- Corporate web development: https://linkdesign.cr/corporate
+- Creative Web Lab: https://linkdesign.cr/weblab
+- Custom internal software: https://linkdesign.cr/software
+- Contact / discovery: https://linkdesign.cr/contact
+
+### How we work
+- Discovery and context analysis.
+- Functional and UX definition.
+- UX/UI design focused on conversion and clarity.
+- Development, integration, and validation.
+- Launch, measurement, and support.
+
+### Industries served
+Healthcare, legal, food, wellness, technology, finance, agribusiness, transportation, accounting, real estate, architecture, maintenance.
+
+### Companies we have worked with (active portfolio)
+- Asembis | Healthcare | https://asembis.org/
+  Medical clinic focused on accessible, high-quality care and broad service coverage.
+- Imperio | Food | https://arrozimperio.net/
+  Leading Costa Rican brand with over 55 years producing essential foods for local households.
+- AAEC | Legal | https://aaec.org/
+  In-house counsel association in Central America with a digital experience for member connection and regional opportunities.
+- Nano | Wellness | https://nano.cr/
+  Scenting and aromatherapy brand with a digital focus on product range, accessibility, and service.
+- CEWTEC | Technology | https://www.cewtec.com/
+  Information security and digital transformation partner for organizations and institutions.
+- AMAG | Fashion | https://amagnr.com/home/inicio
+  Fashion design brand with a digital presence centered on creativity and growth.
+- CEFSA | Finance | https://cefsa.cr/
+  Strategic financial consulting firm with emphasis on precision and decision support.
+- Tierra Fertil | Agribusiness | https://zacatetierrafertil.com/
+  Quality turf producer and distributor with adaptable service for diverse needs.
+- Psicoyng | Healthcare | https://psicoyng.com/
+  Psychology clinic with a clear and trustworthy digital access model.
+- Promaca | Food | https://www.promacaltda.com/
+  Costa Rican producer with 30+ years of experience in corn and rice flours and semolinas.
+- TUPSA | Transportation | https://tupsa.com/
+  Intercity transportation company with a digital layer focused on punctuality, coverage, and information access.
+- Pasto Arca | Agribusiness | https://yellow-water-0de5f8f0f.2.azurestaticapps.net
+  Online tutoring platform positioned around flexibility and personalized learning.
+- CIMED | Legal | https://witty-rock-0c57b0910.1.azurestaticapps.net
+  Private mediation and conciliation center focused on accessible and effective conflict resolution.
+- Escritorio | Accounting | https://green-island-0403db310.5.azurestaticapps.net/
+  Accounting firm with strong professional ethics and personalized service.
+- Haus | Real Estate | https://haus-297eca.webflow.io/
+  Digital journey designed to communicate exclusivity, style, and premium positioning.
+- Espaciocr | Architecture | https://espaciocr-com.webflow.io/
+  Architecture studio focused on contemporary, functional, and sustainable spaces.
+- Punto Cero | Maintenance | https://victorious-desert-032f8750f.1.azurestaticapps.net/
+  Subscription-based HVAC operation model with site-level reporting and operational continuity.
+- Altura Raiz | Architecture | https://wonderful-smoke-00f5c7f0f.6.azurestaticapps.net/
+  Architecture and construction studio integrating concept, technical documentation, and execution under one direction.
+
+### Contact
+- Email: hola@linkdesign.cr
+- WhatsApp: +50672325943
+- Location: San Jose, Costa Rica

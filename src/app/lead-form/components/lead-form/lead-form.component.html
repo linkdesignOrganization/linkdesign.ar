@@ -1,0 +1,222 @@
+<div class="lead-form-wrapper" [class.variant-footer]="variant === 'footer'">
+
+  <!-- ESTADO: FORM -->
+  <ng-container *ngIf="state !== 'success'; else successTpl">
+
+    <form
+      class="lead-form"
+      [formGroup]="form"
+      (ngSubmit)="onSubmit()"
+      novalidate
+      [attr.aria-label]="'LEAD_FORM.A11Y.FORM_LABEL' | translate"
+      [class.is-submitting]="state === 'submitting'"
+    >
+      <!-- Nombre -->
+      <div class="field" [ngClass]="fieldClass('name')">
+        <label for="ld-name" class="field-label">
+          {{ 'LEAD_FORM.FIELDS.NAME_LABEL' | translate }}
+          <span class="req" aria-hidden="true">*</span>
+        </label>
+        <div class="field-input-wrap">
+          <input
+            id="ld-name"
+            type="text"
+            class="field-input"
+            formControlName="name"
+            autocomplete="name"
+            [placeholder]="'LEAD_FORM.FIELDS.NAME_PLACEHOLDER' | translate"
+            (focus)="registerInteraction()"
+            maxlength="80"
+          />
+          <span class="field-check" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+        <div class="field-error" *ngIf="errorKeyFor('name') as key">{{ key | translate }}</div>
+      </div>
+
+      <!-- Empresa -->
+      <div class="field" [ngClass]="fieldClass('company')">
+        <label for="ld-company" class="field-label">
+          {{ 'LEAD_FORM.FIELDS.COMPANY_LABEL' | translate }}
+        </label>
+        <div class="field-input-wrap">
+          <input
+            id="ld-company"
+            type="text"
+            class="field-input"
+            formControlName="company"
+            autocomplete="organization"
+            [placeholder]="'LEAD_FORM.FIELDS.COMPANY_PLACEHOLDER' | translate"
+            (focus)="registerInteraction()"
+            maxlength="120"
+          />
+        </div>
+        <div class="field-error" *ngIf="errorKeyFor('company') as key">{{ key | translate }}</div>
+      </div>
+
+      <!-- Correo -->
+      <div class="field" [ngClass]="fieldClass('email')">
+        <label for="ld-email" class="field-label">
+          {{ 'LEAD_FORM.FIELDS.EMAIL_LABEL' | translate }}
+          <span class="req" aria-hidden="true">*</span>
+        </label>
+        <div class="field-input-wrap">
+          <input
+            id="ld-email"
+            type="email"
+            class="field-input"
+            formControlName="email"
+            autocomplete="email"
+            inputmode="email"
+            [placeholder]="'LEAD_FORM.FIELDS.EMAIL_PLACEHOLDER' | translate"
+            (focus)="registerInteraction()"
+            maxlength="120"
+          />
+          <span class="field-check" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+        <div class="field-error" *ngIf="errorKeyFor('email') as key">{{ key | translate }}</div>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="field" [ngClass]="fieldClass('phone')">
+        <label for="ld-phone" class="field-label">
+          {{ 'LEAD_FORM.FIELDS.PHONE_LABEL' | translate }}
+          <span class="req" aria-hidden="true">*</span>
+        </label>
+        <div class="field-input-wrap">
+          <input
+            id="ld-phone"
+            type="tel"
+            class="field-input"
+            formControlName="phone"
+            autocomplete="tel"
+            inputmode="tel"
+            [placeholder]="'LEAD_FORM.FIELDS.PHONE_PLACEHOLDER' | translate"
+            (focus)="onPhoneFocus($event)"
+            maxlength="20"
+          />
+          <span class="field-check" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+        <div class="field-error" *ngIf="errorKeyFor('phone') as key">{{ key | translate }}</div>
+      </div>
+
+      <!-- ¿Qué necesitás? (chips multi-select, opcional) -->
+      <div class="field field-chips">
+        <label class="field-label">
+          {{ 'LEAD_FORM.FIELDS.NEED_LABEL' | translate }}
+        </label>
+        <app-chip-select
+          formControlName="need"
+          [options]="needOptions"
+          name="need"
+          [ariaLabel]="'LEAD_FORM.A11Y.CHIP_GROUP_NEED' | translate"
+        ></app-chip-select>
+      </div>
+
+      <!-- ¿Cómo preferís que te contactemos? (chips) -->
+      <div class="field field-chips" [class.is-invalid]="chipInvalid('preferred_contact')">
+        <label class="field-label">
+          {{ 'LEAD_FORM.FIELDS.PREFERRED_CONTACT_LABEL' | translate }}
+          <span class="req" aria-hidden="true">*</span>
+        </label>
+        <app-chip-select
+          formControlName="preferred_contact"
+          [options]="contactOptions"
+          name="preferred_contact"
+          [ariaLabel]="'LEAD_FORM.A11Y.CHIP_GROUP_CONTACT' | translate"
+          [invalid]="chipInvalid('preferred_contact')"
+        ></app-chip-select>
+        <div class="field-error" *ngIf="chipInvalid('preferred_contact')">{{ 'LEAD_FORM.ERRORS.REQUIRED' | translate }}</div>
+      </div>
+
+      <!-- Mensaje (opcional) -->
+      <div class="field field-full" [ngClass]="fieldClass('message')">
+        <label for="ld-message" class="field-label">
+          {{ 'LEAD_FORM.FIELDS.MESSAGE_LABEL' | translate }}
+        </label>
+        <div class="field-input-wrap field-input-wrap-textarea">
+          <textarea
+            id="ld-message"
+            class="field-input field-textarea"
+            formControlName="message"
+            rows="3"
+            [placeholder]="'LEAD_FORM.FIELDS.MESSAGE_PLACEHOLDER' | translate"
+            (focus)="registerInteraction()"
+            maxlength="1000"
+          ></textarea>
+        </div>
+        <div class="field-error" *ngIf="errorKeyFor('message') as key">{{ key | translate }}</div>
+      </div>
+
+      <!-- Honeypots (no se muestran al usuario) -->
+      <div class="ld-hp" aria-hidden="true">
+        <label for="ld-website">Website</label>
+        <input id="ld-website" type="text" formControlName="website" tabindex="-1" autocomplete="off"/>
+      </div>
+      <div class="ld-hp ld-hp-alt" aria-hidden="true">
+        <label for="ld-url">URL</label>
+        <input id="ld-url" type="text" formControlName="url" tabindex="-1" autocomplete="off"/>
+      </div>
+
+      <!-- Errores globales -->
+      <div class="form-banner banner-error" *ngIf="state === 'error_network'">
+        <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+        <span>{{ errorMessage || ('LEAD_FORM.ERRORS.GENERIC_NETWORK' | translate) }}</span>
+        <button type="button" class="banner-action" (click)="retry()">
+          {{ 'LEAD_FORM.BUTTONS.RETRY' | translate }}
+        </button>
+      </div>
+
+      <div class="form-banner banner-warn" *ngIf="state === 'error_rate_limited'">
+        <i class="bi bi-clock-history" aria-hidden="true"></i>
+        <span>{{ errorMessage || ('LEAD_FORM.ERRORS.RATE_LIMITED' | translate) }}</span>
+      </div>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        class="submit-btn"
+        [disabled]="state === 'submitting'"
+        [class.is-submitting]="state === 'submitting'"
+      >
+        <span class="submit-label" *ngIf="state !== 'submitting'">
+          {{ 'LEAD_FORM.BUTTONS.SUBMIT' | translate }}
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </span>
+        <span class="submit-label submit-loading" *ngIf="state === 'submitting'">
+          <span class="spinner" aria-hidden="true"></span>
+          {{ 'LEAD_FORM.BUTTONS.SUBMITTING' | translate }}
+        </span>
+      </button>
+    </form>
+  </ng-container>
+
+  <!-- ESTADO: SUCCESS -->
+  <ng-template #successTpl>
+    <div class="success-card" role="status" aria-live="polite">
+      <div class="success-check" aria-hidden="true">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="2.5" class="success-circle"/>
+          <path d="M16 28.5L24.5 37L40 21" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="success-path"/>
+        </svg>
+      </div>
+      <h3 class="success-title hk-bold">{{ 'LEAD_FORM.SUCCESS.TITLE' | translate }}</h3>
+      <p class="success-message roboto-light">{{ 'LEAD_FORM.SUCCESS.MESSAGE' | translate }}</p>
+      <button type="button" class="success-action" (click)="resetForm()">
+        {{ 'LEAD_FORM.BUTTONS.SEND_ANOTHER' | translate }}
+      </button>
+    </div>
+  </ng-template>
+
+</div>

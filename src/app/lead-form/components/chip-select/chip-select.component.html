@@ -1,0 +1,23 @@
+<div
+  class="chip-group"
+  role="group"
+  [attr.aria-label]="ariaLabel || null"
+  [class.is-invalid]="invalid"
+>
+  <button
+    *ngFor="let option of options; trackBy: trackByValue"
+    type="button"
+    class="chip"
+    role="checkbox"
+    [class.is-selected]="isSelected(option.value)"
+    [attr.aria-checked]="isSelected(option.value)"
+    [attr.aria-disabled]="disabled || null"
+    [disabled]="disabled"
+    [tabindex]="disabled ? -1 : 0"
+    (click)="toggle(option)"
+    (keydown)="onKeydown($event, option)"
+  >
+    <i *ngIf="option.icon" class="bi {{ option.icon }} chip-icon" aria-hidden="true"></i>
+    <span class="chip-label">{{ option.labelKey | translate }}</span>
+  </button>
+</div>

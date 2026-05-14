@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-12 text-center mb-5">
+      <div id="app">
+        <div id="wrapper">
+          <h2 class="hk-regularitalic white title title-white-section">{{ 'WEBLAB.PORTFOLIO.INTRO' | translate }}</h2>
+          <h2 class="glitch mb-5" [attr.data-text]="'WEBLAB.PORTFOLIO.LAB_WORK' | translate">
+            {{ 'WEBLAB.PORTFOLIO.LAB_WORK' | translate }}
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4 d-flex" style="overflow: hidden;" *ngFor=" let Project of projects">
+      <div class="card grayDark-bg  border rounded-5 mb-5 p-4" data-aos="fade-right" data-aos-offset="350" data-aos-duration="500">
+        <picture>
+          <source *ngIf="Project.cover.webp"
+                  [srcset]="Project.cover.webp.srcset || Project.cover.webp.src"
+                  [attr.sizes]="Project.cover.webp.sizes || null"
+                  [type]="Project.cover.webp.type">
+          <img [alt]="'WEBLAB.PORTFOLIO.CARD_IMAGE_ALT' | translate:{ name: Project.name }"
+               [src]="Project.cover.fallback.src"
+               [attr.srcset]="Project.cover.fallback.srcset || null"
+               [attr.sizes]="Project.cover.fallback.sizes || null"
+               class="card-img-top rounded-0 portfolio-cover"
+               loading="lazy"
+               decoding="async"
+               width="1500"
+               height="938">
+        </picture>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-12 col-md-12">
+              <img class="portfolio-logo"
+                   [src]="Project.logo.fallback.src"
+                   [alt]="'WEBLAB.PORTFOLIO.LOGO_ALT' | translate:{ name: Project.name }"
+                   loading="lazy"
+                   decoding="async"
+                   width="300"
+                   height="140">
+              <p class="roboto text white">{{ Project.descriptionKey | translate }}
+              </p>
+              <a class="roboto white text cursorp mt-4" [href]="Project.link" target="_blank">
+                {{ 'WEBLAB.PORTFOLIO.VIEW_LIVE' | translate }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,582 @@
+// ──────────────────────────────────────────────────────────────────────────
+// LeadFormComponent — Footer variant
+// Coherente con el footer minimalista del sitio (fondo negro, white text,
+// tipografía HKGrotesk, acento purple #874FE8).
+// ──────────────────────────────────────────────────────────────────────────
+
+$accent: #874fe8;
+$valid: #22c55e;
+$invalid: #ff5252;
+$text-primary: #ffffff;
+$text-muted: rgba(255, 255, 255, 0.6);
+$border-default: rgba(255, 255, 255, 0.18);
+$border-hover: rgba(255, 255, 255, 0.32);
+$bg-input: rgba(255, 255, 255, 0.04);
+$bg-input-focus: rgba(255, 255, 255, 0.07);
+$bg-card: rgba(255, 255, 255, 0.025);
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Wrapper
+// ──────────────────────────────────────────────────────────────────────────
+
+.lead-form-wrapper {
+  background: $bg-card;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 24px 22px;
+  color: $text-primary;
+  width: 100%;
+  // Entrada sutil (no anima en SSR porque opacity inicial = 1 hasta hidratar)
+  animation: form-fade-in 480ms ease-out;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Header
+// ──────────────────────────────────────────────────────────────────────────
+
+.lead-form-header {
+  margin-bottom: 18px;
+}
+
+.lead-form-title {
+  font-size: 18pt;
+  line-height: 1.15;
+  margin: 0 0 4px 0;
+  color: $text-primary;
+  letter-spacing: -0.01em;
+}
+
+.lead-form-subtitle {
+  font-size: 11pt;
+  line-height: 1.4;
+  margin: 0;
+  color: $text-muted;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Form
+// ──────────────────────────────────────────────────────────────────────────
+
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: opacity 200ms ease;
+
+  &.is-submitting {
+    pointer-events: none;
+    opacity: 0.75;
+  }
+}
+
+// Layout en 2 columnas cuando hay espacio (form expandido a col-lg-8 en el footer)
+@media (min-width: 992px) {
+  .lead-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 14px;
+  }
+
+  // Solo estos elementos ocupan ambas columnas.
+  // Los chip-groups (need y preferred_contact) quedan side-by-side para
+  // reducir altura total del form.
+  .lead-form > .field-full,
+  .lead-form > .form-banner,
+  .lead-form > .submit-btn {
+    grid-column: 1 / -1;
+  }
+
+  // Honeypots ya están absolute, igual los excluimos por seguridad
+  .lead-form > .ld-hp {
+    grid-column: 1 / -1;
+  }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Field
+// ──────────────────────────────────────────────────────────────────────────
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-family: "HKGrotesk-regular", sans-serif;
+  font-size: 10.5pt;
+  color: rgba(255, 255, 255, 0.78);
+  letter-spacing: 0.01em;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  .req {
+    color: $accent;
+    font-weight: bold;
+  }
+}
+
+.field-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.field-input {
+  flex: 1;
+  appearance: none;
+  background: $bg-input;
+  border: 1px solid $border-default;
+  border-radius: 10px;
+  color: $text-primary;
+  font-family: "HKGrotesk-regular", sans-serif;
+  font-size: 12pt;
+  padding: 11px 14px;
+  padding-right: 38px; // espacio para el check verde
+  width: 100%;
+  outline: none;
+  transition:
+    border-color 250ms ease-out,
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.32);
+  }
+
+  &:hover {
+    border-color: $border-hover;
+  }
+
+  &:focus {
+    border-color: $accent;
+    background: $bg-input-focus;
+    box-shadow: 0 0 0 3px rgba(135, 79, 232, 0.18);
+  }
+
+  // Disabled durante submit
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.field-textarea {
+  resize: vertical;
+  min-height: 72px;
+  max-height: 200px;
+  padding-right: 14px; // textarea no muestra check
+  line-height: 1.4;
+}
+
+.field-input-wrap-textarea {
+  // textarea sin check
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Check verde de validación
+// ──────────────────────────────────────────────────────────────────────────
+
+.field-check {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%) scale(0.7);
+  color: $valid;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 280ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    transform 280ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field.is-valid {
+  .field-input {
+    border-color: rgba(34, 197, 94, 0.55);
+  }
+  .field-input:focus {
+    border-color: $valid;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+  }
+  .field-check {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Estado invalid
+// ──────────────────────────────────────────────────────────────────────────
+
+.field.is-invalid {
+  .field-input {
+    border-color: rgba(255, 82, 82, 0.65);
+    animation: field-shake 300ms ease-in-out;
+  }
+  .field-input:focus {
+    border-color: $invalid;
+    box-shadow: 0 0 0 3px rgba(255, 82, 82, 0.18);
+  }
+}
+
+.field-error {
+  font-family: "HKGrotesk-regular", sans-serif;
+  font-size: 9.5pt;
+  color: $invalid;
+  margin-top: 2px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-4px);
+  transition:
+    opacity 220ms ease-out,
+    max-height 220ms ease-out,
+    transform 220ms ease-out;
+}
+
+.field.is-invalid .field-error,
+.field-chips.is-invalid .field-error {
+  opacity: 1;
+  max-height: 40px;
+  transform: translateY(0);
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Chips group
+// ──────────────────────────────────────────────────────────────────────────
+
+.field-chips {
+  // El error se muestra cuando el control está invalid y touched
+  .field-error {
+    margin-top: 4px;
+  }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Honeypots (ocultos)
+// ──────────────────────────────────────────────────────────────────────────
+
+.ld-hp {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.ld-hp-alt {
+  // Técnica visually-hidden (alternativa al position absolute) para resistir bots
+  // que filtran inline-styles
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Banners (errores globales)
+// ──────────────────────────────────────────────────────────────────────────
+
+.form-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 10.5pt;
+  font-family: "HKGrotesk-regular", sans-serif;
+  animation: banner-slide-in 280ms ease-out;
+
+  i {
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  span {
+    flex: 1;
+  }
+
+  .banner-action {
+    appearance: none;
+    background: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 10pt;
+    cursor: pointer;
+    transition: background-color 180ms ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.banner-error {
+  background: rgba(255, 82, 82, 0.1);
+  border: 1px solid rgba(255, 82, 82, 0.35);
+  color: #ffb4b4;
+}
+
+.banner-warn {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.35);
+  color: #ffd966;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Submit button
+// ──────────────────────────────────────────────────────────────────────────
+
+.submit-btn {
+  appearance: none;
+  background: rgb(0, 69, 255);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 13px 22px;
+  font-family: "HKGrotesk-SemiBold", sans-serif;
+  font-size: 12.5pt;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 150ms ease-out;
+  margin-top: 4px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover:not(:disabled) {
+    background: rgb(20, 50, 200);
+    box-shadow: 0 8px 24px rgba(0, 69, 255, 0.32);
+    transform: translateY(-1px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 69, 255, 0.4);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &.is-submitting {
+    background: rgb(20, 50, 200);
+  }
+
+  .bi {
+    transition: transform 200ms ease-out;
+  }
+
+  &:hover:not(:disabled) .bi {
+    transform: translateX(3px);
+  }
+}
+
+.submit-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.32);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spinner-rotate 800ms linear infinite;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Success card
+// ──────────────────────────────────────────────────────────────────────────
+
+.success-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 12px 8px;
+  animation: success-rise 480ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.success-check {
+  color: $valid;
+  margin-bottom: 14px;
+
+  .success-circle {
+    stroke-dasharray: 164;
+    stroke-dashoffset: 164;
+    animation: success-circle-draw 480ms ease-out forwards;
+    animation-delay: 100ms;
+    transform-origin: center;
+  }
+
+  .success-path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: success-path-draw 360ms ease-out forwards;
+    animation-delay: 500ms;
+  }
+}
+
+.success-title {
+  font-size: 18pt;
+  margin: 0 0 6px 0;
+  color: $text-primary;
+}
+
+.success-message {
+  font-size: 11pt;
+  color: $text-muted;
+  margin: 0 0 18px 0;
+  max-width: 320px;
+}
+
+.success-action {
+  appearance: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $text-primary;
+  font-family: "HKGrotesk-regular", sans-serif;
+  font-size: 10.5pt;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Animations
+// ──────────────────────────────────────────────────────────────────────────
+
+@keyframes form-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes field-shake {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-4px); }
+  50%      { transform: translateX(4px); }
+  75%      { transform: translateX(-2px); }
+}
+
+@keyframes banner-slide-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spinner-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes success-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes success-circle-draw {
+  from { stroke-dashoffset: 164; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes success-path-draw {
+  from { stroke-dashoffset: 60; }
+  to   { stroke-dashoffset: 0; }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Responsive
+// ──────────────────────────────────────────────────────────────────────────
+
+// Aprovechar el espacio extra cuando el form ocupa col-lg-8
+@media (min-width: 992px) {
+  .lead-form-wrapper {
+    padding: 30px 30px;
+  }
+  .lead-form-header {
+    margin-bottom: 22px;
+  }
+  .lead-form-title {
+    font-size: 22pt;
+  }
+  .lead-form-subtitle {
+    font-size: 12pt;
+  }
+}
+
+@media (min-width: 1400px) {
+  .lead-form-wrapper {
+    padding: 36px 36px;
+  }
+  .lead-form-title {
+    font-size: 26pt;
+  }
+}
+
+@media (max-width: 600px) {
+  .lead-form-wrapper {
+    padding: 22px 18px;
+  }
+  .lead-form-title {
+    font-size: 20pt;
+  }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Reduced motion
+// ──────────────────────────────────────────────────────────────────────────
+
+@media (prefers-reduced-motion: reduce) {
+  .lead-form-wrapper,
+  .field-input,
+  .field-check,
+  .field-error,
+  .submit-btn,
+  .submit-btn .bi,
+  .spinner,
+  .form-banner,
+  .success-card,
+  .success-circle,
+  .success-path {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

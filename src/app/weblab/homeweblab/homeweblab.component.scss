@@ -1,0 +1,170 @@
+.all {
+  cursor: none;
+}
+
+
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(.3);
+  z-index: 1000;
+}
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+.logonav {
+  font-family: "HKGrotesk-ExtraBold";
+  font-size: 23pt;
+  color: white;
+  transition: color 0.15s ease 0s;
+}
+
+.nav-icon {
+  width: 45px;
+  height: 45px;
+  color: white;
+  transition: color 0.15s ease 0s;
+}
+
+.lang-toggle {
+  font-family: "HKGrotesk-ExtraBold";
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: white;
+  text-decoration: none;
+}
+
+
+.top-margin {
+  margin-top: 60%;
+}
+
+.item-3d {
+  width: 60%;
+  margin-top: 40%;
+  margin-bottom: 15%;
+  margin-left: 20%;
+}
+
+
+
+img.first {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite ease-in-out alternate;
+}
+
+img.second {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1.5s infinite ease-in-out alternate;
+}
+
+img.third {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite ease-in-out alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+.prueba {
+  height: 100vh;
+}
+
+
+
+
+//Animation text running
+
+.option-slide-2 {
+  border: solid 1px white;
+  border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+}
+
+.title-slide-2 {
+  font-family: "HKGrotesk-light";
+  font-size: 15pt;
+  color: white;
+}
+
+.marquee-container {
+  height: 80px;
+  overflow: hidden;
+  line-height: 60px;
+
+
+  .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee2 {
+    animation-delay: 15s;
+  }
+
+  b {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%
+  }
+}
+
+
+.title-white-section {
+  margin-top: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  .custom-cursor{
+    display: none;
+  }
+
+  .logonav {
+    font-size: 20pt;
+  }
+
+
+  .title-white-section {
+    margin-top: 55%;
+  }
+}

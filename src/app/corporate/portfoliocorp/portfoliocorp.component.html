@@ -1,0 +1,60 @@
+<ngx-json-ld [json]="portfolioSchema"></ngx-json-ld>
+<div class="container pb-5">
+  <div class="row">
+
+    <div class="col-12">
+      <p class="title-inside dark-blue hk-bold text-center ps-4 pe-4 mb-5">{{ 'CORPORATE.PORTFOLIO.TITLE_LINE1' | translate }} <br>{{ 'CORPORATE.PORTFOLIO.TITLE_LINE2' | translate }}</p>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4 d-flex px-4" *ngFor=" let Project of projects">
+      <div class="card light-blue-bg border-0 rounded-5 mb-5 p-4 portfolio-card">
+        <a class="card-media-link" [href]="Project.link" target="_blank" rel="noopener">
+          <picture>
+            <source *ngIf="Project.cover.webp"
+                    [srcset]="Project.cover.webp.srcset || Project.cover.webp.src"
+                    [attr.sizes]="Project.cover.webp.sizes || null"
+                    [type]="Project.cover.webp.type">
+            <img [attr.alt]="'CORPORATE.PORTFOLIO.CARD_IMAGE_ALT' | translate: { name: Project.name }"
+                 [src]="Project.cover.fallback.src"
+                 [attr.srcset]="Project.cover.fallback.srcset || null"
+                 [attr.sizes]="Project.cover.fallback.sizes || null"
+                 loading="lazy"
+                 decoding="async"
+                 width="1500"
+                 height="938"
+                 class="card-img-top rounded-4 portfolio-cover">
+          </picture>
+        </a>
+        <div class="card-body px-0">
+          <div class="row align-items-center g-2 mb-2">
+            <div class="col-8">
+              <img [src]="Project.logo.fallback.src"
+                   [attr.alt]="'CORPORATE.PORTFOLIO.LOGO_ALT' | translate: { name: Project.name }"
+                   loading="lazy"
+                   decoding="async"
+                   width="300"
+                   height="140"
+                   class="portfolio-logo">
+            </div>
+            <div class="col-4 text-end">
+              <span class="badge rounded-pill badge-industry">{{ Project.industry }}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="text hk-regular gray pt-2">{{ Project.descriptionKey | translate }}</p>
+              <a class="roboto black text cursorp mt-4" [href]="Project.link" target="_blank">{{ 'CORPORATE.PORTFOLIO.VIEW_LIVE' | translate }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

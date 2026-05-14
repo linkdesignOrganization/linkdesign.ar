@@ -1,0 +1,44 @@
+<svg width="768" height="960" viewBox="0 0 768 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="768" height="960" fill="#F0F0F0"/>
+  <g opacity="0.6" stroke="#6728FF" stroke-width="1.45">
+    <path d="M-108 566C28 500 148 454 286 430C438 404 562 424 706 474C800 506 890 548 980 602"/>
+    <path d="M-136 630C12 550 142 496 290 468C442 440 572 456 714 502C818 536 910 582 1000 638"/>
+    <path d="M-168 706C-4 612 136 548 296 518C454 488 588 500 730 544C828 576 920 624 1008 682"/>
+    <path d="M-198 790C-18 684 132 612 302 578C464 546 602 556 744 596C842 624 934 670 1024 728"/>
+    <path d="M-218 884C-14 762 148 678 324 636C486 598 626 604 770 640C870 666 962 712 1056 776"/>
+  </g>
+  <g opacity="0.3" stroke="#4D1FE6" stroke-width="1.05">
+    <path d="M-24 522L120 594L286 502L456 594L624 522L806 606"/>
+    <path d="M-58 600L88 676L260 580L436 672L610 596L792 690"/>
+    <path d="M14 760L182 654L354 740L524 642L702 726"/>
+    <path d="M94 920L272 808L446 896L622 792"/>
+  </g>
+  <g opacity="0.72" stroke="#6728FF" stroke-width="1.3">
+    <path d="M100 474L60 820"/>
+    <path d="M206 432L176 804"/>
+    <path d="M328 400L308 774"/>
+    <path d="M452 394L446 764"/>
+    <path d="M582 422L596 790"/>
+    <path d="M700 486L742 858"/>
+  </g>
+  <g transform="translate(438 198)">
+    <ellipse cx="222" cy="284" rx="222" ry="260" stroke="#4D1FE6" stroke-width="1.4" opacity="0.48"/>
+    <ellipse cx="222" cy="284" rx="176" ry="260" stroke="#6728FF" stroke-width="1.5" opacity="0.74"/>
+    <ellipse cx="222" cy="284" rx="124" ry="260" stroke="#6728FF" stroke-width="1.4" opacity="0.82"/>
+    <ellipse cx="222" cy="284" rx="222" ry="98" stroke="#6728FF" stroke-width="1.45" opacity="0.78"/>
+    <ellipse cx="222" cy="284" rx="222" ry="156" stroke="#4D1FE6" stroke-width="1.2" opacity="0.42"/>
+    <ellipse cx="222" cy="284" rx="222" ry="52" stroke="#4D1FE6" stroke-width="1.3" opacity="0.56"/>
+    <path d="M12 326C106 306 298 200 424 166" stroke="#4D1FE6" stroke-width="1.2" opacity="0.48"/>
+    <path d="M42 188C132 246 300 322 444 348" stroke="#6728FF" stroke-width="1.35" opacity="0.68"/>
+    <path d="M92 448C182 416 292 180 408 120" stroke="#6728FF" stroke-width="1.15" opacity="0.38"/>
+    <g stroke="#6728FF" stroke-linecap="round" stroke-width="1.8">
+      <path d="M-24 350L46 328"/>
+      <path d="M12 178L78 190"/>
+      <path d="M432 82L414 134"/>
+      <path d="M486 196L430 218"/>
+      <path d="M506 390L448 374"/>
+      <path d="M432 514L388 470"/>
+      <path d="M122 552L154 500"/>
+    </g>
+  </g>
+</svg>

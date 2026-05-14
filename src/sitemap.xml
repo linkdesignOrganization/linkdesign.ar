@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://linkdesign.cr/</loc>
+    <lastmod>2026-02-26T19:15:39.158Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://linkdesign.cr/assets/img/section3.webp</image:loc>
+      <image:title>LINK DESIGN home visual</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://linkdesign.cr/corporate</loc>
+    <lastmod>2026-02-26T22:48:21.094Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://linkdesign.cr/assets/img/laptop-cover.webp</image:loc>
+      <image:title>LINK DESIGN corporate showcase</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://linkdesign.cr/weblab</loc>
+    <lastmod>2026-02-26T22:47:36.890Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://linkdesign.cr/assets/img/section2.webp</image:loc>
+      <image:title>LINK DESIGN weblab visual</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://linkdesign.cr/assets/img/section3.webp</video:thumbnail_loc>
+      <video:title>LINK DESIGN weblab reel</video:title>
+      <video:description>Showcase reel for LINK DESIGN Weblab services.</video:description>
+      <video:content_loc>https://linkdesign.cr/assets/videos/bg-codding.mp4</video:content_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://linkdesign.cr/contact</loc>
+    <lastmod>2026-02-26T19:15:40.993Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://linkdesign.cr/assets/img/favicons/1200x630opengraph.png</image:loc>
+      <image:title>LINK DESIGN contact graphic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://linkdesign.cr/software</loc>
+    <lastmod>2026-02-26T22:47:20.442Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://linkdesign.cr/assets/img/hero.webp</image:loc>
+      <image:title>LINK DESIGN software hero</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://linkdesign.cr/assets/img/hero.webp</video:thumbnail_loc>
+      <video:title>LINK DESIGN software capabilities</video:title>
+      <video:description>Overview video for LINK DESIGN software services.</video:description>
+      <video:content_loc>https://linkdesign.cr/assets/videos/video-small.mp4</video:content_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://linkdesign.cr/politicas-de-privacidad</loc>
+    <lastmod>2026-02-26T19:11:25.974Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

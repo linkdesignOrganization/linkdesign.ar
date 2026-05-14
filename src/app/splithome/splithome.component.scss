@@ -1,0 +1,199 @@
+:host {
+  background-color: white !important;
+  /* Hace que el fondo sea blanco solo en este componente */
+  display: block;
+  min-height: 100vh;
+  /* Asegura que cubra toda la pantalla */
+}
+
+.containertest {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+  transition: 0.5s;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  // Desktop: disposición horizontal
+}
+
+.third {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; // Alinea todo al fondo
+  transition: 0.5s;
+  flex: 1;
+  margin: 0 8px;
+  overflow: visible;
+  padding: 10px; // Espaciado interno
+
+  // Efecto hover solo en desktop
+  &:hover {
+    flex: 1.5;
+  }
+}
+
+// Gradientes de fondo
+.section1 {
+  background: linear-gradient(to top, #383838, #2b2a2a, #252525, #1a1a1a, #131313);
+}
+
+.section2 {
+  background: linear-gradient(to top, #eef4ff, #c9dcf4, #9fc6e7, #6db1d9, #179dc9);
+}
+
+.section3 {
+  background: linear-gradient(to bottom, #C6C6C6, #F5F5F5);
+}
+
+// Tarjeta interna: distribución horizontal en desktop
+.custom-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  align-items: flex-end; // Contenido pegado al bottom
+  justify-content: flex-start;
+}
+
+// Texto vertical (para desktop)
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 60pt;
+  white-space: nowrap;
+  transform: rotate(180deg);
+  flex: 0 0 auto;
+  text-align: center;
+  line-height: 0.5;
+}
+
+// Contenido de la tarjeta
+.card-content {
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; // Alineado al bottom
+  margin-left: 35px;
+}
+
+// Animaciones de íconos (se mantienen)
+@keyframes moveUpDown1 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes moveUpDown2 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes moveUpDown3 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.iconicon-third1 {
+  position: absolute;
+  width: 150px;
+  top: 20px;
+  right: -10px;
+  animation: moveUpDown1 2s infinite ease-in-out;
+}
+
+.iconicon-third2 {
+  position: absolute;
+  width: 150px;
+  top: 20px;
+  right: -10px;
+  animation: moveUpDown2 2.5s infinite ease-in-out;
+}
+
+.iconicon-third3 {
+  position: absolute;
+  width: 140px;
+  top: 20px;
+  right: -10px;
+  animation: moveUpDown3 3s infinite ease-in-out;
+}
+
+/* Responsive para pantallas móviles verticales */
+@media (max-width: 1030px) {
+  .containertest {
+    display: none !important;
+  }
+
+  .containertest-mobile {
+    flex-direction: column;
+    height: 98vh;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .third-mobile {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    height: 33%;
+    margin: 0 auto; 
+  }
+
+  .section1,
+  .section2, 
+  .section3 {
+    height: 100%;
+  }
+
+
+  .iconmobile-third1 {
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    width: 95px;
+    animation: moveUpDown3 3s infinite ease-in-out;
+  }
+
+  .iconmobile-third2 {
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    width: 95px;
+    animation: moveUpDown3 3.5s infinite ease-in-out;
+  }
+
+  .iconmobile-third3 {
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    width: 90px;
+    animation: moveUpDown3 4s infinite ease-in-out;
+  }
+
+}

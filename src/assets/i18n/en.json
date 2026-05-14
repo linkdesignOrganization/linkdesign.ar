@@ -1,0 +1,949 @@
+{
+  "COMMON": {
+    "LANG_ES": "ES",
+    "LANG_EN": "EN",
+    "VIDEO_UNSUPPORTED": "Your browser does not support the video tag."
+  },
+  "WEBLAB": {
+    "NAV": {
+      "CLOSE_MENU_ARIA": "Close menu",
+      "HOME": "Home",
+      "LAB_FOCUS": "Lab Focus",
+      "LAB_WORK": "Lab Work",
+      "QUOTE": "Get a Quote",
+      "CONTACT": "Contact",
+      "EXPLORE": "Explore",
+      "CORPORATE_DEV": "Corporate Development",
+      "SOFTWARE_DEV": "Software Development"
+    },
+    "COVER": {
+      "TAGLINE": "- Time to start working -",
+      "TITLE": "Web Lab"
+    },
+    "HOME": {
+      "TOGGLE_NAV_ARIA": "Open menu",
+      "FOCUS_TITLE": "OUR APPROACH",
+      "FOCUS_SUBTITLE": "in this lab",
+      "FOCUS_PARAGRAPH": "We understand that for many projects a corporate visual style doesn't fit. That's why we created this web experimentation space where we dare to play with trends and create sites that break away from the conventional.",
+      "BREAK_TITLE": "Break the mold",
+      "BREAK_PARAGRAPH": "We have to play with limits, prioritize creativity, and create a visual impact that stays in the user's memory.",
+      "DEFINE_TITLE": "Define what matters",
+      "DEFINE_PARAGRAPH": "Each project is unique, and what matters to some doesn't matter as much to others. Let's see what your project needs.",
+      "BALANCE_TITLE": "A perfect balance",
+      "BALANCE_PARAGRAPH": "Everything is in the user experience and the message communication. A web platform should be a tool, not just more content.",
+      "HOW_TITLE_LINE1": "Ok, great approach but",
+      "HOW_TITLE_LINE2": "How do you make it happen?",
+      "HOW_PARAGRAPH": "We use the best available technology and combine it with our ability to create visual elements. That's how we get results that stand out in the market.",
+      "TECHNOLOGY": "Technology",
+      "DESIGN": "Design",
+      "CONTACT_TITLE": "We'd love to start working today",
+      "CONTACT_PARAGRAPH": "Get in touch and let's talk about your project. Every project has its own identity and our intention is to find it and bring it to life.",
+      "CONE_ALT": "cone illustration",
+      "CLIENTS_ALT": "Our clients",
+      "MARQUEE": {
+        "AGENCIAS": "AGENCIES",
+        "PORTAFOLIO": "PORTFOLIO",
+        "MARCAS": "BRANDS",
+        "CAMPANAS": "CAMPAIGNS",
+        "ARTISTAS": "ARTISTS",
+        "ESTRATEGIAS": "STRATEGIES",
+        "EVENTOS": "EVENTS",
+        "MARCAS_PERSONALES": "PERSONAL BRANDS",
+        "IDEAS": "IDEAS"
+      }
+    },
+    "PORTFOLIO": {
+      "INTRO": "Explore our latest",
+      "LAB_WORK": "Lab Work",
+      "CARD_IMAGE_ALT": "This is an image of the site for {{name}}",
+      "LOGO_ALT": "This is the logo for {{name}}",
+      "VIEW_LIVE": "View live site",
+      "PROJECTS": {
+        "EVOKE": {
+          "DESCRIPTION": "Evoke is a clear example of how a site can communicate quality, skill, art, and professionalism. A minimalist website, yet with the strength needed to stand out and represent its creative vision."
+        },
+        "UGA": {
+          "DESCRIPTION": "Working with Uga has been an experience as fun as his own shows. The project was born from the need to gather all his content in one place and ended up becoming a website that is not only functional, but also as entertaining as he is."
+        },
+        "GONOW": {
+          "DESCRIPTION": "Go Now isn't just another ATV sales site; it's a showcase of the adventures these vehicles can deliver. We wanted to build something fun, strong, and visually striking that helps the brand stand out in a competitive market."
+        },
+        "MAGENTA": {
+          "DESCRIPTION": "Magenta is not simply a brand experience agency; it's a team that breathes creativity. Our goal was to create a site that showcases their ability to transform ideas and elevate brands, keeping a clean design with a distinct personality."
+        },
+        "ONIGIRI": {
+          "DESCRIPTION": "Onigiri goes far beyond sushi. Their cuisine tells stories, and we wanted to capture that essence in a website that reflects their love for Japanese gastronomy. A modern, authentic digital experience that shows why they enjoy what they do so much."
+        },
+        "XCELERATE": {
+          "DESCRIPTION": "Xcelerate is pure energy, and from the start we wanted that to be felt on their website. We created a platform that conveys their focus on physical and mental transformation, showcasing a modern, motivating environment aligned with their innovative spirit."
+        }
+      }
+    },
+    "SEO": {
+      "TITLE": "Web Lab | LINK DESIGN - Web Experimentation & Creativity",
+      "DESCRIPTION": "LINK DESIGN Web Lab: a space for visual experimentation and creative web development. We break the rules to create unique digital experiences.",
+      "KEYWORDS": "web lab, experimental design, web creativity, creative web development, web animations, 3d web, costa rica"
+    },
+    "SCHEMA": {
+      "PAGE_NAME": "Web Lab | LINK DESIGN - Web Experimentation & Creativity",
+      "PAGE_DESCRIPTION": "LINK DESIGN Web Lab: a space for visual experimentation and creative web development. We break the rules to create unique digital experiences.",
+      "IN_LANGUAGE": "en-US",
+      "BREADCRUMB_HOME": "Home",
+      "BREADCRUMB_LAB": "Web Lab",
+      "SERVICE_NAME": "Creative and artistic websites",
+      "SERVICE_DESCRIPTION": "Custom website development with a highly creative or experimental focus."
+    }
+  },
+  "FOOT": {
+    "TITLE_LINE1": "Let's start",
+    "TITLE_LINE2": "working today",
+    "EXPECT_MESSAGE": "We look forward to your message",
+    "WHATSAPP_CHAT": "Chat on WhatsApp",
+    "SCHEDULE_MEETING": "Schedule a meeting",
+    "OFFER_TITLE": "Our Offer",
+    "STRATEGY": "Strategy",
+    "RESEARCH": "Research",
+    "UI_UX_TRENDS": "UI/UX Trends",
+    "TECH_CAMPAIGNS": "Tech campaigns",
+    "LAUNCH_STRATEGY": "Launch strategy",
+    "TECH_CONSULTING": "Tech consulting",
+    "DEVELOPMENT": "Development",
+    "FULL_STACK": "Full-Stack",
+    "BACKEND_INTEGRATIONS": "Backend/API integrations",
+    "MARKETING_TOOLS": "Marketing tools integration",
+    "WEB_APPS": "Web applications",
+    "DESIGN": "Design",
+    "UX_UI_DESIGN": "UX/UI design",
+    "PROTOTYPE_DESIGN": "Prototype design",
+    "PRODUCT_DESIGN": "Product design",
+    "BRAND_DESIGN": "Brand design",
+    "CONTENT": "Content",
+    "COPYWRITING": "Copywriting",
+    "VIDEO": "Video",
+    "ANIMATION": "Animation",
+    "GRAPHICS_2D_3D": "2D/3D graphics",
+    "COPYRIGHT": "2026 Link Design. All Rights Reserved.",
+    "PRIVACY": "Privacy policy",
+    "LOCATION": "San Jose, Costa Rica"
+  },
+  "SOFTWARE": {
+    "NAV": {
+      "ABOUT": "About",
+      "SERVICES": "Services",
+      "PROCESSES": "Processes",
+      "PROCESS_SINGLE": "Process",
+      "EMAIL_LABEL": "email:"
+    },
+    "HERO": {
+      "TITLE_LINE1": "Your CRM, ERP, or management system,",
+      "TITLE_LINE2": "built to fit your operation",
+      "SUBTITLE_LINE1": "You don't adapt your company to the software.",
+      "SUBTITLE_LINE2": "We build the software around how your operation already works.",
+      "CTA_CONTACT": "Contact",
+      "CTA": "Evaluate my case"
+    },
+    "CTA_QUOTE": "Get a software quote",
+    "ABOUT": {
+      "TITLE": "About",
+      "HEADING_PART1": "We create, integrate, and implement",
+      "HEADING_HIGHLIGHT": "innovative technology solutions",
+      "PARAGRAPH_LINE1": "Our approach combines strategic analysis, scalable development, and rigorous testing",
+      "PARAGRAPH_LINE2": "to deliver stable, secure solutions tailored to each company's specific needs.",
+      "STEPS": {
+        "ANALYSIS": "Analysis",
+        "DESIGN": "Design",
+        "DEVELOPMENT": "Development",
+        "LAUNCH": "Launch"
+      }
+    },
+    "SERVICES": {
+      "TITLE": "Service options",
+      "HEADING_PART1": "Specialized services to drive",
+      "HEADING_HIGHLIGHT": "Digital Transformation",
+      "LIST": {
+        "REVIEW_DEV": "Development with reviews",
+        "POST_SUPPORT": "Post-implementation support",
+        "REAL_ENV_TEST": "Real-world testing"
+      },
+      "CARDS": {
+        "INTERNAL_APPS_TITLE_LINE1": "Internal",
+        "INTERNAL_APPS_TITLE_LINE2": "application development",
+        "INTERNAL_APPS_DESC": "We build custom digital tools to optimize your company's key processes, centralize data management, and automate repetitive tasks.",
+        "TECH_IMPLEMENTATION_TITLE": "Technology implementation",
+        "TECH_IMPLEMENTATION_DESC": "Our approach spans consulting and strategic planning through execution and ongoing support, ensuring a smooth transition and effective results.",
+        "AI_IMPLEMENTATION_TITLE": "Artificial intelligence implementation"
+      }
+    },
+    "TRANSFORMATION": {
+      "TITLE": "Transformation",
+      "HEADING_PART1": "Transform your processes with",
+      "HEADING_HIGHLIGHT": "digital innovation",
+      "CARDS": {
+        "ADVANCED_EXPERIENCE_TITLE": "Advanced Experience",
+        "ADVANCED_EXPERIENCE_DESC": "Enjoy intuitive, optimized systems for every stage of your business.",
+        "VERSATILE_COMPONENTS_TITLE": "Versatile Components",
+        "VERSATILE_COMPONENTS_DESC": "We integrate modular solutions that fit your team's needs.",
+        "SIMPLE_CUSTOMIZATION_TITLE": "Simple Customization",
+        "SIMPLE_CUSTOMIZATION_DESC": "We tailor every detail, ensuring flexibility and efficiency.",
+        "BOOST_PROJECT_TITLE": "Boost Your Project",
+        "BOOST_PROJECT_DESC": "Maximize results with tech strategies that drive growth.",
+        "SEAMLESS_INTEGRATION_TITLE": "Seamless Integration",
+        "SEAMLESS_INTEGRATION_DESC": "We connect your systems for secure, reliable data exchange.",
+        "AGILE_PROGRESS_TITLE": "Agile Progress",
+        "AGILE_PROGRESS_DESC": "We adopt iterative methods to accelerate quality and innovation."
+      }
+    },
+    "CUSTOM": {
+      "HEADING_PART1": "Custom development to",
+      "HEADING_HIGHLIGHT": "solve your",
+      "HEADING_PART2": "tech challenges",
+      "LIST": {
+        "OPTIMIZED_ARCH": "Optimized architecture",
+        "NEW_TECH": "Use of new technologies",
+        "STABLE_PERFORMANCE": "Stable performance"
+      }
+    },
+    "SHARED": {
+      "NEEDS_PARAGRAPH": "Tell us what you need and we'll work together on a tailored solution that optimizes your processes and helps your business grow."
+    },
+    "PROCESS": {
+      "TITLE": "Development process",
+      "HEADING_PART1": "With a",
+      "HEADING_HIGHLIGHT": "structured and agile",
+      "HEADING_PART2": "approach for successful custom software development",
+      "STEPS": {
+        "ANALYSIS_PLANNING": "Analysis and Planning",
+        "DESIGN_PROTOTYPING": "Design and Prototyping",
+        "DEVELOPMENT_TESTING": "Development and Testing",
+        "LAUNCH_SUPPORT": "Launch and Support"
+      }
+    },
+    "SCALABILITY": {
+      "TITLE": "Future scalability",
+      "HEADING_HIGHLIGHT": "Scalable technology solutions",
+      "HEADING_PART2": "that grow with your business",
+      "PARAGRAPH": "We build flexible, adaptable software so your company can evolve without limitations, ensuring sustainable and efficient growth.",
+      "LIST": {
+        "TECH_IMPLEMENTATION": "Technology implementation",
+        "DATA_PROTECTION": "Data protection",
+        "ANY_SCALE": "Any project scale"
+      }
+    },
+    "FAQ": {
+      "TITLE": "FAQ",
+      "HEADING_PART1": "We answer some of the",
+      "HEADING_HIGHLIGHT": "most frequent questions",
+      "Q1": "How do you ensure the software can scale in the future?",
+      "A1": "We design from the start with a flexible structure that allows modifications and growth without compromising performance. The software architecture is organized into independent modules, making it easier to add new features and optimize existing ones without affecting the entire system. We also perform load testing to measure behavior under different demand levels.",
+      "Q2": "What security measures do you implement in applications?",
+      "A2": "Software is developed following security best practices to minimize vulnerabilities. We apply access controls, data encryption, and authentication protocols that protect information integrity. We also conduct periodic reviews to identify potential risks and keep systems protected against new threats.",
+      "Q3": "Do you provide support and maintenance after development?",
+      "A3": "Yes, maintenance is part of the process to ensure the software continues to work correctly over time. This includes fixing possible errors, optimizing processes, and updating dependencies when necessary. We also monitor systems to detect and resolve incidents proactively.",
+      "Q4": "How do you make sure the software is easy to use?",
+      "A4": "Before development begins, we analyze processes and end-user needs to define an intuitive structure. Functional prototypes are created to evaluate usability before implementation. During development, we test with users to detect difficulties and make adjustments that improve the user experience without compromising functionality.",
+      "Q5": "How do you verify the software works properly before delivery?",
+      "A5": "Before delivery, the software goes through multiple testing phases. Automated and manual tests are performed to detect errors, evaluate performance, and ensure all functionalities behave as expected. We also test in pre-production environments, where the software runs under conditions similar to real use, ensuring a stable implementation.",
+      "Q6": "How do you manage timelines and project delivery?",
+      "A6": "Each project is planned in stages with defined objectives and estimated development times. Before starting, we establish a work schedule with specific milestones to track progress and make adjustments if needed. Communication with the client is constant, allowing us to address issues without affecting agreed timelines."
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "HEADING_PART1": "Take the first step toward innovation,",
+      "HEADING_HIGHLIGHT": "let's start working today.",
+      "WHATSAPP": "WhatsApp"
+    },
+    "ALT": {
+      "HERO_IMAGE": "illustrative photo of a person using a tablet",
+      "ILLUSTRATIVE_ICON": "Illustrative icon"
+    },
+    "SEO": {
+      "TITLE": "Custom Software | LINK DESIGN - Technology Solutions",
+      "DESCRIPTION": "Custom software development, internal applications, and AI implementation. We optimize processes and empower your company with technology.",
+      "KEYWORDS": "custom software, software development, internal applications, artificial intelligence, automation, technology, costa rica"
+    },
+    "SCHEMA": {
+      "PAGE_NAME": "Custom Software | LINK DESIGN - Technology Solutions",
+      "PAGE_DESCRIPTION": "Custom software development, internal applications, and AI implementation. We optimize processes and empower your company with technology.",
+      "IN_LANGUAGE": "en-US",
+      "BREADCRUMB_HOME": "Home",
+      "BREADCRUMB_SOFTWARE": "Software",
+      "SERVICE_CUSTOM_NAME": "Custom software development",
+      "SERVICE_CUSTOM_DESCRIPTION": "We create, integrate, and implement tailored technology solutions for business needs, from design to launch.",
+      "SERVICE_INTERNAL_APPS_NAME": "Internal application development",
+      "SERVICE_INTERNAL_APPS_DESCRIPTION": "We build custom digital tools to optimize processes, centralize data, and automate repetitive tasks in your company.",
+      "SERVICE_TECH_IMPLEMENTATION_NAME": "Technology implementation",
+      "SERVICE_TECH_IMPLEMENTATION_DESCRIPTION": "Consulting, strategic planning, execution, and ongoing support to ensure a smooth transition and effective results.",
+      "SERVICE_AI_NAME": "Artificial intelligence implementation",
+      "SERVICE_AI_DESCRIPTION": "Integration of AI-based solutions to optimize decision-making, automate processes, and improve competitiveness."
+    },
+    "PAGE_COPY": {
+      "BRAND": {
+        "NAME": "LINK DESIGN",
+        "EMAIL": "hola@linkdesign.cr"
+      },
+      "HERO": {
+        "TITLE_LINE1": "Custom internal software",
+        "TITLE_LINE2": "for companies",
+        "SUBTITLE_LINE1": "We design and build internal applications to organize processes,",
+        "SUBTITLE_LINE2": "centralize information, and provide real visibility into operations, starting from how your company works today.",
+        "CTA": "Evaluate my case"
+      },
+      "CONTEXT": {
+        "LABEL": "Products",
+        "HEADLINE_PRE": "Systems we",
+        "HEADLINE_HIGHLIGHT": "build custom for you",
+        "HEADLINE_POST": "",
+        "PARAGRAPH": "Each category represents a real capability, with systems in production. We don't sell a packaged product: we build web software around how your company works, with the functions operations actually need.",
+        "ITEMS": {
+          "ITEM1_TITLE": "Custom CRM",
+          "ITEM1_BODY": "Sales system that unifies WhatsApp, calls, and email, automates quotes with AI, and keeps the real status of every lead visible in one place.",
+          "ITEM2_TITLE": "Operations & inventory ERP",
+          "ITEM2_BODY": "Multi-location stock control, full sales flow with dispatch tracking, electronic invoicing, and real-time movement traceability.",
+          "ITEM3_TITLE": "E-commerce with custom logic",
+          "ITEM3_BODY": "Online store with sales rules, customer types, and commercial conditions built into the system, not on a generic template.",
+          "ITEM4_TITLE": "Booking and ticketing platforms",
+          "ITEM4_BODY": "Systems to manage schedules, availability, reminders, and online payment, connected to operations without relying on external tools.",
+          "ITEM5_TITLE": "Dashboards and reporting",
+          "ITEM5_BODY": "Boards with real-time metrics, downloadable reports, and executive visibility into operations, fed directly from active systems.",
+          "ITEM6_TITLE": "Applied AI automation",
+          "ITEM6_BODY": "Flows that read data, fill in forms, and connect manual tasks without the team changing how they work. AI runs in the background; it doesn't replace the customer relationship."
+        }
+      },
+      "MEDIA": {
+        "VIDEO_UNSUPPORTED": "Your browser does not support video."
+      },
+      "HOW": {
+        "LABEL": "How we work",
+        "HEADLINE_LINE1": "We don't build blindly.",
+        "HEADLINE_PRE": "First",
+        "HEADLINE_HIGHLIGHT": "we define the system.",
+        "PARAGRAPH": "Internal software fails when you start without clarity. Before writing code, we map the real operational flow, scope, rules, integrations, and control points.",
+        "LIST": {
+          "ITEM1": "Clear scope with priorities",
+          "ITEM2": "Business rules from the start",
+          "ITEM3": "Quality control processes in the real environment"
+        }
+      },
+      "WHAT": {
+        "YES": {
+          "BADGE": "What we do",
+          "TITLE_PRE": "We build",
+          "TITLE_HIGHLIGHT": "internal software",
+          "TITLE_POST": "to regain operational control",
+          "PARAGRAPH": "We design and build internal systems when operations can no longer be sustained with patches, loose files, and human dependencies.",
+          "LIST": {
+            "ITEM1": "Internal applications for real processes",
+            "ITEM2": "Elimination of rework and manual tasks",
+            "ITEM3": "Centralized data and real-time status in one place",
+            "ITEM4": "Integrations without disrupting existing operations",
+            "ITEM5": "Roles, permissions, and action traceability"
+          }
+        },
+        "NO": {
+          "BADGE": "What we don't do",
+          "TITLE": "We don't build software without analysis or technical criteria",
+          "PARAGRAPH": "We don't take projects without definition, without internal owners, or that seek \"something quick\" to cover structural problems.",
+          "LIST": {
+            "ITEM1": "We don't sell generic products or apps",
+            "ITEM2": "We don't work without analysis or structure",
+            "ITEM3": "We don't compete on price by sacrificing quality",
+            "ITEM4": "We don't patch broken processes",
+            "ITEM5": "We don't move forward without owners and clear decisions"
+          }
+        }
+      },
+      "SERVICES_EXTRA": {
+        "HEADING_PRE": "Internal systems to",
+        "HEADING_HIGHLIGHT": "operate, control, and scale",
+        "HEADING_POST": "your company.",
+        "CARD_INTERNAL_PARAGRAPH": "We design and build custom internal systems to centralize operations, organize processes, and provide real visibility to the business.",
+        "CARD_TECH_PARAGRAPH": "We integrate and connect existing systems, data, and internal tools to eliminate rework and manual dependencies, without disrupting current operations.",
+        "CARD_AI_PARAGRAPH": "We apply artificial intelligence to automate tasks, assist operational decisions, and reduce manual load in real processes. We use it only when it produces measurable impact."
+      },
+      "SHOWCASE": {
+        "LABEL": "Results",
+        "TITLE": "Systems we build <span class=\"hk-bold\">from scratch</span> to solve real operations",
+        "SUBTITLE": "Each one started from a concrete problem, not from an idea.",
+        "ARIA": {
+          "SECTION": "Showcase of implemented systems",
+          "PREV": "Previous case",
+          "NEXT": "Next case"
+        },
+        "ITEMS": {
+          "ITEM1": {
+            "TAG": "CRM + AI + WhatsApp",
+            "TITLE": "Quotes, follow-up, and sales lived in WhatsApp and spreadsheets",
+            "BEFORE": "Three sales reps spent 20 minutes per quote. Customer data was scattered across chats, files, and calendars. There was no database and no formal follow-up.",
+            "AFTER": "The CRM integrates WhatsApp Business. AI reads the conversation and pre-fills the quote while the rep is still chatting. It validates data, generates the PDF, and sends it from the same system. Follow-up, scheduling, and reporting update automatically."
+          },
+          "ITEM2": {
+            "TAG": "ERP + Logistics",
+            "TITLE": "3 stores and one warehouse with no inventory visibility or sales control",
+            "BEFORE": "There was no way to know what inventory existed per location without asking. Quotes were handled separately and, once approved, sales had to be entered manually.",
+            "AFTER": "An ERP centralizes inventory by location and converts quotes into sales without duplicating data. It includes role-based access, AI-powered reports, and direct integration with e-commerce and invoicing."
+          },
+          "ITEM3": {
+            "TAG": "Operations System",
+            "TITLE": "Field technicians without records, per-visit billing, and scheduling in manual calendars",
+            "BEFORE": "More than seven technicians were coordinated manually. There was no subscription model. Visits were billed one by one and there was no evidence of what happened in each service.",
+            "AFTER": "The system schedules visits by subscription frequency and flags pending payments. Technicians log each service with photos, customer signature, and geolocation from mobile. Management approves reports before sending them to the client."
+          },
+          "ITEM4": {
+            "TAG": "Web Integration",
+            "TITLE": "All appointments went through call center, WhatsApp, or front desk",
+            "BEFORE": "The clinic's internal system worked well, but patients could not self-manage anything. Every appointment required human assistance.",
+            "AFTER": "A web scheduler was connected to the existing internal system. Patients book using real-time availability, without replacing what already worked and without duplicating data."
+          },
+          "ITEM5": {
+            "TAG": "Ticketing + QR",
+            "TITLE": "Ticket sales depended on a third party charging commission per ticket",
+            "BEFORE": "Creating an event required notifying the provider via WhatsApp. Access was validated with downloaded lists and commissions were paid per sold ticket.",
+            "AFTER": "A first-party ticketing system integrated into the website was implemented. Online purchase, automatic QR by email, scan app at the gate, and refunds from a management panel. No middlemen and no commissions."
+          },
+          "ITEM6": {
+            "TAG": "B2B E-commerce",
+            "TITLE": "5 customer types with different conditions and all sales depended on reps",
+            "BEFORE": "There was no online sales channel. Every order required a sales rep to apply prices and business rules manually based on customer type inside the ERP.",
+            "AFTER": "The e-commerce platform recognizes customer types and automatically applies commercial conditions. Prices, promotions, and differentiated rules work without manual intervention while respecting existing ERP logic."
+          }
+        }
+      },
+      "PROCESS_EXTRA": {
+        "HEADLINE_PRE": "We define the system, build it in stages, and",
+        "HEADLINE_HIGHLIGHT": "validate it in real operations",
+        "STEP1": "We map the real operational flow, business rules, stakeholders, and scope. Here we define what is built, what isn't, and why.",
+        "STEP2": "We design the system architecture and functional prototypes to validate logic, flows, and experience before development.",
+        "STEP3": "We build the system in modules and stages, with continuous testing and real validations to avoid errors and rework.",
+        "STEP4": "We implement the system in operations, support adoption, and provide assistance for adjustments, improvements, and evolution of the system."
+      },
+      "FAQ": {
+        "TITLE": "FAQ",
+        "SUBTITLE_PRE": "We answer some of the",
+        "SUBTITLE_HIGHLIGHT": "most frequently asked questions",
+        "Q1": "How do you ensure the software can scale in the future?",
+        "A1": "We define architecture, rules, and structure from the start. The system is built in modules, allowing growth, adjustments, or new integrations without having to rebuild everything.",
+        "Q2": "What security measures do you implement?",
+        "A2": "We define roles, permissions, validations, and controls according to the real operation. We apply security best practices from the architecture, not as an add-on at the end.",
+        "Q3": "Do you provide support after development?",
+        "A3": "Yes. We support the system after launch for adjustments, improvements, and evolution. Internal software is not \"delivered and abandoned\".",
+        "Q4": "How do you ensure the software is easy to use?",
+        "A4": "We design the system based on users' real flows. We validate prototypes and functionality before development to avoid complex or hard-to-use systems.",
+        "Q5": "How do you verify that the software works correctly?",
+        "A5": "We test the system in stages and in real operational scenarios. We detect errors before they impact the business.",
+        "Q6": "How do you manage timelines and project delivery?",
+        "A6": "We work with defined scope and staged deliveries. That allows progress with visibility, control of timelines, and priority adjustments without losing control of the project."
+      },
+      "CONTACT": {
+        "TITLE": "Contact",
+        "HEADLINE": "Let's talk about your operation",
+        "PARAGRAPH": "In a first conversation we review your context, understand the problem, and define the next step with technical judgment.",
+        "CTA_WHATSAPP": "Start conversation",
+        "CTA_MEETING": "Request a meeting",
+        "WHATSAPP_PRESET_MESSAGE": "Hi, I would like more information about your services."
+      }
+    }
+  },
+  "CORPORATE": {
+    "NAV": {
+      "HOME": "Home",
+      "WEB_OFFER": "Web offer",
+      "PROJECTS": "Projects",
+      "CONTACT": "Contact",
+      "EXPLORE": "Explore",
+      "CREATIVE_DEV": "Creative Development",
+      "SOFTWARE_DEV": "Software Development",
+      "START_TODAY": "Let's start working today",
+      "START_TODAY_SHORT": "Let's start today",
+      "QUOTE_BUTTON": "Request a quote"
+    },
+    "ARIA": {
+      "SWITCH_ES": "Switch to Spanish",
+      "SWITCH_EN": "Switch to English",
+      "TOGGLE_NAV": "Toggle navigation",
+      "WHATSAPP_BUTTON": "WhatsApp button",
+      "QUOTE_BUTTON": "Quote button"
+    },
+    "HOME": {
+      "HERO": {
+        "LINE1": "Hey, we take care of",
+        "LINE2": "your new",
+        "BADGE": "website"
+      },
+      "OPTIONS": {
+        "CUSTOM_TITLE": "Custom development",
+        "CUSTOM_DESC_LINE1": "We use modern technologies that",
+        "CUSTOM_DESC_LINE2": "deliver robust and scalable development.",
+        "EXPERIENCE_TITLE": "Impeccable experience",
+        "EXPERIENCE_DESC_LINE1": "Websites designed to deliver the best",
+        "EXPERIENCE_DESC_LINE2": "experience on any screen.",
+        "DESIGN_TITLE": "Custom design",
+        "DESIGN_DESC_LINE1": "Each site is unique, designed from the",
+        "DESIGN_DESC_LINE2": "needs of your business."
+      },
+      "DONT": {
+        "TITLE": "What we don't do"
+      },
+      "COMMON": {
+        "NO_WORDPRESS": "No WordPress",
+        "NO_PLUGINS": "No plugins",
+        "NO_SLOW_SITES": "No slow sites",
+        "NO_LIMITS": "No limits",
+        "NO_TEMPLATES": "No templates",
+        "NO_LIMITED_SITES": "No limited sites",
+        "NO_OUTDATED": "No outdated versions",
+        "NO_RECYCLED": "No recycled designs",
+        "NO_OUTDATED_DESIGNS": "No outdated designs"
+      },
+      "TECH": {
+        "BADGE": "The best technologies",
+        "PARAGRAPH_PREFIX": "At",
+        "PARAGRAPH_SUFFIX": "we create unique solutions tailored to your business, using the most advanced technological tools on the market. Your project is unique, and that's how we build it."
+      },
+      "EXPERIENCE": {
+        "BADGE": "For every device",
+        "PARAGRAPH": "We know that most users browse the internet from their phones. That's why we optimize our designs to look flawless on mobile devices, without neglecting the experience on computers.",
+        "CARD_USER_LINE1": "We prioritize",
+        "CARD_USER_LINE2": "the user",
+        "CARD_CUSTOM": "We build custom",
+        "CARD_RESULT_LINE1": "We guarantee",
+        "CARD_RESULT_LINE2": "the result"
+      },
+      "DESIGN": {
+        "BADGE": "Unique designs per project",
+        "PARAGRAPH_PART1": "Here, creativity and functionality combine to highlight the best of your brand. We build each site from scratch, adapting to your needs.",
+        "PARAGRAPH_PART2_PREFIX": "Forget generic templates and third-party platforms:",
+        "PARAGRAPH_PART2_STRONG": "every design is exclusive",
+        "PARAGRAPH_PART2_SUFFIX": ", designed for every device and aligned with your market."
+      },
+      "OFFER": {
+        "TITLE": "We have the solutions",
+        "COMMON": {
+          "INCLUDES_TITLE": "What you get",
+          "UNIQUE_MODERN": "Unique, modern design",
+          "CONTACT_OPTIMIZATION": "Contact optimization",
+          "DOMAIN": "Domain",
+          "CLOUD_INTEGRATION": "Cloud integration",
+          "CONTINUOUS_ADVICE": "Ongoing, personalized guidance",
+          "UX_UI": "UX/UI principles"
+        },
+        "CARDS": {
+          "LANDING": {
+            "TITLE": "Dedicated landing page",
+            "DESCRIPTION": "Telling who we are on a small website can be an ideal tool for independent professionals, entrepreneurs, events, or anyone who needs a web presence.",
+            "NO_TEMPLATES": "No pre-designed templates",
+            "ONE_PAGE_SCROLL": "A single scrolling page",
+            "FIVE_SECTIONS": "5 sections dedicated to information",
+            "FAST_DELIVERY": "Shorter delivery times",
+            "DOMAIN_INCLUDED": "included"
+          },
+          "CORPORATE": {
+            "TITLE": "Corporate website",
+            "DESCRIPTION": "We know that SMEs, mid-sized, and large companies have different needs. That's why we build websites tailored to each requirement and strategically designed for their market.",
+            "TREND_DESIGN": "Design aligned with the latest trends in your market",
+            "UNLIMITED_PAGES": "Unlimited pages and sections"
+          },
+          "ECOMMERCE": {
+            "TITLE": "E-Commerce",
+            "DESCRIPTION": "Your online store is a key tool that will undoubtedly grow your business. It's essential that it's built for your potential customers and can keep evolving over time.",
+            "TREND_DESIGN": "Design aligned with the latest trends for your market",
+            "UNLIMITED_PRODUCTS": "Unlimited product quantity",
+            "CHECKOUT_OPTIMIZATION": "Checkout flow optimization",
+            "PRODUCT_CATEGORIZATION": "Product categorization",
+            "INVENTORY_PLATFORM": "Inventory management platform"
+          },
+          "APPS": {
+            "TITLE": "Apps and internal web apps",
+            "DESCRIPTION": "Web and mobile apps are especially useful for solving everyday challenges. Thanks to today's technology, we can streamline processes, solve problems, and grow your business.",
+            "BEST_SOLUTION": "We devise the best solution for your need",
+            "LATEST_TECH": "Leveraging the latest technologies",
+            "SCALABLE_APPS": "Applications built with scalability in mind"
+          }
+        }
+      },
+      "QUOTE_BUTTON": "Quote"
+    },
+    "ALT": {
+      "CONE": "cone illustration",
+      "LAPTOP": "laptop illustration",
+      "TRASH": "trash icon",
+      "LOGO_ANGULAR": "Angular logo",
+      "LOGO_MONGODB": "MongoDB logo",
+      "LOGO_NODE": "Node.js logo",
+      "LOGO_ANALYTICS": "Analytics logo",
+      "LOGO_AZURE": "Azure logo",
+      "LOGO_ADS": "Google Ads logo",
+      "DESKTOP_ILLUSTRATION": "desktop computer illustration",
+      "MOBILE_ILLUSTRATION": "mobile phone illustration",
+      "COMPUTER_ILLUSTRATION": "computer illustration",
+      "LANDING_ILLUSTRATION": "landing page illustration",
+      "CORPORATE_ILLUSTRATION": "corporate illustration",
+      "ECOMMERCE_ILLUSTRATION": "ecommerce illustration",
+      "WEBAPP_ILLUSTRATION": "web app illustration",
+      "DECORATION": "decorative illustration"
+    },
+    "GLITCH": {
+      "COMMENT_TAGLINE": "If your brand is looking for something different from corporate",
+      "COMMENT_EXPLORE": "Explore our",
+      "COMMENT_WEBLAB": "Web Lab",
+      "TAGLINE": "If what you are looking for is different",
+      "SUBTITLE": "Explore our specialized services",
+      "DEV_LINE1": "Development",
+      "DEV_LINE2": "Creative",
+      "SOFTWARE_LINE1": "Development of",
+      "SOFTWARE_LINE2": "Software"
+    },
+    "PORTFOLIO": {
+      "TITLE_LINE1": "These are some of our",
+      "TITLE_LINE2": "latest projects",
+      "CARD_IMAGE_ALT": "This is an illustrative image of the site for {{name}}",
+      "LOGO_ALT": "This is the logo for {{name}}",
+      "VIEW_LIVE": "View live site",
+      "PROJECTS": {
+        "ASEMBIS": {
+          "DESCRIPTION": "A medical clinic specialized in accessible, high-quality services. Our digital strategy focused on highlighting its range of services and social commitment."
+        },
+        "AAEC": {
+          "DESCRIPTION": "AAEC is the voice of in-house counsel in Central America. We designed a digital experience that connects its members, promotes regional leadership, and communicates opportunities, networking, and strategic alliances."
+        },
+        "AMAG": {
+          "DESCRIPTION": "A fashion design brand inspired by nature, women, and history. Our digital collaboration highlighted its creativity and growth in the fashion market."
+        },
+        "TIERRAFERTIL": {
+          "DESCRIPTION": "Leaders in the production and distribution of quality turf grass. We emphasized their adaptability and focus on meeting diverse customer needs through our digital strategy."
+        },
+        "CEWTEC": {
+          "DESCRIPTION": "Leaders in information security and digital transformation. We highlighted their role as a strategic partner for key institutions, driving growth with innovative, efficient solutions."
+        },
+        "CEFSA": {
+          "DESCRIPTION": "A consulting firm specialized in strategic financial solutions. Our digital work highlighted their experience, precision, and ability to deliver guidance that drives smart decision-making."
+        },
+        "NANO": {
+          "DESCRIPTION": "Experts in scenting and aromatherapy. Through our digital strategy, we focused on their product range, accessibility, and exceptional customer service."
+        },
+        "PSICOYNG": {
+          "DESCRIPTION": "A psychology clinic focused on making access to professional services clear and trustworthy. We built a functional, modern website centered on the user experience."
+        },
+        "PROMACA": {
+          "DESCRIPTION": "A Costa Rican company with more than 30 years of experience producing corn and rice flours and semolinas. Our web design highlights their track record, quality, and commitment to the food sector."
+        },
+        "IMPERIO": {
+          "DESCRIPTION": "Imperio is a leading Costa Rican brand with over 55 years of experience, a 100% Costa Rican company focused on producing essential foods that are part of everyday life in households nationwide. Its industrial plant operates under high quality standards with an innovative, sustainable approach, backed by a culture of tradition and excellence."
+        },
+        "TUPSA": {
+          "DESCRIPTION": "An intercity transport company committed to quality and passenger comfort. We built a digital presence that reflects their punctuality, coverage, and easy access to information."
+        },
+        "PASTO_ARCA": {
+          "DESCRIPTION": "An online tutoring platform offering personalized education. We highlighted its convenience and flexibility, promoting its innovative learning model to a young audience."
+        },
+        "CIMED": {
+          "DESCRIPTION": "CIMED, a private mediation and conciliation center. We highlighted its commitment to a culture of peace and peaceful solutions through accessible, effective processes."
+        },
+        "ESCRITORIO": {
+          "DESCRIPTION": "An accounting firm with extensive experience and professional ethics. Our digital strategy emphasized its focus on quality and personalized client service."
+        },
+        "HAUS": {
+          "DESCRIPTION": "Haus is not just an experience; it's a glimpse of the exclusivity the brand offers. We designed a digital journey that reflects its sophisticated style and privileged location, helping future buyers imagine life there from the first moment."
+        },
+        "ESPACIOCR": {
+          "DESCRIPTION": "ESPACIOCR is an architecture studio focused on creating contemporary, functional, and sustainable spaces across different sectors. Our digital work highlighted its value proposition, commitment to excellence, and ability to transform ideas into unique and meaningful environments."
+        },
+        "PUNTOCERO": {
+          "DESCRIPTION": "Punto Cero manages subscription-based HVAC maintenance for companies across Spain. Its model combines scheduled checkups, photo evidence, and clear site-by-site reports to improve operational continuity and cost control."
+        },
+        "ALTURARAIZ": {
+          "DESCRIPTION": "Altura Raiz is an architecture and construction studio that integrates concept development, technical documentation, site management, and execution under a single direction. Its approach combines clear scope, traceable budgeting, and technical coordination for high-standard residential and commercial projects."
+        },
+        "OWLING": {
+          "DESCRIPTION": "Owling is an online tutoring platform designed to connect students and teachers clearly and closely. We built a site that conveys trust and dynamism, highlighting its flexibility and the value of personalized learning."
+        }
+      }
+    },
+    "SEO": {
+      "TITLE": "Corporate Services | LINK DESIGN - Professional Web Development",
+      "DESCRIPTION": "LINK DESIGN corporate web solutions: websites, e-commerce, and custom applications for companies seeking scalability and performance.",
+      "KEYWORDS": "corporate services, business web development, e-commerce, web applications, custom software, costa rica"
+    },
+    "SCHEMA": {
+      "PAGE_NAME": "Corporate Services | LINK DESIGN - Professional Web Development",
+      "PAGE_DESCRIPTION": "LINK DESIGN corporate web solutions: websites, e-commerce, and custom applications for companies seeking scalability and performance.",
+      "IN_LANGUAGE": "en-US",
+      "BREADCRUMB_HOME": "Home",
+      "BREADCRUMB_CORPORATE": "Corporate",
+      "SERVICE_LANDING_NAME": "Dedicated landing page",
+      "SERVICE_LANDING_DESCRIPTION": "Landing page for entrepreneurs, events, or those who need a small web presence.",
+      "SERVICE_CORPORATE_NAME": "Corporate website",
+      "SERVICE_CORPORATE_DESCRIPTION": "Websites for SMEs and companies, tailored to their needs and market.",
+      "SERVICE_ECOMMERCE_NAME": "E-Commerce",
+      "SERVICE_ECOMMERCE_DESCRIPTION": "Scalable online stores focused on the shopping experience.",
+      "SERVICE_APPS_NAME": "Apps and internal web apps",
+      "SERVICE_APPS_DESCRIPTION": "Custom web and mobile applications to solve specific needs."
+    }
+  },
+  "SPLITHOME": {
+    "COMMON": {
+      "WEB_DEVELOPMENT": "Web Development",
+      "LEARN_MORE": "Learn more"
+    },
+    "SECTIONS": {
+      "CREATIVE": {
+        "LABEL": "Creative",
+        "DESCRIPTION": "Unique digital experiences that combine design and functionality."
+      },
+      "CORPORATE": {
+        "LABEL": "Corporate",
+        "DESCRIPTION": "Secure, scalable web solutions that strengthen your business."
+      },
+      "SOFTWARE": {
+        "LABEL": "Software",
+        "HEADING": "Technology development",
+        "DESCRIPTION": "Software development to improve your business productivity."
+      }
+    },
+    "ALT": {
+      "DECORATION": "decorative illustration"
+    },
+    "SEO": {
+      "TITLE": "LINK DESIGN | Web Development in Costa Rica - Custom Websites",
+      "DESCRIPTION": "LINK DESIGN: Web development in Costa Rica. We create fast, optimized, modern websites for companies and SMEs. Boost your digital presence!",
+      "KEYWORDS": "web development, web design, costa rica, websites, web pages, programming, seo, digital marketing"
+    },
+    "SCHEMA": {
+      "PAGE_NAME": "LINK DESIGN | Web Development in Costa Rica - Custom Websites",
+      "PAGE_DESCRIPTION": "LINK DESIGN: Web development in Costa Rica. We create fast, optimized, modern websites for companies and SMEs. Boost your digital presence!",
+      "IN_LANGUAGE": "en-US",
+      "BREADCRUMB_HOME": "Home"
+    }
+  },
+  "CONTACT_PAGE": {
+    "ARIA": {
+      "BACK": "Go back"
+    },
+    "TITLES": {
+      "CONTACT": "CONTACT",
+      "MEETING": "MEETING",
+      "SCHEDULE": "SCHEDULE",
+      "ABOUT": "ABOUT"
+    },
+    "EMAIL": {
+      "LABEL": "Email:"
+    },
+    "WHATSAPP": {
+      "LABEL": "WhatsApp:",
+      "CTA": "Click to chat"
+    },
+    "MESSAGE": "We look forward to your message!",
+    "MEETING": {
+      "DESCRIPTION": "We have made our calendar available so you can schedule a meeting automatically.",
+      "BUTTON": "Calendar"
+    },
+    "SCHEDULE": {
+      "WEEKDAYS": "Monday - Friday",
+      "WEEKDAYS_HOURS": "8 am / 5 pm",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday",
+      "CLOSED": "Closed"
+    },
+    "LINKS": {
+      "DEVELOPMENT": "Development",
+      "CORPORATE": "Corporate",
+      "CREATIVE": "Creative",
+      "DEVELOPMENT_OF": "Development of",
+      "SOFTWARE": "Software"
+    },
+    "BOTTOM": {
+      "PARAGRAPH": "We know how important it is to find the right team to take your business to the next level. We focus on building personalized digital solutions aligned with your goals and with a strategic approach.",
+      "CTA": "We are ready to listen to you."
+    },
+    "ALT": {
+      "LOGO": "Link Design logo",
+      "CONE": "cone illustration",
+      "CIRCLE_TEXT": "animated circular text"
+    },
+    "SEO": {
+      "TITLE": "Contact | LINK DESIGN - Let's Talk About Your Project",
+      "DESCRIPTION": "Get in touch with LINK DESIGN. We are ready to hear your ideas and turn them into digital reality. Email, WhatsApp, and contact options.",
+      "KEYWORDS": "contact, link design, phone, email, whatsapp, location, costa rica"
+    },
+    "SCHEMA": {
+      "PAGE_NAME": "Contact page | LINK DESIGN",
+      "PAGE_DESCRIPTION": "Get in touch with us: email, WhatsApp, hours, and calendar for meetings.",
+      "IN_LANGUAGE": "en-US",
+      "BREADCRUMB_HOME": "Home",
+      "BREADCRUMB_CONTACT": "Contact",
+      "AVAILABLE_LANGUAGE": "en"
+    }
+  }
+,  "PRIVACY_POLICY": {
+    "BRAND_LOGO": "LINK DESIGN",
+    "TITLE": "Privacy Policy",
+    "SUBTITLE": "How we collect, use, and protect the information of people who visit our site and contact us.",
+    "LAST_UPDATED_LABEL": "Last updated",
+    "LAST_UPDATED_DATE": "February 4, 2026",
+    "INTRO": {
+      "PREFIX": "At",
+      "COMPANY": "Link Design",
+      "SUFFIX": "(hereinafter, “Link Design”, “we”), we respect the privacy of our users, clients, and prospects. This policy describes what information we collect, the purposes for which we use it, how we protect it, and the rights people have over their data."
+    },
+    "SECTION_1": {
+      "TITLE": "1) Data controller",
+      "COMPANY_LABEL": "Company",
+      "COMPANY_VALUE": "Link Design",
+      "WEBSITE_LABEL": "Website",
+      "WEBSITE_VALUE": "https://linkdesign.cr",
+      "EMAIL_LABEL": "Contact email",
+      "EMAIL_VALUE": "hola@linkdesign.cr",
+      "COUNTRY_LABEL": "Country",
+      "COUNTRY_VALUE": "Costa Rica"
+    },
+    "SECTION_2": {
+      "TITLE": "2) What information we collect",
+      "INTRO": "We may collect information when you visit our site, complete forms, request information, or contact us. This may include:",
+      "CARD_CONTACT_TITLE": "Contact details",
+      "CARD_CONTACT_DESC": "First and last name, email, company/organization, phone (if applicable), and any message you send.",
+      "CARD_TECH_TITLE": "Technical information",
+      "CARD_TECH_DESC": "IP address, device type, browser, pages visited, browsing time, and interaction data (depending on analytics configuration).",
+      "OUTRO": "We do not intentionally collect sensitive data. If you send us sensitive information through contact channels, we will treat it with due confidentiality, but we recommend avoiding including it in forms or general messages."
+    },
+    "SECTION_3": {
+      "TITLE": "3) Purposes of use",
+      "INTRO": "We use the information to:",
+      "LIST_1": "Respond to inquiries and follow up on requests for information or quotes.",
+      "LIST_2": "Coordinate meetings, calls, or demos related to our services.",
+      "LIST_3": "Provide our services, manage projects, and communicate with clients.",
+      "LIST_4": "Improve our site, user experience, and content (aggregate analysis).",
+      "LIST_5": "Send communications related to the requested service (no spam)."
+    },
+    "SECTION_4": {
+      "TITLE": "4) Legal basis",
+      "BODY": "We process information based on the user's consent (for example, when completing a form), the need to manage a pre-contractual/contractual relationship, and/or legitimate interests such as improving our site and preventing fraud, always seeking reasonable and proportionate use."
+    },
+    "SECTION_5": {
+      "TITLE": "5) Who we share information with",
+      "INTRO": "We do not sell or rent personal data. We may share information only with:",
+      "ITEM_1_LABEL": "Technology providers",
+      "ITEM_1_DESC": "necessary to operate the site and communications (for example, hosting, email, analytics, or CRM), under confidentiality agreements.",
+      "ITEM_2_LABEL": "Partners or subcontractors",
+      "ITEM_2_DESC": "strictly necessary to perform a service, when applicable, and only with the minimum information required.",
+      "ITEM_3_LABEL": "Competent authorities",
+      "ITEM_3_DESC": ", if there is a legal obligation."
+    },
+    "SECTION_6": {
+      "TITLE": "6) International transfers",
+      "BODY": "Some technology providers may process data outside Costa Rica. In such cases, we seek to use trusted providers and apply reasonable measures to protect the information."
+    },
+    "SECTION_7": {
+      "TITLE": "7) Data retention",
+      "INTRO": "We keep the information only for the time necessary to:",
+      "LIST_1": "Respond to your request and maintain related communication.",
+      "LIST_2": "Manage business relationships and service delivery.",
+      "LIST_3": "Comply with legal obligations and administrative records when applicable."
+    },
+    "SECTION_8": {
+      "TITLE": "8) Information security",
+      "BODY": "We implement reasonable security measures to protect information against unauthorized access, loss, misuse, or disclosure. No system is completely infallible, but we work to reduce risks and improve continuously."
+    },
+    "SECTION_9": {
+      "TITLE": "9) User rights",
+      "INTRO": "You may request:",
+      "LIST_1": "Access to the information we have about you.",
+      "LIST_2": "Correction of inaccurate or outdated data.",
+      "LIST_3": "Deletion or limitation of use, when applicable.",
+      "LIST_4": "Withdrawal of consent for future contact.",
+      "CONTACT_PREFIX": "To exercise these rights, write to",
+      "CONTACT_EMAIL": "hola@linkdesign.cr",
+      "CONTACT_SUFFIX": "indicating your name, associated email, and your request."
+    },
+    "SECTION_10": {
+      "TITLE": "10) Cookies and similar technologies",
+      "INTRO": "Our site may use cookies or similar technologies for operation, measurement, and experience improvement. Some cookies are necessary for the site to function, while others help measure performance and usage.",
+      "ACCORDION_TITLE": "Types of cookies we may use",
+      "COOKIE_NECESSARY_LABEL": "Necessary:",
+      "COOKIE_NECESSARY_DESC": "allow the site to function properly.",
+      "COOKIE_ANALYTICS_LABEL": "Analytics:",
+      "COOKIE_ANALYTICS_DESC": "help us understand site usage in aggregate.",
+      "COOKIE_PREFERENCES_LABEL": "Preferences:",
+      "COOKIE_PREFERENCES_DESC": "store settings to improve your experience.",
+      "COOKIE_MARKETING_LABEL": "Marketing (if applicable):",
+      "COOKIE_MARKETING_DESC": "measures campaigns and attribution when enabled."
+    },
+    "SECTION_11": {
+      "TITLE": "11) Links to third-party sites",
+      "BODY": "Our site may include links to third-party sites. Link Design is not responsible for the privacy practices of those sites. We recommend reviewing their privacy policies."
+    },
+    "SECTION_12": {
+      "TITLE": "12) Changes to this policy",
+      "BODY": "We may update this policy at any time. The current version will be available on this page and will include the last updated date."
+    },
+    "SIDEBAR": {
+      "QUICK_SUMMARY_TITLE": "Quick summary",
+      "BADGE_USE": "Use",
+      "BADGE_USE_DESC": "We respond to requests and follow up related to our services.",
+      "BADGE_DATA": "Data",
+      "BADGE_DATA_DESC": "Contact details and technical browsing data (depending on configuration).",
+      "BADGE_SHARING": "Sharing",
+      "BADGE_SHARING_DESC": "Only with necessary providers and, if applicable, due to legal obligation.",
+      "BADGE_CONTACT": "Contact",
+      "BADGE_CONTACT_EMAIL": "hola@linkdesign.cr",
+      "CONTACT_TITLE": "Privacy contact",
+      "CONTACT_BODY": "If you wish to exercise your rights or have privacy-related questions, contact us:",
+      "CONTACT_EMAIL_LABEL": "Email",
+      "CONTACT_EMAIL_VALUE": "hola@linkdesign.cr"
+    }
+  },
+  "LEAD_FORM": {
+    "TITLE": "Let's talk about your project",
+    "SUBTITLE": "We reply within 24 business hours.",
+    "FIELDS": {
+      "NAME_LABEL": "Name",
+      "NAME_PLACEHOLDER": "Your name",
+      "COMPANY_LABEL": "Company",
+      "COMPANY_PLACEHOLDER": "Your company name (optional)",
+      "EMAIL_LABEL": "Email",
+      "EMAIL_PLACEHOLDER": "you@example.com",
+      "PHONE_LABEL": "WhatsApp / Phone",
+      "PHONE_PLACEHOLDER": "+506 8888 8888",
+      "NEED_LABEL": "What do you need?",
+      "PREFERRED_CONTACT_LABEL": "How do you prefer to be contacted?",
+      "MESSAGE_LABEL": "Message",
+      "MESSAGE_PLACEHOLDER": "Tell us a bit about your project (optional)"
+    },
+    "NEED_OPTIONS": {
+      "SOFTWARE_A_MEDIDA": "Custom software",
+      "SITIO_WEB": "Website",
+      "ECOMMERCE": "E-commerce",
+      "OTRO": "Other"
+    },
+    "CONTACT_OPTIONS": {
+      "CORREO": "Email",
+      "WHATSAPP": "WhatsApp",
+      "LLAMADA": "Phone call"
+    },
+    "ERRORS": {
+      "REQUIRED": "This field is required",
+      "TOO_SHORT": "Too short",
+      "TOO_LONG": "Too long",
+      "INVALID_EMAIL": "Email is not valid",
+      "INVALID_PHONE": "Phone is not valid",
+      "INVALID_PHONE_CR": "For Costa Rica use 8 digits after +506",
+      "PHONE_NEEDS_PREFIX": "Phone must start with the country code (e.g. +1)",
+      "NO_LINKS": "Links are not allowed in this field",
+      "GENERIC_NETWORK": "We couldn't send your message. Please try again.",
+      "RATE_LIMITED": "We already received your message. We'll be in touch soon."
+    },
+    "BUTTONS": {
+      "SUBMIT": "Send message",
+      "SUBMITTING": "Sending...",
+      "RETRY": "Retry",
+      "SEND_ANOTHER": "Send another message"
+    },
+    "SUCCESS": {
+      "TITLE": "Message received!",
+      "MESSAGE": "Thanks for reaching out. We'll get back to you soon."
+    },
+    "A11Y": {
+      "FORM_LABEL": "Contact form",
+      "CHIP_GROUP_NEED": "Choose what type of service you need",
+      "CHIP_GROUP_CONTACT": "Choose how you prefer to be contacted"
+    }
+  }
+}

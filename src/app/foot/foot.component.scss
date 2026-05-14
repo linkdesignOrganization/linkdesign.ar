@@ -1,0 +1,98 @@
+.chatBtn:hover {
+  color: #25d366;
+  cursor: pointer;
+}
+
+.meetingBtn:hover {
+  color: #1cbefd;
+  cursor: pointer;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Botón de copiar correo
+// ──────────────────────────────────────────────────────────────────────────
+
+.email-line {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.email-copy-btn {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  padding: 4px 6px;
+  margin-left: 6px;
+  border-radius: 6px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 16px;
+  transition:
+    color 200ms ease,
+    background-color 200ms ease,
+    transform 150ms ease-out;
+
+  .bi {
+    display: block;
+    line-height: 1;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  &:active {
+    transform: scale(0.92);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(135, 79, 232, 0.45);
+  }
+
+  &.is-copied {
+    color: #25d366;
+    animation: email-copy-pop 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+.email-copied-toast {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: "HKGrotesk-regular", sans-serif;
+  font-size: 10pt;
+  color: #25d366;
+  opacity: 0;
+  animation: email-toast-in 220ms ease-out forwards;
+  user-select: none;
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+@keyframes email-copy-pop {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+@keyframes email-toast-in {
+  from { opacity: 0; transform: translateY(-2px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .email-copy-btn,
+  .email-copy-btn.is-copied,
+  .email-copied-toast {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

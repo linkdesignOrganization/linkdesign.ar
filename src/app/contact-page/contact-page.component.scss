@@ -1,0 +1,132 @@
+.back-button {
+    position: fixed;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(1, 31, 58);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 20px;
+    z-index: 2000;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.chatBtn {
+    color: rgb(1, 31, 58);;
+}
+
+.chatBtn:hover {
+    color: #25d366;
+    cursor: pointer;
+}
+
+.btn-calendar {
+    background-color: rgb(132, 58, 250);
+    color: white;
+}
+
+.btn-calendar:hover {
+    background-color: rgb(69, 20, 150);
+}
+
+.link-pages:hover {
+    text-decoration: underline;
+}
+
+.info-wrapper {
+    border: 2px solid rgb(1, 31, 58);
+}
+
+.wrapper-logo {
+    border-bottom: 2px solid rgb(1, 31, 58);
+    position: relative;
+    display: flex;
+}
+
+.icon-contact {
+    position: absolute;
+    top: -80px; /* Ajusta según sea necesario */
+    right: 10px; /* Ajusta según sea necesario */
+    max-width: 250px;
+    animation: floatUpDown 2.5s ease-in-out infinite;
+  }
+  
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); // Ajusta la altura del movimiento
+    }
+  }
+  
+
+.circle-text-wrapper {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* O ajusta según lo necesites */
+    position: relative;
+  }
+  
+  .circle-text {
+    width: 50%;
+    animation: rotateText 10s linear infinite;
+  }
+  
+  @keyframes rotateText {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+// ✅ Evitar bordes duplicados en Desktop (≥768px)
+@media (min-width: 768px) {
+
+    // Quitar borde derecho de las cajas impares (col-izquierda)
+    .col-md-6:nth-child(odd) .info-wrapper {
+        border-right: none;
+    }
+
+    // Quitar borde inferior de las cajas superiores
+    .col-md-6:nth-child(1) .info-wrapper,
+    .col-md-6:nth-child(2) .info-wrapper {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .circle-text {
+        width: 70%;
+        animation: rotateText 10s linear infinite;
+      }
+}
+@media (max-width: 767px) {
+
+    // Quitar borde inferior de todas las cajas excepto la última
+    .col-12:not(:last-child) .info-wrapper {
+        border-bottom: none;
+    }
+
+    .icon-contact {
+        position: absolute;
+        top: -60px; /* Ajusta según sea necesario */
+        right: 10px; /* Ajusta según sea necesario */
+        max-width: 150px;
+      }
+}

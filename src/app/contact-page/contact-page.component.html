@@ -1,0 +1,134 @@
+<main role="main">
+    <ngx-json-ld [json]="contactSchema"></ngx-json-ld>
+    <section class="light-bg">
+        <button class="back-button ms-3" (click)="goBack()" [attr.aria-label]="'CONTACT_PAGE.ARIA.BACK' | translate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </button>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-7 g-0 d-flex flex-column mt-md-5 mt-lg-0">
+                    <div class="only-phone" style="display: block; height: 100px;"></div>
+                    <div class="wrapper-logo w-100 mt-auto p-4 p-md-5">
+                        <picture>
+                            <source srcset="assets/img/linkdesign.svg" type="image/svg+xml">
+                            <img src="assets/img/linkdesign.svg" class="w-100 mt-5 mt-md-0" alt="{{ 'CONTACT_PAGE.ALT.LOGO' | translate }}" width="886" height="390" loading="eager" decoding="async" fetchpriority="high">
+                        </picture>
+                        <picture>
+                            <source srcset="assets/img/3d-4.webp" type="image/webp">
+                            <source srcset="assets/img/3d-4.png" type="image/png">
+                            <img class="icon-contact" alt="{{ 'CONTACT_PAGE.ALT.CONE' | translate }}"
+                            src="assets/img/3d-2.png" width="529" height="529" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                </div>
+
+            <div class="col-12 col-md-12 col-lg-5 g-0">
+                <div class="row g-0 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 g-0 d-flex" style="position: relative;">
+                        <div class="info-wrapper p-5 w-100 d-flex flex-column">
+                            <h1 class="hk-bold small-title dark-blue mb-4 mt-4">{{ 'CONTACT_PAGE.TITLES.CONTACT' | translate }}</h1>
+                            <p class="hk-regular text" (copy)="handleEmailCopy()">{{ 'CONTACT_PAGE.EMAIL.LABEL' | translate }} <strong>hola&#64;linkdesign.cr</strong></p>
+                            <a class="chatBtn" href="https://wa.me/50672325943" (click)="$event.preventDefault(); handleWhatsappClick($event, true)">
+                                <span class="hk-regular text"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-whatsapp mb-1" viewBox="0 0 16 16">
+                                    <path
+                                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                  </svg> {{ 'CONTACT_PAGE.WHATSAPP.LABEL' | translate }} <strong>{{ 'CONTACT_PAGE.WHATSAPP.CTA' | translate }}</strong></span>
+                            </a>
+                            <div class="text-center pt-5 mt-auto">
+                                <span class="text hk-bold">{{ 'CONTACT_PAGE.MESSAGE' | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-12 col-md-6 g-0 d-flex">
+                            <div class="info-wrapper p-5 w-100 d-flex flex-column">
+                                <h2 class="hk-bold small-title dark-blue mb-4 mt-4">{{ 'CONTACT_PAGE.TITLES.MEETING' | translate }}</h2>
+                                <p class="hk-regular text">{{ 'CONTACT_PAGE.MEETING.DESCRIPTION' | translate }}</p>
+
+                                <div class="text-center pt-3 mt-auto">
+                                    <a href="https://calendar.app.google/ZRkWtLvfCpUSwY1XA" target="_blank"
+                                        (click)="handleCalendarClick($event)"
+                                        rel="noopener noreferrer"><button type="button"
+                                            class="btn btn-calendar rounded-corner px-5"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar2-check mb-1 me-1"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                                                <path
+                                                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
+                                            </svg> {{ 'CONTACT_PAGE.MEETING.BUTTON' | translate }}</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 g-0 d-flex">
+                            <div class="info-wrapper p-5 w-100 d-flex flex-column">
+                                <h3 class="hk-bold small-title dark-blue mb-4 mt-4">{{ 'CONTACT_PAGE.TITLES.SCHEDULE' | translate }}</h3>
+                                <span class="text hk-regular">{{ 'CONTACT_PAGE.SCHEDULE.WEEKDAYS' | translate }} <br> <strong>{{ 'CONTACT_PAGE.SCHEDULE.WEEKDAYS_HOURS' | translate }}</strong></span>
+                                <br>
+                                <span class="text hk-regular">{{ 'CONTACT_PAGE.SCHEDULE.SATURDAY' | translate }} <br> <strong>{{ 'CONTACT_PAGE.SCHEDULE.CLOSED' | translate }}</strong></span>
+                                <br>
+                                <span class="text hk-regular">{{ 'CONTACT_PAGE.SCHEDULE.SUNDAY' | translate }} <br> <strong>{{ 'CONTACT_PAGE.SCHEDULE.CLOSED' | translate }}</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 g-0 d-flex">
+                            <div class="info-wrapper p-5 w-100 d-flex flex-column">
+                                <h3 class="hk-bold small-title dark-blue mb-4 mt-4">{{ 'CONTACT_PAGE.TITLES.ABOUT' | translate }}</h3>
+                                <a routerLink="/corporate" style="color: inherit; text-decoration: none;"><span
+                                        class="text hk-regular link-pages">{{ 'CONTACT_PAGE.LINKS.DEVELOPMENT' | translate }} <strong>{{ 'CONTACT_PAGE.LINKS.CORPORATE' | translate }}</strong> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                        </svg></span></a>
+                                <br>
+                                <a routerLink="/weblab" style="color: inherit; text-decoration: none;"><span
+                                        class="text hk-regular link-pages">{{ 'CONTACT_PAGE.LINKS.DEVELOPMENT' | translate }} <strong>{{ 'CONTACT_PAGE.LINKS.CREATIVE' | translate }}</strong> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                        </svg></span></a>
+                                <br>
+                                <a routerLink="/software" style="color: inherit; text-decoration: none;"><span
+                                        class="text hk-regular link-pages">{{ 'CONTACT_PAGE.LINKS.DEVELOPMENT_OF' | translate }} <strong>{{ 'CONTACT_PAGE.LINKS.SOFTWARE' | translate }}</strong> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                        </svg></span></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 p-5">
+                    <p class="hk-regular text">{{ 'CONTACT_PAGE.BOTTOM.PARAGRAPH' | translate }}</p>
+                    <span class="hk-bold text-big dark-blue">{{ 'CONTACT_PAGE.BOTTOM.CTA' | translate }}</span>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-end align-items-center">
+                    <div class="circle-text-wrapper mb-5 mb-md-0 p-4">
+                        <picture>
+                            <source srcset="assets/img/circle-text.svg" type="image/svg+xml">
+                            <img src="assets/img/circle-text.svg" class="circle-text" alt="{{ 'CONTACT_PAGE.ALT.CIRCLE_TEXT' | translate }}" width="230" height="229" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+</main>

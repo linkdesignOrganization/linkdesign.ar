@@ -1,0 +1,62 @@
+<section class="bg-white pb-5 showcase-section pt-5 mt-5"
+    [attr.aria-label]="'SOFTWARE.PAGE_COPY.SHOWCASE.ARIA.SECTION' | translate">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-11 col-xl-9">
+                <div class="text-center showcase-header">
+                    <h2 class="hk-bold text-big">{{ 'SOFTWARE.PAGE_COPY.SHOWCASE.LABEL' | translate }}</h2>
+                    <h3 class="hk-semibold title mt-4" [innerHTML]="'SOFTWARE.PAGE_COPY.SHOWCASE.TITLE' | translate"></h3>
+                    <p class="hk-regular text mt-3 showcase-subtitle">{{ 'SOFTWARE.PAGE_COPY.SHOWCASE.SUBTITLE' | translate
+                        }}</p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="showcase-carousel-shell">
+                    <div class="splide showcase-splide" #showcaseSlider>
+                    <div class="splide__arrows showcase-controls"
+                        [attr.aria-label]="'SOFTWARE.PAGE_COPY.SHOWCASE.ARIA.SECTION' | translate">
+                        <button class="splide__arrow splide__arrow--prev showcase-arrow" type="button"
+                            [attr.aria-label]="'SOFTWARE.PAGE_COPY.SHOWCASE.ARIA.PREV' | translate">
+                            <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <button class="splide__arrow splide__arrow--next showcase-arrow" type="button"
+                            [attr.aria-label]="'SOFTWARE.PAGE_COPY.SHOWCASE.ARIA.NEXT' | translate">
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide" *ngFor="let item of items">
+                                <article class="showcase-card rounded-corner h-100">
+                                    <span class="hk-semibold showcase-tag">{{ item.tagKey | translate }}</span>
+
+                                    <h4 class="hk-bold showcase-title mt-3">{{ item.titleKey | translate }}</h4>
+
+                                    <div class="showcase-ba-item showcase-ba-item--before mt-3">
+                                        <span class="showcase-icon" aria-hidden="true">
+                                            <i class="bi bi-exclamation-circle showcase-icon-glyph"></i>
+                                        </span>
+                                        <p class="hk-regular showcase-copy">{{ item.beforeKey | translate }}</p>
+                                    </div>
+
+                                    <div class="showcase-divider" aria-hidden="true"></div>
+
+                                    <div class="showcase-ba-item showcase-ba-item--after">
+                                        <span class="showcase-icon" aria-hidden="true">
+                                            <i class="bi bi-check-circle-fill showcase-icon-glyph"></i>
+                                        </span>
+                                        <p class="hk-regular showcase-copy">{{ item.afterKey | translate }}</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,260 @@
+﻿
+<!-- privacy-policy.component.html -->
+
+<!-- privacy-policy.component.html -->
+
+<section class="bg-light border-bottom">
+  <div class="container py-4">
+    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+      <div>
+        <a routerLink="/" class="d-inline-flex align-items-center gap-2 text-decoration-none mb-2">
+        <span class="logonav cursorp">{{ 'PRIVACY_POLICY.BRAND_LOGO' | translate }}</span>
+        </a>
+        <h1 class="h3 mb-1">{{ 'PRIVACY_POLICY.TITLE' | translate }}</h1>
+        <p class="text-secondary mb-0">
+          {{ 'PRIVACY_POLICY.SUBTITLE' | translate }}
+        </p>
+      </div>
+      <div class="text-md-end">
+        <div class="small text-secondary">{{ 'PRIVACY_POLICY.LAST_UPDATED_LABEL' | translate }}</div>
+        <div class="fw-semibold">{{ 'PRIVACY_POLICY.LAST_UPDATED_DATE' | translate }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-4 py-lg-5">
+  <div class="row g-4">
+    <!-- Content -->
+    <div class="col-lg-8">
+      <div class="card shadow-sm">
+        <div class="card-body p-4 p-lg-5">
+          <p class="mb-4">
+            {{ 'PRIVACY_POLICY.INTRO.PREFIX' | translate }} <strong>{{ 'PRIVACY_POLICY.INTRO.COMPANY' | translate }}</strong>
+            {{ 'PRIVACY_POLICY.INTRO.SUFFIX' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_1.TITLE' | translate }}</h2>
+          <div class="table-responsive">
+            <table class="table table-sm align-middle">
+              <tbody>
+                <tr>
+                  <th class="text-nowrap" scope="row">{{ 'PRIVACY_POLICY.SECTION_1.COMPANY_LABEL' | translate }}</th>
+                  <td>{{ 'PRIVACY_POLICY.SECTION_1.COMPANY_VALUE' | translate }}</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">{{ 'PRIVACY_POLICY.SECTION_1.WEBSITE_LABEL' | translate }}</th>
+                  <td>{{ 'PRIVACY_POLICY.SECTION_1.WEBSITE_VALUE' | translate }}</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">{{ 'PRIVACY_POLICY.SECTION_1.EMAIL_LABEL' | translate }}</th>
+                  <td>
+                    <a href="mailto:hola@linkdesign.cr">{{ 'PRIVACY_POLICY.SECTION_1.EMAIL_VALUE' | translate }}</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">{{ 'PRIVACY_POLICY.SECTION_1.COUNTRY_LABEL' | translate }}</th>
+                  <td>{{ 'PRIVACY_POLICY.SECTION_1.COUNTRY_VALUE' | translate }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_2.TITLE' | translate }}</h2>
+          <p class="mb-2">
+            {{ 'PRIVACY_POLICY.SECTION_2.INTRO' | translate }}
+          </p>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <div class="border rounded p-3 bg-white h-100">
+                <div class="fw-semibold">{{ 'PRIVACY_POLICY.SECTION_2.CARD_CONTACT_TITLE' | translate }}</div>
+                <div class="text-secondary small">
+                  {{ 'PRIVACY_POLICY.SECTION_2.CARD_CONTACT_DESC' | translate }}
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="border rounded p-3 bg-white h-100">
+                <div class="fw-semibold">{{ 'PRIVACY_POLICY.SECTION_2.CARD_TECH_TITLE' | translate }}</div>
+                <div class="text-secondary small">
+                  {{ 'PRIVACY_POLICY.SECTION_2.CARD_TECH_DESC' | translate }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_2.OUTRO' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_3.TITLE' | translate }}</h2>
+          <p class="mb-2">{{ 'PRIVACY_POLICY.SECTION_3.INTRO' | translate }}</p>
+          <ul class="mb-0">
+            <li>{{ 'PRIVACY_POLICY.SECTION_3.LIST_1' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_3.LIST_2' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_3.LIST_3' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_3.LIST_4' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_3.LIST_5' | translate }}</li>
+          </ul>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_4.TITLE' | translate }}</h2>
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_4.BODY' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_5.TITLE' | translate }}</h2>
+          <p class="mb-2">{{ 'PRIVACY_POLICY.SECTION_5.INTRO' | translate }}</p>
+          <ul class="mb-0">
+            <li>
+              <strong>{{ 'PRIVACY_POLICY.SECTION_5.ITEM_1_LABEL' | translate }}</strong>
+              {{ 'PRIVACY_POLICY.SECTION_5.ITEM_1_DESC' | translate }}
+            </li>
+            <li>
+              <strong>{{ 'PRIVACY_POLICY.SECTION_5.ITEM_2_LABEL' | translate }}</strong>
+              {{ 'PRIVACY_POLICY.SECTION_5.ITEM_2_DESC' | translate }}
+            </li>
+            <li>
+              <strong>{{ 'PRIVACY_POLICY.SECTION_5.ITEM_3_LABEL' | translate }}</strong>
+              {{ 'PRIVACY_POLICY.SECTION_5.ITEM_3_DESC' | translate }}
+            </li>
+          </ul>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_6.TITLE' | translate }}</h2>
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_6.BODY' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_7.TITLE' | translate }}</h2>
+          <p class="mb-2">{{ 'PRIVACY_POLICY.SECTION_7.INTRO' | translate }}</p>
+          <ul class="mb-0">
+            <li>{{ 'PRIVACY_POLICY.SECTION_7.LIST_1' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_7.LIST_2' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_7.LIST_3' | translate }}</li>
+          </ul>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_8.TITLE' | translate }}</h2>
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_8.BODY' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_9.TITLE' | translate }}</h2>
+          <p class="mb-2">{{ 'PRIVACY_POLICY.SECTION_9.INTRO' | translate }}</p>
+          <ul>
+            <li>{{ 'PRIVACY_POLICY.SECTION_9.LIST_1' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_9.LIST_2' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_9.LIST_3' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.SECTION_9.LIST_4' | translate }}</li>
+          </ul>
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_9.CONTACT_PREFIX' | translate }}
+            <a href="mailto:hola@linkdesign.cr">{{ 'PRIVACY_POLICY.SECTION_9.CONTACT_EMAIL' | translate }}</a>
+            {{ 'PRIVACY_POLICY.SECTION_9.CONTACT_SUFFIX' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_10.TITLE' | translate }}</h2>
+          <p class="mb-2">
+            {{ 'PRIVACY_POLICY.SECTION_10.INTRO' | translate }}
+          </p>
+
+          <div class="accordion" id="cookiesAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="cookiesHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cookiesCollapse"
+                  aria-expanded="false"
+                  aria-controls="cookiesCollapse"
+                >
+                  {{ 'PRIVACY_POLICY.SECTION_10.ACCORDION_TITLE' | translate }}
+                </button>
+              </h3>
+              <div
+                id="cookiesCollapse"
+                class="accordion-collapse collapse"
+                aria-labelledby="cookiesHeading"
+                data-bs-parent="#cookiesAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>
+                      <strong>{{ 'PRIVACY_POLICY.SECTION_10.COOKIE_NECESSARY_LABEL' | translate }}</strong>
+                      {{ 'PRIVACY_POLICY.SECTION_10.COOKIE_NECESSARY_DESC' | translate }}
+                    </li>
+                    <li>
+                      <strong>{{ 'PRIVACY_POLICY.SECTION_10.COOKIE_ANALYTICS_LABEL' | translate }}</strong>
+                      {{ 'PRIVACY_POLICY.SECTION_10.COOKIE_ANALYTICS_DESC' | translate }}
+                    </li>
+                    <li>
+                      <strong>{{ 'PRIVACY_POLICY.SECTION_10.COOKIE_PREFERENCES_LABEL' | translate }}</strong>
+                      {{ 'PRIVACY_POLICY.SECTION_10.COOKIE_PREFERENCES_DESC' | translate }}
+                    </li>
+                    <li>
+                      <strong>{{ 'PRIVACY_POLICY.SECTION_10.COOKIE_MARKETING_LABEL' | translate }}</strong>
+                      {{ 'PRIVACY_POLICY.SECTION_10.COOKIE_MARKETING_DESC' | translate }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_11.TITLE' | translate }}</h2>
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_11.BODY' | translate }}
+          </p>
+
+          <h2 class="h5 mt-4">{{ 'PRIVACY_POLICY.SECTION_12.TITLE' | translate }}</h2>
+          <p class="mb-0">
+            {{ 'PRIVACY_POLICY.SECTION_12.BODY' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-lg-4">
+      <div class="sticky-lg-top" style="top: 1rem;">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body p-4">
+            <h2 class="h6 mb-3">{{ 'PRIVACY_POLICY.SIDEBAR.QUICK_SUMMARY_TITLE' | translate }}</h2>
+
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex flex-column gap-1 mb-3">
+                <span class="badge text-bg-success align-self-start">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_USE' | translate }}</span>
+                <span class="small">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_USE_DESC' | translate }}</span>
+              </li>
+              <li class="d-flex flex-column gap-1 mb-3">
+                <span class="badge text-bg-secondary align-self-start">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_DATA' | translate }}</span>
+                <span class="small">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_DATA_DESC' | translate }}</span>
+              </li>
+              <li class="d-flex flex-column gap-1 mb-3">
+                <span class="badge text-bg-primary align-self-start">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_SHARING' | translate }}</span>
+                <span class="small">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_SHARING_DESC' | translate }}</span>
+              </li>
+              <li class="d-flex flex-column gap-1">
+                <span class="badge text-bg-dark align-self-start">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_CONTACT' | translate }}</span>
+                <span class="small"><a href="mailto:hola@linkdesign.cr">{{ 'PRIVACY_POLICY.SIDEBAR.BADGE_CONTACT_EMAIL' | translate }}</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body p-4">
+            <h2 class="h6 mb-3">{{ 'PRIVACY_POLICY.SIDEBAR.CONTACT_TITLE' | translate }}</h2>
+            <p class="small text-secondary mb-2">
+              {{ 'PRIVACY_POLICY.SIDEBAR.CONTACT_BODY' | translate }}
+            </p>
+            <div class="border rounded p-3 bg-white small">
+              <div class="fw-semibold">{{ 'PRIVACY_POLICY.SIDEBAR.CONTACT_EMAIL_LABEL' | translate }}</div>
+              <a href="mailto:hola@linkdesign.cr">{{ 'PRIVACY_POLICY.SIDEBAR.CONTACT_EMAIL_VALUE' | translate }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - master
+
+jobs:
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          lfs: false
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build & Prerender
+        run: npm run prerender
+
+      - name: Copy Azure Static Web App config
+        run: cp staticwebapp.config.json dist/linkdesignweb/browser/
+
+      - name: Deploy to Azure Static Web Apps
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_MUD_005F0A50F }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          # Ajusta app_location a la ruta raíz de tu repo (o subcarpeta si fuera el caso)
+          app_location: "dist/linkdesignweb/browser"
+          api_location: ''
+          # Deja output_location vacío, porque nosotros ya construimos la app
+          output_location: ''
+          # skip_app_build no es estrictamente necesario, pero es recomendable
+          # para que el Action no intente volver a hacer npm install / npm run build
+          skip_app_build: true
+
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_MUD_005F0A50F }}
+          action: "close"

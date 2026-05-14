@@ -1,0 +1,879 @@
+<ngx-json-ld [json]="softwareSchema"></ngx-json-ld>
+<section class="bg-white p-3 p-md-4 hero-section">
+    <div class="container-fluid g-0">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="nav-bar-mobile w-100 none-desktop mb-5 mb-md-3">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <!-- Botón WhatsApp -->
+                        <div class="btn-whatsapp-mobile" (click)="handleWhatsappClick($event, true)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                        </div>
+
+                        <!-- Texto Centrado -->
+                        <div class="text-center flex-grow-1">
+                            <span class="hk-bold title">LINK DESIGN</span>
+                        </div>
+
+                        <!-- Botón Llamada -->
+                        <a href="tel:+50672325943">
+                            <div class="btn-call-mobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-100 mt-3 mt-md-4">
+
+                        <ul class="nav-menu d-flex list-unstyled w-100 p-0">
+                            <li class="nav-item flex-fill" (click)="scrollToSection('.context-section', $event)">
+                                <a href="/software#contexto"
+                                    class="nav-link hk-regular small-text white text-center d-block">{{
+                                    'SOFTWARE.PAGE_COPY.CONTEXT.LABEL' | translate }}</a>
+                            </li>
+                            <li class="nav-item flex-fill" (click)="scrollToSection('.service-section', $event)">
+                                <a href="/software#servicios"
+                                    class="nav-link hk-regular small-text white text-center d-block">{{
+                                    'SOFTWARE.NAV.SERVICES' | translate }}</a>
+                            </li>
+                            <li class="nav-item flex-fill" (click)="scrollToSection('.process-section', $event)">
+                                <a href="/software#procesos"
+                                    class="nav-link hk-regular small-text white text-center d-block">{{
+                                    'SOFTWARE.NAV.PROCESS_SINGLE' | translate }}</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-end mt-2 me-3">
+                            <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'es'"
+                                (click)="setLang('en', $event)">{{ 'COMMON.LANG_EN' | translate }}</a>
+                            <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'en'"
+                                (click)="setLang('es', $event)">{{ 'COMMON.LANG_ES' | translate }}</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="hero-wrapper px-3 px-md-5 pt-0 pt-md-4 rounded-corner">
+                    <div class="hero-artifact-layer" aria-hidden="true">
+                        <div #heroArtifactRef class="hero-artifact" [class.is-active]="isHeroArtifactActive"></div>
+                        <picture *ngIf="showHeroFallback" class="hero-fallback-picture">
+                            <source [srcset]="heroFallbackMobileSrc" media="(max-width: 1035px)">
+                            <img class="hero-fallback-image" [src]="heroFallbackDesktopSrc" alt="" width="1600"
+                                height="900" loading="eager" decoding="async" fetchpriority="high">
+                        </picture>
+                    </div>
+
+                    <div class="hero-content-layer">
+                        <div class="only-desktop">
+                            <div class="d-flex justify-content-end pe-3 pb-2">
+                                <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'es'"
+                                    (click)="setLang('en', $event)">{{ 'COMMON.LANG_EN' | translate }}</a>
+                                <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'en'"
+                                    (click)="setLang('es', $event)">{{ 'COMMON.LANG_ES' | translate }}</a>
+                            </div>
+                        </div>
+                        <div class="row nav-bar only-desktop">
+
+                            <div class="col-12">
+                                <div class="row align-items-stretch">
+                                    <div class="col-lg-4 col-xl-3 d-flex">
+                                        <div class="bg-white rounded-corner w-100 h-100 d-flex align-items-center justify-content-center text-center p-2">
+
+                                            <span class="hk-regular text email-line">{{ 'SOFTWARE.NAV.EMAIL_LABEL' | translate }} <span
+                                                    class="hk-bold"
+                                                    (copy)="handleEmailCopy()">hola&#64;linkdesign.cr</span><button type="button"
+                                                    class="email-copy-btn" (click)="copyEmail($event)"
+                                                    [class.is-copied]="emailCopied"
+                                                    [attr.aria-label]="emailCopied ? 'Correo copiado' : 'Copiar correo al portapapeles'"
+                                                    [title]="emailCopied ? '¡Copiado!' : 'Copiar correo'"><i class="bi"
+                                                        [class.bi-copy]="!emailCopied"
+                                                        [class.bi-check2]="emailCopied"
+                                                        aria-hidden="true"></i></button></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-6 d-flex align-items-center justify-content-center">
+                                        <div class="text-center">
+                                            <span class="hk-bold small-title">LINK DESIGN</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-end">
+
+                                        <div class="bg-white rounded-corner mini-nav p-2">
+
+                                            <ul class="mini-nav-list">
+                                                <li class="mini-nav-item m-1"
+                                                    (click)="scrollToSection('.context-section', $event)">
+                                                    <a href="/software#contexto" class="text-decoration-none text-reset">{{
+                                                        'SOFTWARE.PAGE_COPY.CONTEXT.LABEL' | translate }}</a>
+                                                </li>
+                                                <li class="mini-nav-item m-1"
+                                                    (click)="scrollToSection('.service-section', $event)">
+                                                    <a href="/software#servicios" class="text-decoration-none text-reset">{{
+                                                        'SOFTWARE.NAV.SERVICES' | translate }}</a>
+                                                </li>
+                                                <li class="mini-nav-item m-1"
+                                                    (click)="scrollToSection('.process-section', $event)">
+                                                    <a href="/software#procesos" class="text-decoration-none text-reset">{{
+                                                        'SOFTWARE.NAV.PROCESS_SINGLE' | translate }}</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hero-main-row">
+                            <div class="col-12 col-lg-7 col-xl-6 d-flex align-items-center">
+                                <div class="hero-content mt-md-5 mt-lg-0 ms-xl-5">
+                                    <h1 class="hk-bold section-title hero-heading">{{ 'SOFTWARE.HERO.TITLE_LINE1' | translate }} {{
+                                        'SOFTWARE.HERO.TITLE_LINE2' | translate }}</h1>
+                                    <p class="hk-regular text mt-3 hero-subtitle">{{ 'SOFTWARE.HERO.SUBTITLE_LINE1' | translate }}
+                                        {{ 'SOFTWARE.HERO.SUBTITLE_LINE2' | translate }}</p>
+                                    <div class="hero-cta-row d-flex align-items-center flex-wrap">
+                                        <a href="https://calendar.app.google/ZRkWtLvfCpUSwY1XA" target="_blank"
+                                            rel="noopener noreferrer" (click)="handleCalendarClick($event)"
+                                            class="btn btn-purple btn-lg rounded-corner px-4 white contact-cta-btn contact-cta-link">
+                                            <i class="bi bi-person-video me-1"></i>
+                                            {{ 'SOFTWARE.PAGE_COPY.CONTACT.CTA_MEETING' | translate }}
+                                        </a>
+                                        <a href="#footer" (click)="scrollToSection('#footer', $event)"
+                                            class="btn btn-dark btn-lg rounded-corner px-4 white contact-cta-btn contact-cta-link">
+                                            <i class="bi bi-chat-fill me-1"></i>
+                                            {{ 'SOFTWARE.HERO.CTA_CONTACT' | translate }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-6 d-none d-lg-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contexto" class="context-section bg-white pt-5 pb-5 mt-5" >
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-10 col-xl-8">
+                <div class="text-center">
+                    <h2 class="hk-bold text-big">{{ 'SOFTWARE.PAGE_COPY.CONTEXT.LABEL' | translate }}</h2>
+                    <h3 class="hk-semibold section-title mt-4">
+                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.HEADLINE_PRE' | translate }}<br><span class="hk-bold">{{
+                            'SOFTWARE.PAGE_COPY.CONTEXT.HEADLINE_HIGHLIGHT' | translate }}</span> {{
+                        'SOFTWARE.PAGE_COPY.CONTEXT.HEADLINE_POST' | translate }}
+                    </h3>
+                    <p class="hk-regular text mt-3">
+                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.PARAGRAPH' | translate }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="row pt-4">
+                    <!-- Item 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="gray-light-bg h-100 p-4 rounded-corner card-hover">
+                            <div class="text-center">
+                                <i class="bi bi-headset fs-1 purple-software"></i>
+                                <div class="py-2">
+                                    <span class="hk-bold text-big">
+                                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM1_TITLE' | translate }}
+                                    </span>
+                                </div>
+                                <p class="hk-regular text">
+                                    {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM1_BODY' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="gray-light-bg h-100 p-4 rounded-corner card-hover">
+                            <div class="text-center">
+                                <i class="bi bi-boxes fs-1 purple-software"></i>
+                                <div class="py-2">
+                                    <span class="hk-bold text-big">
+                                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM2_TITLE' | translate }}
+                                    </span>
+                                </div>
+                                <p class="hk-regular text">
+                                    {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM2_BODY' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="gray-light-bg h-100 p-4 rounded-corner card-hover">
+                            <div class="text-center">
+                                <i class="bi bi-shop fs-1 purple-software"></i>
+                                <div class="py-2">
+                                    <span class="hk-bold text-big">
+                                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM3_TITLE' | translate }}
+                                    </span>
+                                </div>
+                                <p class="hk-regular text">
+                                    {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM3_BODY' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-md-4">
+                    <!-- Item 4 -->
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="gray-light-bg h-100 p-4 rounded-corner card-hover">
+                            <div class="text-center">
+                                <i class="bi bi-calendar2-check-fill fs-1 purple-software"></i>
+                                <div class="py-2">
+                                    <span class="hk-bold text-big">
+                                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM4_TITLE' | translate }}
+                                    </span>
+                                </div>
+                                <p class="hk-regular text">
+                                    {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM4_BODY' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="gray-light-bg h-100 p-4 rounded-corner card-hover">
+                            <div class="text-center">
+                                <i class="bi bi-bar-chart-line-fill fs-1 purple-software"></i>
+                                <div class="py-2">
+                                    <span class="hk-bold text-big">
+                                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM5_TITLE' | translate }}
+                                    </span>
+                                </div>
+                                <p class="hk-regular text">
+                                    {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM5_BODY' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="gray-light-bg h-100 p-4 rounded-corner card-hover">
+                            <div class="text-center">
+                                <i class="bi bi-robot fs-1 purple-software"></i>
+                                <div class="py-2">
+                                    <span class="hk-bold text-big">
+                                        {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM6_TITLE' | translate }}
+                                    </span>
+                                </div>
+                                <p class="hk-regular text">
+                                    {{ 'SOFTWARE.PAGE_COPY.CONTEXT.ITEMS.ITEM6_BODY' | translate }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-white pb-5 what-section pt-5 mt-5">
+    <div class="container">
+        <div class="row pt-4">
+
+            <!-- Card: Lo que sí hacemos -->
+            <div class="col-12 col-lg-6">
+                <div class="gray-light-bg h-100 p-4 p-md-5 rounded-corner card-hover">
+
+                    <!-- Badge -->
+                    <div class="d-inline-flex align-items-center px-4 py-2 rounded-corner bg-white mb-3">
+                        <i class="bi bi-check-circle-fill me-2 purple-software"></i>
+                        <span class="hk-bold text">
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.BADGE' | translate }}
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <div class="mt-2">
+                        <span class="hk-semibold section-title">
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.TITLE_PRE' | translate }} <span class="hk-bold">{{
+                                'SOFTWARE.PAGE_COPY.WHAT.YES.TITLE_HIGHLIGHT' | translate }}</span> {{
+                            'SOFTWARE.PAGE_COPY.WHAT.YES.TITLE_POST' | translate }}
+                        </span>
+                    </div>
+
+                    <!-- Paragraph -->
+                    <p class="hk-regular text mt-3">
+                        {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.PARAGRAPH' | translate }}
+                    </p>
+
+                    <!-- List -->
+                    <ul class="p-0 mt-4" style="list-style: none;">
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-diagram-3-fill me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.LIST.ITEM1' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-arrow-repeat me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.LIST.ITEM2' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-database-fill-check me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.LIST.ITEM3' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-plug-fill me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.LIST.ITEM4' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 bg-white">
+                            <i class="bi bi-shield-fill-check me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.YES.LIST.ITEM5' | translate }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card: Lo que no hacemos -->
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                <div class="gray-light-bg h-100 p-4 p-md-5 rounded-corner card-hover">
+
+                    <!-- Badge -->
+                    <div class="d-inline-flex align-items-center px-4 py-2 rounded-corner bg-white mb-3">
+                        <i class="bi bi-x-circle-fill me-2 purple-software"></i>
+                        <span class="hk-bold text">
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.BADGE' | translate }}
+                        </span>
+                    </div>
+
+
+                    <!-- Title -->
+                    <div class="mt-2">
+                        <span class="hk-semibold section-title">
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.TITLE' | translate }}
+                        </span>
+                    </div>
+
+                    <!-- Paragraph -->
+                    <p class="hk-regular text mt-3">
+                        {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.PARAGRAPH' | translate }}
+                    </p>
+
+                    <!-- List -->
+                    <ul class="p-0 mt-4" style="list-style: none;">
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-box-seam-fill me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.LIST.ITEM1' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-lightning-fill me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.LIST.ITEM2' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-cash-coin me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.LIST.ITEM3' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 bg-white">
+                            <i class="bi bi-bandaid-fill me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.LIST.ITEM4' | translate }}
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 bg-white">
+                            <i class="bi bi-exclamation-triangle-fill me-2 purple-software"></i>
+                            {{ 'SOFTWARE.PAGE_COPY.WHAT.NO.LIST.ITEM5' | translate }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-white pb-5 how-section pt-5 mt-5">
+    <div class="container">
+        <div class="row d-flex align-items-stretch">
+            <!-- Media -->
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="video-wrapper rounded-corner">
+                    <video autoplay loop muted [muted]="true" playsinline class="video-bg none-phone"
+                        preload="none" poster="assets/img/hero.webp" data-deferred-video>
+                        <source src="assets/videos/video-small.mp4" type="video/mp4">
+                        {{ 'SOFTWARE.PAGE_COPY.MEDIA.VIDEO_UNSUPPORTED' | translate }}
+                    </video>
+                    <video autoplay loop muted [muted]="true" playsinline class="video-bg only-phone"
+                        preload="none" poster="assets/img/hero.webp" data-deferred-video>
+                        <source src="assets/videos/video-mobile.mp4" type="video/mp4">
+                        {{ 'SOFTWARE.PAGE_COPY.MEDIA.VIDEO_UNSUPPORTED' | translate }}
+                    </video>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="ps-3 pe-2 ps-md-5 pt-5 pt-lg-0">
+                    <h2 class="hk-bold text-big">{{ 'SOFTWARE.PAGE_COPY.HOW.LABEL' | translate }}</h2>
+
+                    <h3 class="hk-semibold section-title mt-4">
+                        {{ 'SOFTWARE.PAGE_COPY.HOW.HEADLINE_LINE1' | translate }}
+                        {{ 'SOFTWARE.PAGE_COPY.HOW.HEADLINE_PRE' | translate }} <span class="hk-bold">{{
+                            'SOFTWARE.PAGE_COPY.HOW.HEADLINE_HIGHLIGHT' | translate }}</span>
+                    </h3>
+
+                    <p class="hk-regular text">
+                        {{ 'SOFTWARE.PAGE_COPY.HOW.PARAGRAPH' | translate }}
+                    </p>
+
+                    <div class="d-flex my-4">
+                        <ul class="p-0" style="list-style: none;">
+
+                            <li class="border rounded-corner py-2 px-4 mb-3 d-inline-flex align-items-center">
+                                <span class="hk-regular text">
+                                    <i class="bi bi-1-circle-fill purple-software me-2"></i>
+                                    {{ 'SOFTWARE.PAGE_COPY.HOW.LIST.ITEM1' | translate }}
+                                </span>
+                            </li>
+
+                            <li class="border rounded-corner py-2 px-4 mb-3 d-inline-flex align-items-center">
+                                <span class="hk-regular text">
+                                    <i class="bi bi-2-circle-fill purple-software me-2"></i>
+                                    {{ 'SOFTWARE.PAGE_COPY.HOW.LIST.ITEM2' | translate }}
+                                </span>
+                            </li>
+
+                            <li class="border rounded-corner py-2 px-4 mb-3 d-inline-flex align-items-center">
+                                <span class="hk-regular text">
+                                    <i class="bi bi-3-circle-fill purple-software me-2"></i>
+                                    {{ 'SOFTWARE.PAGE_COPY.HOW.LIST.ITEM3' | translate }}
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="servicios" class="bg-white pb-5 service-section pt-5 mt-5">
+    <div class="container">
+        <div class="row px-3 px-md-0">
+            <div class="col-12 col-md-12 col-lg-6">
+                <h2 class="hk-bold text-big">{{ 'SOFTWARE.SERVICES.TITLE' | translate }}</h2>
+                <h3 class="hk-semibold section-title mt-4">{{ 'SOFTWARE.PAGE_COPY.SERVICES_EXTRA.HEADING_PRE' | translate }}
+                    <span class="hk-bold">{{ 'SOFTWARE.PAGE_COPY.SERVICES_EXTRA.HEADING_HIGHLIGHT' | translate }}</span>
+                    {{ 'SOFTWARE.PAGE_COPY.SERVICES_EXTRA.HEADING_POST' | translate }}
+                </h3>
+                <div class="d-flex my-4">
+                    <ul class="p-0 list-unstyled">
+                        <li class="border rounded-corner py-2 p-4 mb-3 d-block">
+                            <span class="hk-regular text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-clipboard2-check mb-1 me-1 purple-software" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z" />
+                                    <path
+                                        d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                                </svg>
+                                {{ 'SOFTWARE.SERVICES.LIST.REVIEW_DEV' | translate }}
+                            </span>
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 d-block">
+                            <span class="hk-regular text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-headset mb-1 me-1 purple-software" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                                </svg>
+                                {{ 'SOFTWARE.SERVICES.LIST.POST_SUPPORT' | translate }}
+                            </span>
+                        </li>
+                        <li class="border rounded-corner py-2 p-4 mb-3 d-block">
+                            <span class="hk-regular text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-pc-display mb-1 me-1 purple-software" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z" />
+                                </svg>
+                                {{ 'SOFTWARE.SERVICES.LIST.REAL_ENV_TEST' | translate }}
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="w-100 gray-light-bg p-4 rounded-corner align-items-stretch h-100 card-hover">
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex flex-column">
+                                    <picture>
+                                        <source srcset="assets/img/icons-software/icon-desarrollo.svg"
+                                            type="image/svg+xml">
+                                        <img src="assets/img/icons-software/icon-desarrollo.svg" class="icon-svg mt-4"
+                                            alt="" aria-hidden="true" width="90"
+                                            height="91" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="py-3">
+                                        <span class="hk-bold text-big">{{
+                                            'SOFTWARE.SERVICES.CARDS.INTERNAL_APPS_TITLE_LINE1' | translate }} <br>{{
+                                            'SOFTWARE.SERVICES.CARDS.INTERNAL_APPS_TITLE_LINE2' | translate }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex flex-column">
+                                    <p class="hk-regular text mt-auto">{{
+                                        'SOFTWARE.PAGE_COPY.SERVICES_EXTRA.CARD_INTERNAL_PARAGRAPH' | translate }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="gray-light-bg p-4 rounded-corner align-items-stretch h-100 card-hover">
+                            <picture>
+                                <source srcset="assets/img/icons-software/icon-implementation.svg" type="image/svg+xml">
+                                <img src="assets/img/icons-software/icon-implementation.svg" class="icon-svg mt-4"
+                                    alt="" aria-hidden="true" width="91" height="91"
+                                    loading="lazy" decoding="async">
+                            </picture>
+                            <div class="py-4">
+                                <span class="hk-bold text-big">{{ 'SOFTWARE.SERVICES.CARDS.TECH_IMPLEMENTATION_TITLE' |
+                                    translate }}</span>
+                            </div>
+                            <p class="hk-regular text mt-auto">{{
+                                'SOFTWARE.PAGE_COPY.SERVICES_EXTRA.CARD_TECH_PARAGRAPH' | translate }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="gray-light-bg p-4 rounded-corner align-items-stretch h-100 card-hover">
+                            <picture>
+                                <source srcset="assets/img/icons-software/icon-ai.svg" type="image/svg+xml">
+                                <img src="assets/img/icons-software/icon-ai.svg" class="icon-svg mt-4"
+                                    alt="" aria-hidden="true" width="91" height="91"
+                                    loading="lazy" decoding="async">
+                            </picture>
+                            <div class="py-4">
+                                <span class="hk-bold text-big">{{ 'SOFTWARE.SERVICES.CARDS.AI_IMPLEMENTATION_TITLE' |
+                                    translate }}</span>
+                            </div>
+                            <p class="hk-regular text mt-auto">{{
+                                'SOFTWARE.PAGE_COPY.SERVICES_EXTRA.CARD_AI_PARAGRAPH' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<app-software-showcase></app-software-showcase>
+
+<section id="procesos" class="bg-white pb-5 process-section pt-5 mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-xl-9">
+                <div class="text-center">
+                    <h2 class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.TITLE' | translate }}</h2>
+                    <h3 class="hk-semibold section-title mt-4">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.HEADLINE_PRE' | translate }}
+                        <span class="hk-bold">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.HEADLINE_HIGHLIGHT' | translate
+                            }}</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-11">
+                <div class="row pt-4">
+
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="gray-light-bg p-4 rounded-corner align-items-stretch card-hover h-100 w-100">
+                            <div class="row">
+                                <div class="col-3 col-xl-2 d-flex justify-content-center align-items-center">
+                                    <picture>
+                                        <source srcset="assets/img/icons-software/number1.svg" type="image/svg+xml">
+                                        <img src="assets/img/icons-software/number1.svg" class=""
+                                            alt="" aria-hidden="true" width="64"
+                                            height="64" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="col-9 col-xl-10">
+                                    <div class="py-2">
+                                        <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.ANALYSIS_PLANNING' |
+                                            translate }}</span>
+                                    </div>
+                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP1' | translate
+                                        }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="gray-light-bg p-4 rounded-corner align-items-stretch mt-4 mt-lg-0 card-hover h-100 w-100">
+                            <div class="row">
+                                <div class="col-3 col-xl-2 d-flex justify-content-center align-items-center">
+                                    <picture>
+                                        <source srcset="assets/img/icons-software/number2.svg" type="image/svg+xml">
+                                        <img src="assets/img/icons-software/number2.svg" class=""
+                                            alt="" aria-hidden="true" width="65"
+                                            height="65" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="col-9 col-xl-10">
+                                    <div class="py-2">
+                                        <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.DESIGN_PROTOTYPING' |
+                                            translate }}</span>
+                                    </div>
+                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP2' | translate
+                                        }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-4">
+
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="gray-light-bg p-4 rounded-corner align-items-stretch card-hover h-100 w-100">
+                            <div class="row">
+                                <div class="col-3 col-xl-2 d-flex justify-content-center align-items-center">
+                                    <picture>
+                                        <source srcset="assets/img/icons-software/number3.svg" type="image/svg+xml">
+                                        <img src="assets/img/icons-software/number3.svg" class=""
+                                            alt="" aria-hidden="true" width="65"
+                                            height="64" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="col-9 col-xl-10">
+                                    <div class="py-2">
+                                        <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.DEVELOPMENT_TESTING' |
+                                            translate }}</span>
+                                    </div>
+                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP3' | translate
+                                        }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="gray-light-bg p-4 rounded-corner align-items-stretch mt-4 mt-lg-0 card-hover h-100 w-100">
+                            <div class="row">
+                                <div class="col-3 col-xl-2 d-flex justify-content-center align-items-center">
+                                    <picture>
+                                        <source srcset="assets/img/icons-software/number4.svg" type="image/svg+xml">
+                                        <img src="assets/img/icons-software/number4.svg" class=""
+                                            alt="" aria-hidden="true" width="65"
+                                            height="64" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
+                                <div class="col-9 col-xl-10">
+                                    <div class="py-2">
+                                        <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.LAUNCH_SUPPORT' |
+                                            translate }}</span>
+                                    </div>
+                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP4' | translate
+                                        }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="faq" class="bg-white pb-5 pt-5 mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 col-xl-7">
+                <div class="text-center">
+                    <div class="pb-4">
+                        <h2 class="hk-bold text-big">{{ 'SOFTWARE.PAGE_COPY.FAQ.TITLE' | translate }}</h2>
+                    </div>
+                    <h3 class="hk-semibold section-title mt-4">
+                        {{ 'SOFTWARE.PAGE_COPY.FAQ.SUBTITLE_PRE' | translate }} <span class="hk-bold">{{
+                            'SOFTWARE.PAGE_COPY.FAQ.SUBTITLE_HIGHLIGHT' | translate }}</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col-11 col-lg-8">
+                <div class="border rounded-5 p-2 p-md-4 mt-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <!-- Q1 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q1' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A1' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q2' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A2' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q3' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A3' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse4" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q4' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapse4" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A4' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse5" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q5' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapse5" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A5' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse6" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q6' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapse6" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A6' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-white pb-5 mt-5">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center box-contact mx-2 mx-md-3 p-3 p-md-5 rounded-corner">
+            <div class="col-12 col-lg-7 col-xl-6">
+                <div class="text-center">
+                    <div class="pb-4">
+                        <h2 class="hk-bold text-big">{{ 'SOFTWARE.PAGE_COPY.CONTACT.TITLE' | translate }}</h2>
+                    </div>
+                    <h3 class="hk-bold section-title mt-4">
+                        {{ 'SOFTWARE.PAGE_COPY.CONTACT.HEADLINE' | translate }}
+                    </h3>
+                    <p class="hk-regular text mt-3">
+                        {{ 'SOFTWARE.PAGE_COPY.CONTACT.PARAGRAPH' | translate }}
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-center py-4 flex-wrap gap-2">
+                    <button type="button"
+                        class="btn btn-outline-dark btn-md-lg rounded-corner px-5 contact-cta-btn"
+                        (click)="handleContactWhatsappClick($event, true)">
+                        <i class="bi bi-whatsapp me-1"></i>
+                        {{ 'SOFTWARE.PAGE_COPY.CONTACT.CTA_WHATSAPP' | translate }}
+                    </button>
+
+                    <a href="https://calendar.app.google/ZRkWtLvfCpUSwY1XA" target="_blank" rel="noopener noreferrer"
+                        (click)="handleCalendarClick($event)"
+                        class="btn btn-purple btn-md-lg rounded-corner px-5 white contact-cta-btn contact-cta-link">
+                        <i class="bi bi-person-video me-1"></i>
+                        {{ 'SOFTWARE.PAGE_COPY.CONTACT.CTA_MEETING' | translate }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

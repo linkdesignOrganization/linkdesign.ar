@@ -1,0 +1,128 @@
+<ngx-json-ld [json]="homeSchema"></ngx-json-ld>
+<div class="containertest cover_big only-desktop">
+  <!-- Sección 1 -->
+  <div class="third">
+    <picture>
+      <source srcset="assets/img/third1.svg" type="image/svg+xml">
+      <img class="iconicon-third1" alt="{{ 'SPLITHOME.ALT.DECORATION' | translate }}" src="assets/img/third1.svg" width="189" height="163" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="custom-card section1">
+      <span class="vertical-text hk-bold white">{{ 'SPLITHOME.SECTIONS.CREATIVE.LABEL' | translate }}</span>
+      <div class="card-content">
+        <h1 class="hk-bold text-big white only-desktop">{{ 'SPLITHOME.COMMON.WEB_DEVELOPMENT' | translate }}</h1>
+        <p class="text hk-regular white">
+          {{ 'SPLITHOME.SECTIONS.CREATIVE.DESCRIPTION' | translate }}
+        </p>
+        <div>
+          <a routerLink="/weblab"><button type="button" class="btn btn-light px-5">{{ 'SPLITHOME.COMMON.LEARN_MORE' | translate }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección 2 -->
+  <div class="third">
+    <picture>
+      <source srcset="assets/img/third2.svg" type="image/svg+xml">
+      <img class="iconicon-third2" alt="{{ 'SPLITHOME.ALT.DECORATION' | translate }}" src="assets/img/third2.svg" width="374" height="389" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="custom-card section2">
+      <span class="vertical-text hk-bold dark-blue">{{ 'SPLITHOME.SECTIONS.CORPORATE.LABEL' | translate }}</span>
+      <div class="card-content">
+        <span class="hk-bold text-big dark-blue only-desktop d-block">{{ 'SPLITHOME.COMMON.WEB_DEVELOPMENT' | translate }}</span>
+        <p class="text hk-regular dark-blue">
+          {{ 'SPLITHOME.SECTIONS.CORPORATE.DESCRIPTION' | translate }}
+        </p>
+        <div>
+          <a routerLink="/corporate"><button type="button" class="btn btn-primary px-5">{{ 'SPLITHOME.COMMON.LEARN_MORE' | translate }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección 3 -->
+  <div class="third ">
+    <picture>
+      <source srcset="assets/img/third3.svg" type="image/svg+xml">
+      <img class="iconicon-third3" alt="{{ 'SPLITHOME.ALT.DECORATION' | translate }}" src="assets/img/third3.svg" width="281" height="343" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="custom-card section3">
+      <span class="vertical-text hk-bold">{{ 'SPLITHOME.SECTIONS.SOFTWARE.LABEL' | translate }}</span>
+      <div class="card-content">
+        <span class="hk-bold text-big only-desktop d-block">{{ 'SPLITHOME.SECTIONS.SOFTWARE.HEADING' | translate }}</span>
+        <p class="text hk-regular">
+          {{ 'SPLITHOME.SECTIONS.SOFTWARE.DESCRIPTION' | translate }}
+        </p>
+        <div>
+          <a routerLink="/software"><span class="visually-hidden">{{ 'SPLITHOME.SECTIONS.SOFTWARE.HEADING' | translate }}</span><button type="button" class="btn btn-dark px-5">{{ 'SPLITHOME.COMMON.LEARN_MORE' | translate }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="containertest-mobile cover_big none-desktop">
+  <!-- Sección 1 -->
+  <div class="third-mobile p-3">
+    <picture>
+      <source srcset="assets/img/third1.svg" type="image/svg+xml">
+      <img class="iconmobile-third1" alt="{{ 'SPLITHOME.ALT.DECORATION' | translate }}" src="assets/img/third1.svg" width="189" height="163" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="section1 px-5 rounded-corner d-flex flex-column justify-content-center align-items-start">
+      <span class="hk-bold white title-huge d-block">{{ 'SPLITHOME.SECTIONS.CREATIVE.LABEL' | translate }}</span>
+      <p class="text hk-regular white">
+        {{ 'SPLITHOME.SECTIONS.CREATIVE.DESCRIPTION' | translate }}
+      </p>
+      <div>
+        <a routerLink="/weblab"><button type="button" class="btn btn-light px-5">{{ 'SPLITHOME.COMMON.LEARN_MORE' | translate }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+        </svg></button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección 2 -->
+  <div class="third-mobile p-3">
+    <picture>
+      <source srcset="assets/img/third2.svg" type="image/svg+xml">
+      <img class="iconmobile-third2" alt="{{ 'SPLITHOME.ALT.DECORATION' | translate }}" src="assets/img/third2.svg" width="374" height="389" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="section2 px-5 rounded-corner d-flex flex-column justify-content-center align-items-start">
+      <span class="hk-bold white title-huge d-block">{{ 'SPLITHOME.SECTIONS.CORPORATE.LABEL' | translate }}</span>
+      <p class="text hk-regular dark-blue">
+        {{ 'SPLITHOME.SECTIONS.CORPORATE.DESCRIPTION' | translate }}
+      </p>
+      <div>
+        <a routerLink="/corporate"><button type="button" class="btn btn-primary px-5">{{ 'SPLITHOME.COMMON.LEARN_MORE' | translate }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+        </svg></button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección 3 -->
+  <div class="third-mobile p-3">
+    <picture>
+      <source srcset="assets/img/third3.svg" type="image/svg+xml">
+      <img class="iconmobile-third3" alt="{{ 'SPLITHOME.ALT.DECORATION' | translate }}" src="assets/img/third3.svg" width="281" height="343" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="section3 px-5 rounded-corner d-flex flex-column justify-content-center align-items-start">
+      <span class="hk-bold title-huge d-block">{{ 'SPLITHOME.SECTIONS.SOFTWARE.LABEL' | translate }}</span>
+      <p class="text hk-regular">
+        {{ 'SPLITHOME.SECTIONS.SOFTWARE.DESCRIPTION' | translate }}
+      </p>
+      <div>
+        <a routerLink="/software"><span class="visually-hidden">{{ 'SPLITHOME.SECTIONS.SOFTWARE.HEADING' | translate }}</span><button type="button" class="btn btn-dark px-5">{{ 'SPLITHOME.COMMON.LEARN_MORE' | translate }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+        </svg></button></a>
+      </div>
+    </div>
+  </div>
+</div>
