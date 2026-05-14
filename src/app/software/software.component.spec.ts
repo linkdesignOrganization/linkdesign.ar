@@ -155,8 +155,8 @@ describe('SoftwareComponent', () => {
     expect(options.mouseControls).toBeFalse();
     expect(options.touchControls).toBeFalse();
     expect(options.gyroControls).toBeFalse();
-    expect(options.points).toBe(6);
-    expect(options.scaleMobile).toBe(0.8);
+    expect(options.points).toBe(7);
+    expect(options.scaleMobile).toBe(0.9);
     expect(component.showHeroFallback).toBeFalse();
     expect(component.isHeroArtifactActive).toBeTrue();
   });

@@ -1,10 +1,26 @@
 <ngx-json-ld [json]="softwareSchema"></ngx-json-ld>
+<ng-template #languageSwitch>
+    <div class="language-switch" role="group" [attr.aria-label]="'COMMON.LANG_SWITCH.LABEL' | translate"
+        [attr.data-active]="i18n.currentLang">
+        <span class="language-switch__indicator" aria-hidden="true"></span>
+        <button type="button" class="language-switch__option"
+            [class.is-active]="i18n.currentLang === 'es'" [attr.aria-pressed]="i18n.currentLang === 'es'"
+            (click)="setLang('es')">
+            <span class="language-switch__text">{{ 'COMMON.LANG_ES' | translate }}</span>
+        </button>
+        <button type="button" class="language-switch__option"
+            [class.is-active]="i18n.currentLang === 'en'" [attr.aria-pressed]="i18n.currentLang === 'en'"
+            (click)="setLang('en')">
+            <span class="language-switch__text">{{ 'COMMON.LANG_EN' | translate }}</span>
+        </button>
+    </div>
+</ng-template>
 <section class="bg-white p-3 p-md-4 hero-section">
     <div class="container-fluid g-0">
         <div class="row">
             <div class="col-12">
 
-                <div class="nav-bar-mobile w-100 none-desktop mb-5 mb-md-3">
+                <div class="nav-bar-mobile w-100 none-desktop">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <!-- Botón WhatsApp -->
                         <div class="btn-whatsapp-mobile" (click)="handleWhatsappClick($event, true)">
@@ -50,17 +66,11 @@
                                     'SOFTWARE.NAV.PROCESS_SINGLE' | translate }}</a>
                             </li>
                         </ul>
-                        <div class="d-flex justify-content-end mt-2 me-3">
-                            <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'es'"
-                                (click)="setLang('en', $event)">{{ 'COMMON.LANG_EN' | translate }}</a>
-                            <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'en'"
-                                (click)="setLang('es', $event)">{{ 'COMMON.LANG_ES' | translate }}</a>
-                        </div>
                     </div>
                 </div>
 
 
-                <div class="hero-wrapper px-3 px-md-5 pt-0 pt-md-4 rounded-corner">
+                <div #heroWrapperRef class="hero-wrapper px-3 px-md-5 pt-0 pt-md-4 rounded-corner">
                     <div class="hero-artifact-layer" aria-hidden="true">
                         <div #heroArtifactRef class="hero-artifact" [class.is-active]="isHeroArtifactActive"></div>
                         <picture *ngIf="showHeroFallback" class="hero-fallback-picture">
@@ -71,13 +81,8 @@
                     </div>
 
                     <div class="hero-content-layer">
-                        <div class="only-desktop">
-                            <div class="d-flex justify-content-end pe-3 pb-2">
-                                <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'es'"
-                                    (click)="setLang('en', $event)">{{ 'COMMON.LANG_EN' | translate }}</a>
-                                <a href="#" class="cursorp lang-toggle" *ngIf="i18n.currentLang === 'en'"
-                                    (click)="setLang('es', $event)">{{ 'COMMON.LANG_ES' | translate }}</a>
-                            </div>
+                        <div class="language-switch-row language-switch-row--hero">
+                            <ng-container *ngTemplateOutlet="languageSwitch"></ng-container>
                         </div>
                         <div class="row nav-bar only-desktop">
 
@@ -103,7 +108,7 @@
                                             <span class="hk-bold small-title">LINK DESIGN</span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-end">
+                                    <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-end desktop-nav-slot">
 
                                         <div class="bg-white rounded-corner mini-nav p-2">
 

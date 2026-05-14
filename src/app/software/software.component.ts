@@ -37,6 +37,7 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
   private static readonly HERO_MOBILE_FALLBACK_SRC = 'assets/img/software-hero-vanta-fallback-mobile.svg';
 
   @ViewChild('heroArtifactRef') private heroArtifactRef?: ElementRef<HTMLElement>;
+  @ViewChild('heroWrapperRef') private heroWrapperRef?: ElementRef<HTMLElement>;
 
   private langSub?: Subscription;
   private cardObserver?: IntersectionObserver;
@@ -47,6 +48,7 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
   private mobileQueryHandler?: () => void;
   private deferredVideoCleanup?: () => void;
   private heroEffect?: HeroVantaEffect;
+  private heroResizeObserver?: ResizeObserver;
   private activeHeroProfile?: HeroArtifactProfile;
   private heroRefreshFrame?: number;
   private heroInitAttempt = 0;
@@ -74,6 +76,7 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
     if (isPlatformBrowser(this.platformId)) {
       this.deferredVideoCleanup = initDeferredVideoObserver(this.host.nativeElement);
       this.initMobileCardObserver();
+      this.initHeroResizeObserver();
       this.queueHeroArtifactRefresh();
     }
   }
@@ -89,6 +92,7 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
     this.langSub?.unsubscribe();
     this.teardownMobileCardObserver();
     this.deferredVideoCleanup?.();
+    this.teardownHeroResizeObserver();
     this.teardownHeroArtifact(false);
     if (isPlatformBrowser(this.platformId) && this.heroRefreshFrame) {
       window.cancelAnimationFrame(this.heroRefreshFrame);
@@ -469,6 +473,42 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
 
+  private initHeroResizeObserver(): void {
+    if (!isPlatformBrowser(this.platformId)
+      || typeof ResizeObserver === 'undefined'
+      || !this.heroWrapperRef?.nativeElement) {
+      return;
+    }
+
+    this.teardownHeroResizeObserver();
+
+    let lastWidth = 0;
+    let lastHeight = 0;
+    this.heroResizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (!entry) {
+        return;
+      }
+
+      const width = Math.round(entry.contentRect.width);
+      const height = Math.round(entry.contentRect.height);
+      if (width === lastWidth && height === lastHeight) {
+        return;
+      }
+
+      lastWidth = width;
+      lastHeight = height;
+      this.queueHeroArtifactRefresh();
+    });
+
+    this.heroResizeObserver.observe(this.heroWrapperRef.nativeElement);
+  }
+
+  private teardownHeroResizeObserver(): void {
+    this.heroResizeObserver?.disconnect();
+    this.heroResizeObserver = undefined;
+  }
+
   private async refreshHeroArtifact(): Promise<void> {
     if (!isPlatformBrowser(this.platformId)) {
       return;
@@ -603,13 +643,13 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
 
     return {
       ...baseOptions,
-      maxDistance: 17,
+      maxDistance: 18,
       mouseControls: false,
-      points: 6,
-      scale: 0.9,
-      scaleMobile: 0.8,
-      size: 0.6,
-      spacing: 18,
+      points: 7,
+      scale: 0.98,
+      scaleMobile: 0.9,
+      size: 0.74,
+      spacing: 16,
       touchControls: false
     };
   }

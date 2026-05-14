@@ -2,6 +2,11 @@
   "COMMON": {
     "LANG_ES": "ES",
     "LANG_EN": "EN",
+    "LANG_SWITCH": {
+      "LABEL": "Idioma del sitio",
+      "ES": "Español",
+      "EN": "English"
+    },
     "VIDEO_UNSUPPORTED": "Tu navegador no soporta la etiqueta de video."
   },
   "WEBLAB": {
