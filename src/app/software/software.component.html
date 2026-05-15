@@ -148,7 +148,7 @@
                                             rel="noopener noreferrer" (click)="handleCalendarClick($event)"
                                             class="btn btn-purple btn-lg rounded-corner px-4 white contact-cta-btn contact-cta-link">
                                             <i class="bi bi-person-video me-1"></i>
-                                            {{ 'SOFTWARE.PAGE_COPY.CONTACT.CTA_MEETING' | translate }}
+                                            {{ 'SOFTWARE.HERO.CTA_MEETING' | translate }}
                                         </a>
                                         <a href="#footer" (click)="scrollToSection('#footer', $event)"
                                             class="btn btn-dark btn-lg rounded-corner px-4 white contact-cta-btn contact-cta-link">
@@ -546,7 +546,7 @@
                                     </picture>
                                     <div class="py-3">
                                         <span class="hk-bold text-big">{{
-                                            'SOFTWARE.SERVICES.CARDS.INTERNAL_APPS_TITLE_LINE1' | translate }} <br>{{
+                                            'SOFTWARE.SERVICES.CARDS.INTERNAL_APPS_TITLE_LINE1' | translate }} {{
                                             'SOFTWARE.SERVICES.CARDS.INTERNAL_APPS_TITLE_LINE2' | translate }}</span>
                                     </div>
                                 </div>
@@ -633,9 +633,10 @@
                                         <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.ANALYSIS_PLANNING' |
                                             translate }}</span>
                                     </div>
-                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP1' | translate
+                                    <p class="hk-regular text mb-0">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP1' | translate
                                         }}
                                     </p>
+                                    <p class="small text-muted mt-1 mb-0"><i class="bi bi-clock me-1"></i>{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP1_TIMING' | translate }}</p>
                                 </div>
                             </div>
                         </div>
@@ -657,9 +658,10 @@
                                         <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.DESIGN_PROTOTYPING' |
                                             translate }}</span>
                                     </div>
-                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP2' | translate
+                                    <p class="hk-regular text mb-0">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP2' | translate
                                         }}
                                     </p>
+                                    <p class="small text-muted mt-1 mb-0"><i class="bi bi-clock me-1"></i>{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP2_TIMING' | translate }}</p>
                                 </div>
                             </div>
                         </div>
@@ -684,9 +686,10 @@
                                         <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.DEVELOPMENT_TESTING' |
                                             translate }}</span>
                                     </div>
-                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP3' | translate
+                                    <p class="hk-regular text mb-0">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP3' | translate
                                         }}
                                     </p>
+                                    <p class="small text-muted mt-1 mb-0"><i class="bi bi-clock me-1"></i>{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP3_TIMING' | translate }}</p>
                                 </div>
                             </div>
                         </div>
@@ -708,9 +711,10 @@
                                         <span class="hk-bold text-big">{{ 'SOFTWARE.PROCESS.STEPS.LAUNCH_SUPPORT' |
                                             translate }}</span>
                                     </div>
-                                    <p class="hk-regular text">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP4' | translate
+                                    <p class="hk-regular text mb-0">{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP4' | translate
                                         }}
                                     </p>
+                                    <p class="small text-muted mt-1 mb-0"><i class="bi bi-clock me-1"></i>{{ 'SOFTWARE.PAGE_COPY.PROCESS_EXTRA.STEP4_TIMING' | translate }}</p>
                                 </div>
                             </div>
                         </div>
@@ -834,6 +838,54 @@
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     {{ 'SOFTWARE.PAGE_COPY.FAQ.A6' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse7" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q7' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapse7" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A7' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse8" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q8' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapse8" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A8' | translate }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q9 -->
+                        <div class="accordion-item">
+                            <span class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse9" aria-expanded="false">
+                                    <span class="pe-2">{{ 'SOFTWARE.PAGE_COPY.FAQ.Q9' | translate }}</span>
+                                </button>
+                            </span>
+                            <div id="flush-collapse9" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ 'SOFTWARE.PAGE_COPY.FAQ.A9' | translate }}
                                 </div>
                             </div>
                         </div>

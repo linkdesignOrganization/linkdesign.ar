@@ -102,34 +102,34 @@
   "FOOT": {
     "TITLE_LINE1": "Comencemos a",
     "TITLE_LINE2": "trabajar hoy",
-    "EXPECT_MESSAGE": "Esperamos su mensaje",
-    "WHATSAPP_CHAT": "Chat en whatsapp",
-    "SCHEDULE_MEETING": "Agendar reunión",
-    "OFFER_TITLE": "Nuestra Oferta",
+    "EXPECT_MESSAGE": "Esperamos tu mensaje",
+    "WHATSAPP_CHAT": "Mandar WhatsApp",
+    "SCHEDULE_MEETING": "Pedir reunión",
+    "OFFER_TITLE": "Nuestra oferta",
     "STRATEGY": "Estrategia",
     "RESEARCH": "Investigación",
-    "UI_UX_TRENDS": "Tendencias UI/UX",
+    "UI_UX_TRENDS": "Tendencias de UI/UX",
     "TECH_CAMPAIGNS": "Campañas tecnológicas",
     "LAUNCH_STRATEGY": "Estrategia de lanzamiento",
     "TECH_CONSULTING": "Consultoría tecnológica",
     "DEVELOPMENT": "Desarrollo",
-    "FULL_STACK": "Full - Stack",
-    "BACKEND_INTEGRATIONS": "Integraciones Backend/API",
-    "MARKETING_TOOLS": "Integración marketing tools",
+    "FULL_STACK": "Full stack",
+    "BACKEND_INTEGRATIONS": "Integraciones de backend/API",
+    "MARKETING_TOOLS": "Integración con herramientas de marketing",
     "WEB_APPS": "Aplicaciones web",
     "DESIGN": "Diseño",
     "UX_UI_DESIGN": "Diseño UX/UI",
     "PROTOTYPE_DESIGN": "Diseño de prototipos",
     "PRODUCT_DESIGN": "Diseño de producto",
-    "BRAND_DESIGN": "Diseño para marcas",
+    "BRAND_DESIGN": "Diseño de marca",
     "CONTENT": "Contenido",
     "COPYWRITING": "Redacción",
     "VIDEO": "Video",
     "ANIMATION": "Animación",
     "GRAPHICS_2D_3D": "Gráficos 2D/3D",
-    "COPYRIGHT": "© 2026 Link Design. All Rights Reserved.",
-    "PRIVACY": "Políticas de privacidad",
-    "LOCATION": "San Jos\u00e9, Costa Rica"
+    "COPYRIGHT": "© 2026 Link Design. Todos los derechos reservados.",
+    "PRIVACY": "Política de privacidad",
+    "LOCATION": "CABA, Argentina"
   },
   "SOFTWARE": {
     "NAV": {
@@ -145,7 +145,8 @@
       "SUBTITLE_LINE1": "No adaptás tu empresa al software.",
       "SUBTITLE_LINE2": "Construimos el software alrededor de cómo ya funciona tu operación.",
       "CTA": "Evaluar mi caso",
-      "CTA_CONTACT": "Contacto"
+      "CTA_CONTACT": "Mandar mensaje",
+      "CTA_MEETING": "Pedir reunión"
     },
     "CTA_QUOTE": "Cotizar software",
     "ABOUT": {
@@ -171,12 +172,12 @@
         "REAL_ENV_TEST": "Pruebas en entorno real"
       },
       "CARDS": {
-        "INTERNAL_APPS_TITLE_LINE1": "Desarrollo de",
-        "INTERNAL_APPS_TITLE_LINE2": "aplicaciones internas",
+        "INTERNAL_APPS_TITLE_LINE1": "Software",
+        "INTERNAL_APPS_TITLE_LINE2": "a medida",
         "INTERNAL_APPS_DESC": "Creamos herramientas digitales a la medida para optimizar los procesos clave de tu empresa, centralizar la gestión de datos y automatizar tareas repetitivas.",
-        "TECH_IMPLEMENTATION_TITLE": "Implementación de tecnologías",
+        "TECH_IMPLEMENTATION_TITLE": "Integración de sistemas y datos",
         "TECH_IMPLEMENTATION_DESC": "Nuestro enfoque abarca desde la consultoría y la planificación estratégica, hasta la ejecución y el soporte continuo, garantizando una transición fluida y resultados efectivos.",
-        "AI_IMPLEMENTATION_TITLE": "Implementación de inteligencia artificial"
+        "AI_IMPLEMENTATION_TITLE": "Automatización con IA aplicada"
       }
     },
     "TRANSFORMATION": {
@@ -242,14 +243,20 @@
       "A1": "El desarrollo se plantea desde el inicio con una estructura flexible para permitir modificaciones y crecimiento sin comprometer el rendimiento. La arquitectura del software se organiza en módulos independientes, lo que facilita la incorporación de nuevas funciones y la optimización de las existentes sin afectar el sistema completo. Además, realizamos pruebas de carga para medir su comportamiento bajo diferentes niveles de demanda.",
       "Q2": "¿Qué medidas de seguridad implementan en las aplicaciones?",
       "A2": "El software se desarrolla siguiendo buenas prácticas de seguridad para minimizar vulnerabilidades. Se aplican controles de acceso, cifrado de datos y protocolos de autenticación que protegen la integridad de la información. También realizamos revisiones periódicas para identificar posibles riesgos y mantener los sistemas protegidos ante nuevas amenazas.",
-      "Q3": "¿Brindan soporte y mantenimiento después del desarrollo?",
-      "A3": "Sí, el mantenimiento es parte del proceso para asegurar que el software siga funcionando correctamente con el tiempo. Esto incluye la corrección de posibles errores, la optimización de procesos y la actualización de dependencias cuando sea necesario. También se realizan monitoreos para detectar y resolver incidentes de manera anticipada.",
-      "Q4": "¿Cómo se aseguran de que el software sea fácil de usar?",
-      "A4": "Antes de comenzar el desarrollo, analizamos los procesos y necesidades del usuario final para definir una estructura intuitiva. Se crean prototipos funcionales que permiten evaluar la usabilidad antes de la implementación. Durante el desarrollo, se realizan pruebas con usuarios para detectar posibles dificultades y hacer ajustes que mejoren la experiencia de uso sin comprometer la funcionalidad del sistema.",
-      "Q5": "¿Cómo verifican que el software funciona correctamente antes de entregarlo?",
-      "A5": "Antes de la entrega, el software pasa por varias fases de prueba. Se realizan pruebas automatizadas y manuales para detectar errores, evaluar el rendimiento y asegurar que todas las funcionalidades respondan como se espera. También se hacen pruebas en entornos de preproducción, donde el software se ejecuta en condiciones similares a las reales, asegurando que su implementación sea estable.",
-      "Q6": "¿Cómo manejan los plazos y la entrega del proyecto?",
-      "A6": "Cada proyecto se planifica en etapas con objetivos definidos y tiempos estimados de desarrollo. Antes de comenzar, se establece un cronograma de trabajo con hitos específicos para monitorear avances y hacer ajustes si es necesario. La comunicación con el cliente es constante, lo que permite resolver imprevistos sin afectar los plazos establecidos."
+      "Q3": "¿Cómo es el soporte después de entregar el sistema?",
+      "A3": "Ofrecemos planes de soporte con SLA definido. Cubre consultas, corrección de errores, ajustes operativos y nuevas funcionalidades según evoluciona la operación. El alcance y modelo se acuerda al cierre del proyecto. El software interno no se entrega y se abandona, se acompaña en el tiempo.",
+      "Q4": "¿Cómo es el esquema de pago del proyecto?",
+      "A4": "El esquema se define en la primera conversación según el proyecto y lo que mejor encaje a ambas partes. Los modelos más usados son pago 30/70 con anticipo y entrega, pagos por hitos según etapas, pagos mensuales con SLA, o suscripción mensual cuando el cliente prefiere modelo SaaS. Nos adaptamos al esquema, no al revés.",
+      "Q5": "¿Cómo arranca el proyecto?",
+      "A5": "Al aceptar la propuesta económica se abona un porcentaje inicial que arranca la Etapa 1 de discovery. El resto se distribuye según el esquema de pago acordado para todo el proyecto. Esto asegura que ambas partes están comprometidas desde el inicio.",
+      "Q6": "¿Con qué tecnologías construyen?",
+      "A6": "Trabajamos principalmente con Angular para frontend, Node para backend y Azure para infraestructura, base de datos y servicios. También usamos Python, React y otras tecnologías según conveniencia técnica del proyecto. La pila final se define en el discovery, eligiendo lo que mejor encaja con la operación del cliente y la integración con sistemas existentes.",
+      "Q7": "¿Cómo se aseguran de que el software sea fácil de usar?",
+      "A7": "Antes de comenzar el desarrollo, analizamos los procesos y necesidades del usuario final para definir una estructura intuitiva. Se crean prototipos funcionales que permiten evaluar la usabilidad antes de la implementación. Durante el desarrollo, se realizan pruebas con usuarios para detectar posibles dificultades y hacer ajustes que mejoren la experiencia de uso sin comprometer la funcionalidad del sistema.",
+      "Q8": "¿Cómo verifican que el software funciona correctamente antes de entregarlo?",
+      "A8": "Antes de la entrega, el software pasa por varias fases de prueba. Se realizan pruebas automatizadas y manuales para detectar errores, evaluar el rendimiento y asegurar que todas las funcionalidades respondan como se espera. También se hacen pruebas en entornos de preproducción, donde el software se ejecuta en condiciones similares a las reales, asegurando que su implementación sea estable.",
+      "Q9": "¿Cómo manejan los plazos y la entrega del proyecto?",
+      "A9": "Cada proyecto se planifica en etapas con objetivos definidos y tiempos estimados de desarrollo. Antes de comenzar, se establece un cronograma de trabajo con hitos específicos para monitorear avances y hacer ajustes si es necesario. La comunicación con el cliente es constante, lo que permite resolver imprevistos sin afectar los plazos establecidos."
     },
     "CONTACT": {
       "TITLE": "Contacto",
@@ -361,9 +368,9 @@
         "HEADING_PRE": "Sistemas internos para",
         "HEADING_HIGHLIGHT": "operar, controlar y escalar",
         "HEADING_POST": "tu empresa.",
-        "CARD_INTERNAL_PARAGRAPH": "Diseñamos y desarrollamos sistemas internos a medida para centralizar la operación, ordenar procesos y dar visibilidad real al negocio.",
-        "CARD_TECH_PARAGRAPH": "Integramos y conectamos sistemas existentes, datos y herramientas internas para eliminar reprocesos y dependencias manuales, sin romper la operación actual.",
-        "CARD_AI_PARAGRAPH": "Aplicamos inteligencia artificial para automatizar tareas, asistir decisiones operativas y reducir carga manual en procesos reales. La usamos solo cuando genera impacto medible."
+        "CARD_INTERNAL_PARAGRAPH": "Desarrollo de aplicaciones internas a medida para centralizar la operación, ordenar procesos y dar visibilidad real al negocio.",
+        "CARD_TECH_PARAGRAPH": "Conectamos lo que ya tenés funcionando sin romper la operación actual. Eliminamos reprocesos y dependencias manuales entre sistemas y herramientas internas.",
+        "CARD_AI_PARAGRAPH": "IA con criterio técnico para procesos reales, no decorativa. Automatizamos tareas, asistimos decisiones operativas y reducimos carga manual solo cuando genera impacto medible."
       },
       "SHOWCASE": {
         "LABEL": "Resultados",
@@ -417,9 +424,13 @@
         "HEADLINE_PRE": "Definimos el sistema, lo construimos por etapas y lo",
         "HEADLINE_HIGHLIGHT": "validamos en operación real",
         "STEP1": "Aterrizamos el flujo real de la operación, las reglas del negocio, los actores y el alcance. Aquí se define qué se construye, qué no y por qué.",
+        "STEP1_TIMING": "De 2 a 3 semanas",
         "STEP2": "Diseñamos la arquitectura del sistema y prototipos funcionales para validar lógica, flujos y experiencia antes de desarrollar.",
+        "STEP2_TIMING": "De 2 a 4 semanas",
         "STEP3": "Construimos el sistema por módulos y etapas, con pruebas continuas y validaciones reales para evitar errores y retrabajos.",
-        "STEP4": "Implementamos el sistema en la operación, acompañamos la adopción y damos soporte para ajustes, mejoras y evolución del sistema."
+        "STEP3_TIMING": "De 2 a 6 meses según alcance",
+        "STEP4": "Implementamos el sistema en la operación, acompañamos la adopción y damos soporte para ajustes, mejoras y evolución del sistema.",
+        "STEP4_TIMING": "De 1 a 2 semanas de lanzamiento, soporte continuo"
       },
       "FAQ": {
         "TITLE": "FAQ",
@@ -429,21 +440,27 @@
         "A1": "Definimos arquitectura, reglas y estructura desde el inicio. El sistema se construye por módulos, permitiendo crecer, ajustar o integrar nuevas funcionalidades sin tener que rehacer todo.",
         "Q2": "¿Qué medidas de seguridad implementan?",
         "A2": "Definimos roles, permisos, validaciones y controles según la operación real. Aplicamos buenas prácticas de seguridad desde la arquitectura, no como un agregado al final.",
-        "Q3": "¿Brindan soporte después del desarrollo?",
-        "A3": "Sí. Acompañamos el sistema después del lanzamiento para ajustes, mejoras y evolución. El software interno no se \"entrega y se abandona\".",
-        "Q4": "¿Cómo se aseguran de que el software sea fácil de usar?",
-        "A4": "Diseñamos el sistema según los flujos reales de los usuarios. Validamos prototipos y funcionalidad antes de desarrollar para evitar sistemas complejos o poco usables.",
-        "Q5": "¿Cómo verifican que el software funcione correctamente?",
-        "A5": "Probamos el sistema por etapas y en escenarios reales de la operación. Detectamos errores antes de que impacten al negocio.",
-        "Q6": "¿Cómo manejan los plazos y la entrega del proyecto?",
-        "A6": "Trabajamos con alcance definido y entregas por etapas. Eso permite avanzar con visibilidad, controlar tiempos y ajustar prioridades sin perder control del proyecto."
+        "Q3": "¿Cómo es el soporte después de entregar el sistema?",
+        "A3": "Ofrecemos planes de soporte con SLA definido. Cubre consultas, corrección de errores, ajustes operativos y nuevas funcionalidades según evoluciona la operación. El alcance y modelo se acuerda al cierre del proyecto. El software interno no se entrega y se abandona, se acompaña en el tiempo.",
+        "Q4": "¿Cómo es el esquema de pago del proyecto?",
+        "A4": "El esquema se define en la primera conversación según el proyecto y lo que mejor encaje a ambas partes. Los modelos más usados son pago 30/70 con anticipo y entrega, pagos por hitos según etapas, pagos mensuales con SLA, o suscripción mensual cuando el cliente prefiere modelo SaaS. Nos adaptamos al esquema, no al revés.",
+        "Q5": "¿Cómo arranca el proyecto?",
+        "A5": "Al aceptar la propuesta económica se abona un porcentaje inicial que arranca la Etapa 1 de discovery. El resto se distribuye según el esquema de pago acordado para todo el proyecto. Esto asegura que ambas partes están comprometidas desde el inicio.",
+        "Q6": "¿Con qué tecnologías construyen?",
+        "A6": "Trabajamos principalmente con Angular para frontend, Node para backend y Azure para infraestructura, base de datos y servicios. También usamos Python, React y otras tecnologías según conveniencia técnica del proyecto. La pila final se define en el discovery, eligiendo lo que mejor encaja con la operación del cliente y la integración con sistemas existentes.",
+        "Q7": "¿Cómo se aseguran de que el software sea fácil de usar?",
+        "A7": "Diseñamos el sistema según los flujos reales de los usuarios. Validamos prototipos y funcionalidad antes de desarrollar para evitar sistemas complejos o poco usables.",
+        "Q8": "¿Cómo verifican que el software funcione correctamente?",
+        "A8": "Probamos el sistema por etapas y en escenarios reales de la operación. Detectamos errores antes de que impacten al negocio.",
+        "Q9": "¿Cómo manejan los plazos y la entrega del proyecto?",
+        "A9": "Trabajamos con alcance definido y entregas por etapas. Eso permite avanzar con visibilidad, controlar tiempos y ajustar prioridades sin perder control del proyecto."
       },
       "CONTACT": {
         "TITLE": "Contacto",
         "HEADLINE": "Hablemos de tu operación",
         "PARAGRAPH": "En una primera conversación revisamos tu contexto, entendemos el problema y definimos el siguiente paso con criterio técnico.",
-        "CTA_WHATSAPP": "Abrir conversación",
-        "CTA_MEETING": "Solicitar reunión",
+        "CTA_WHATSAPP": "Mandar WhatsApp",
+        "CTA_MEETING": "Pedir reunión",
         "WHATSAPP_PRESET_MESSAGE": "Hola, me gustaría tener más información de sus servicios."
       }
     }
@@ -906,7 +923,7 @@
       "EMAIL_LABEL": "Correo",
       "EMAIL_PLACEHOLDER": "tu@correo.com",
       "PHONE_LABEL": "WhatsApp / Teléfono",
-      "PHONE_PLACEHOLDER": "+506 8888 8888",
+      "PHONE_PLACEHOLDER": "+54 11 5555 5555",
       "NEED_LABEL": "¿Qué necesitás?",
       "PREFERRED_CONTACT_LABEL": "¿Cómo preferís que te contactemos?",
       "MESSAGE_LABEL": "Mensaje",
@@ -929,8 +946,7 @@
       "TOO_LONG": "Demasiado largo",
       "INVALID_EMAIL": "El correo no es válido",
       "INVALID_PHONE": "El teléfono no es válido",
-      "INVALID_PHONE_CR": "Para Costa Rica usá 8 dígitos después de +506",
-      "PHONE_NEEDS_PREFIX": "El teléfono debe iniciar con el código de país (ej: +506)",
+      "PHONE_NEEDS_PREFIX": "El teléfono debe iniciar con el código de país (ej: +54)",
       "NO_LINKS": "No se permiten enlaces en este campo",
       "GENERIC_NETWORK": "No pudimos enviar tu mensaje. Intentá de nuevo.",
       "RATE_LIMITED": "Ya recibimos tu mensaje. Te contactaremos pronto."

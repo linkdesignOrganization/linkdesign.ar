@@ -49,8 +49,8 @@ export function emailStrictValidator(): ValidatorFn {
 
 /**
  * Phone validator flexible:
- *   - Si empieza con "+506 " seguido de 8 dígitos: válido (Costa Rica)
- *   - Si empieza con "+" cualquier código: valida formato E.164 (7-15 dígitos totales sin contar el +)
+ *   - Si empieza con "+" cualquier código: valida formato E.164
+ *     (7-15 dígitos totales sin contar el +)
  *   - Sin "+": rechaza
  *
  * Acepta espacios, guiones y paréntesis como separadores visuales — se ignoran.
@@ -75,12 +75,6 @@ export function phoneFlexibleValidator(): ValidatorFn {
     // E.164 estándar: 7-15 dígitos
     if (digits.length < 7) return { phoneTooShort: true };
     if (digits.length > 15) return { phoneTooLong: true };
-
-    // Costa Rica: +506 + 8 dígitos = 11 dígitos totales
-    if (cleaned.startsWith('+506')) {
-      const local = cleaned.slice(4);
-      if (local.length !== 8) return { phoneInvalidCR: true };
-    }
 
     return null;
   };

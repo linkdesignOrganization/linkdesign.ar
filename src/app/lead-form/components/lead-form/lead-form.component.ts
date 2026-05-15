@@ -96,10 +96,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     if (!this.isBrowser) return;
 
-    // Pre-llenar teléfono con +506 (en browser, post-hidratado)
-    this.form.get('phone')?.setValue('+506 ', { emitEvent: false });
-
-    // Iniciar contador de tiempo y eventos
+    // Iniciar contador de tiempo y eventos una vez hidratado en browser
     this.formLoadedAt = Date.now();
 
     // Cualquier valueChange real cuenta como interacción
@@ -121,24 +118,9 @@ export class LeadFormComponent implements OnInit, AfterViewInit, OnDestroy {
     this.interactionCount += 1;
   }
 
-  /**
-   * Al hacer focus en phone, si está exactamente "+506 ", mover cursor al final
-   * (evita que el usuario tenga que mover el cursor manualmente y rompe iOS bug).
-   */
-  onPhoneFocus(event: FocusEvent): void {
+  onPhoneFocus(): void {
     if (!this.isBrowser) return;
     this.registerInteraction();
-    const input = event.target as HTMLInputElement;
-    if (input.value === '+506 ') {
-      // setTimeout para esperar al frame de focus (necesario en iOS Safari)
-      setTimeout(() => {
-        try {
-          input.setSelectionRange(input.value.length, input.value.length);
-        } catch {
-          /* algunos type=tel no soportan setSelectionRange en todos los browsers */
-        }
-      }, 0);
-    }
   }
 
   // ──────────────────────────────────────────────────────────────────────────
@@ -177,7 +159,6 @@ export class LeadFormComponent implements OnInit, AfterViewInit, OnDestroy {
     if (errs['phoneNeedsPrefix']) return 'LEAD_FORM.ERRORS.PHONE_NEEDS_PREFIX';
     if (errs['phoneInvalidChars']) return 'LEAD_FORM.ERRORS.INVALID_PHONE';
     if (errs['phoneTooShort'] || errs['phoneTooLong']) return 'LEAD_FORM.ERRORS.INVALID_PHONE';
-    if (errs['phoneInvalidCR']) return 'LEAD_FORM.ERRORS.INVALID_PHONE_CR';
     if (errs['containsLinks']) return 'LEAD_FORM.ERRORS.NO_LINKS';
     if (errs['tooManyLinks']) return 'LEAD_FORM.ERRORS.NO_LINKS';
     if (errs['spamKeyword']) return 'LEAD_FORM.ERRORS.NO_LINKS';
@@ -257,7 +238,7 @@ export class LeadFormComponent implements OnInit, AfterViewInit, OnDestroy {
       name: '',
       company: '',
       email: '',
-      phone: this.isBrowser ? '+506 ' : '',
+      phone: '',
       need: [],
       preferred_contact: [],
       message: '',

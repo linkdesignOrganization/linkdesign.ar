@@ -129,7 +129,7 @@
     "GRAPHICS_2D_3D": "2D/3D graphics",
     "COPYRIGHT": "2026 Link Design. All Rights Reserved.",
     "PRIVACY": "Privacy policy",
-    "LOCATION": "San Jose, Costa Rica"
+    "LOCATION": "CABA, Argentina"
   },
   "SOFTWARE": {
     "NAV": {
@@ -144,7 +144,8 @@
       "TITLE_LINE2": "built to fit your operation",
       "SUBTITLE_LINE1": "You don't adapt your company to the software.",
       "SUBTITLE_LINE2": "We build the software around how your operation already works.",
-      "CTA_CONTACT": "Contact",
+      "CTA_CONTACT": "Send message",
+      "CTA_MEETING": "Request meeting",
       "CTA": "Evaluate my case"
     },
     "CTA_QUOTE": "Get a software quote",
@@ -242,14 +243,20 @@
       "A1": "We design from the start with a flexible structure that allows modifications and growth without compromising performance. The software architecture is organized into independent modules, making it easier to add new features and optimize existing ones without affecting the entire system. We also perform load testing to measure behavior under different demand levels.",
       "Q2": "What security measures do you implement in applications?",
       "A2": "Software is developed following security best practices to minimize vulnerabilities. We apply access controls, data encryption, and authentication protocols that protect information integrity. We also conduct periodic reviews to identify potential risks and keep systems protected against new threats.",
-      "Q3": "Do you provide support and maintenance after development?",
-      "A3": "Yes, maintenance is part of the process to ensure the software continues to work correctly over time. This includes fixing possible errors, optimizing processes, and updating dependencies when necessary. We also monitor systems to detect and resolve incidents proactively.",
-      "Q4": "How do you make sure the software is easy to use?",
-      "A4": "Before development begins, we analyze processes and end-user needs to define an intuitive structure. Functional prototypes are created to evaluate usability before implementation. During development, we test with users to detect difficulties and make adjustments that improve the user experience without compromising functionality.",
-      "Q5": "How do you verify the software works properly before delivery?",
-      "A5": "Before delivery, the software goes through multiple testing phases. Automated and manual tests are performed to detect errors, evaluate performance, and ensure all functionalities behave as expected. We also test in pre-production environments, where the software runs under conditions similar to real use, ensuring a stable implementation.",
-      "Q6": "How do you manage timelines and project delivery?",
-      "A6": "Each project is planned in stages with defined objectives and estimated development times. Before starting, we establish a work schedule with specific milestones to track progress and make adjustments if needed. Communication with the client is constant, allowing us to address issues without affecting agreed timelines."
+      "Q3": "What is support like after the system is delivered?",
+      "A3": "We offer support plans with a defined SLA. It covers questions, bug fixes, operational adjustments, and new features as the operation evolves. The scope and model are agreed upon at project close. Internal software is not delivered and abandoned; it is supported over time.",
+      "Q4": "What is the project's payment structure?",
+      "A4": "The structure is defined in the first conversation according to the project and what fits both parties best. The most common models are 30/70 payment with advance and delivery, milestone payments by stage, monthly payments with SLA, or a monthly subscription when the client prefers a SaaS model. We adapt to the structure, not the other way around.",
+      "Q5": "How does the project start?",
+      "A5": "When the commercial proposal is accepted, an initial percentage is paid to start Stage 1 discovery. The rest is distributed according to the payment structure agreed for the full project. This ensures both parties are committed from the beginning.",
+      "Q6": "What technologies do you build with?",
+      "A6": "We work mainly with Angular for frontend, Node for backend, and Azure for infrastructure, databases, and services. We also use Python, React, and other technologies depending on the project's technical convenience. The final stack is defined during discovery, choosing what best fits the client's operation and integration with existing systems.",
+      "Q7": "How do you make sure the software is easy to use?",
+      "A7": "Before development begins, we analyze processes and end-user needs to define an intuitive structure. Functional prototypes are created to evaluate usability before implementation. During development, we test with users to detect difficulties and make adjustments that improve the user experience without compromising functionality.",
+      "Q8": "How do you verify the software works properly before delivery?",
+      "A8": "Before delivery, the software goes through multiple testing phases. Automated and manual tests are performed to detect errors, evaluate performance, and ensure all functionalities behave as expected. We also test in pre-production environments, where the software runs under conditions similar to real use, ensuring a stable implementation.",
+      "Q9": "How do you manage timelines and project delivery?",
+      "A9": "Each project is planned in stages with defined objectives and estimated development times. Before starting, we establish a work schedule with specific milestones to track progress and make adjustments if needed. Communication with the client is constant, allowing us to address issues without affecting agreed timelines."
     },
     "CONTACT": {
       "TITLE": "Contact",
@@ -417,9 +424,13 @@
         "HEADLINE_PRE": "We define the system, build it in stages, and",
         "HEADLINE_HIGHLIGHT": "validate it in real operations",
         "STEP1": "We map the real operational flow, business rules, stakeholders, and scope. Here we define what is built, what isn't, and why.",
+        "STEP1_TIMING": "2 to 4 weeks",
         "STEP2": "We design the system architecture and functional prototypes to validate logic, flows, and experience before development.",
+        "STEP2_TIMING": "2 to 4 weeks",
         "STEP3": "We build the system in modules and stages, with continuous testing and real validations to avoid errors and rework.",
-        "STEP4": "We implement the system in operations, support adoption, and provide assistance for adjustments, improvements, and evolution of the system."
+        "STEP3_TIMING": "2 to 6 months depending on scope",
+        "STEP4": "We implement the system in operations, support adoption, and provide assistance for adjustments, improvements, and evolution of the system.",
+        "STEP4_TIMING": "Launch 1 to 2 weeks, ongoing support"
       },
       "FAQ": {
         "TITLE": "FAQ",
@@ -429,21 +440,27 @@
         "A1": "We define architecture, rules, and structure from the start. The system is built in modules, allowing growth, adjustments, or new integrations without having to rebuild everything.",
         "Q2": "What security measures do you implement?",
         "A2": "We define roles, permissions, validations, and controls according to the real operation. We apply security best practices from the architecture, not as an add-on at the end.",
-        "Q3": "Do you provide support after development?",
-        "A3": "Yes. We support the system after launch for adjustments, improvements, and evolution. Internal software is not \"delivered and abandoned\".",
-        "Q4": "How do you ensure the software is easy to use?",
-        "A4": "We design the system based on users' real flows. We validate prototypes and functionality before development to avoid complex or hard-to-use systems.",
-        "Q5": "How do you verify that the software works correctly?",
-        "A5": "We test the system in stages and in real operational scenarios. We detect errors before they impact the business.",
-        "Q6": "How do you manage timelines and project delivery?",
-        "A6": "We work with defined scope and staged deliveries. That allows progress with visibility, control of timelines, and priority adjustments without losing control of the project."
+        "Q3": "What is support like after the system is delivered?",
+        "A3": "We offer support plans with a defined SLA. It covers questions, bug fixes, operational adjustments, and new features as the operation evolves. The scope and model are agreed upon at project close. Internal software is not delivered and abandoned; it is supported over time.",
+        "Q4": "What is the project's payment structure?",
+        "A4": "The structure is defined in the first conversation according to the project and what fits both parties best. The most common models are 30/70 payment with advance and delivery, milestone payments by stage, monthly payments with SLA, or a monthly subscription when the client prefers a SaaS model. We adapt to the structure, not the other way around.",
+        "Q5": "How does the project start?",
+        "A5": "When the commercial proposal is accepted, an initial percentage is paid to start Stage 1 discovery. The rest is distributed according to the payment structure agreed for the full project. This ensures both parties are committed from the beginning.",
+        "Q6": "What technologies do you build with?",
+        "A6": "We work mainly with Angular for frontend, Node for backend, and Azure for infrastructure, databases, and services. We also use Python, React, and other technologies depending on the project's technical convenience. The final stack is defined during discovery, choosing what best fits the client's operation and integration with existing systems.",
+        "Q7": "How do you ensure the software is easy to use?",
+        "A7": "We design the system based on users' real flows. We validate prototypes and functionality before development to avoid complex or hard-to-use systems.",
+        "Q8": "How do you verify that the software works correctly?",
+        "A8": "We test the system in stages and in real operational scenarios. We detect errors before they impact the business.",
+        "Q9": "How do you manage timelines and project delivery?",
+        "A9": "We work with defined scope and staged deliveries. That allows progress with visibility, control of timelines, and priority adjustments without losing control of the project."
       },
       "CONTACT": {
         "TITLE": "Contact",
         "HEADLINE": "Let's talk about your operation",
         "PARAGRAPH": "In a first conversation we review your context, understand the problem, and define the next step with technical judgment.",
-        "CTA_WHATSAPP": "Start conversation",
-        "CTA_MEETING": "Request a meeting",
+        "CTA_WHATSAPP": "Send WhatsApp",
+        "CTA_MEETING": "Request meeting",
         "WHATSAPP_PRESET_MESSAGE": "Hi, I would like more information about your services."
       }
     }
@@ -906,7 +923,7 @@
       "EMAIL_LABEL": "Email",
       "EMAIL_PLACEHOLDER": "you@example.com",
       "PHONE_LABEL": "WhatsApp / Phone",
-      "PHONE_PLACEHOLDER": "+506 8888 8888",
+      "PHONE_PLACEHOLDER": "+54 11 5555 5555",
       "NEED_LABEL": "What do you need?",
       "PREFERRED_CONTACT_LABEL": "How do you prefer to be contacted?",
       "MESSAGE_LABEL": "Message",
@@ -929,8 +946,7 @@
       "TOO_LONG": "Too long",
       "INVALID_EMAIL": "Email is not valid",
       "INVALID_PHONE": "Phone is not valid",
-      "INVALID_PHONE_CR": "For Costa Rica use 8 digits after +506",
-      "PHONE_NEEDS_PREFIX": "Phone must start with the country code (e.g. +1)",
+      "PHONE_NEEDS_PREFIX": "Phone must start with the country code (e.g. +54)",
       "NO_LINKS": "Links are not allowed in this field",
       "GENERIC_NETWORK": "We couldn't send your message. Please try again.",
       "RATE_LIMITED": "We already received your message. We'll be in touch soon."

@@ -42,9 +42,9 @@ export interface LeadContact {
   email: string;
   /** Clasificación del dominio del email: corporativo o personal. */
   email_domain_type: EmailDomainType;
-  /** Teléfono normalizado a E.164 (ej: '+50688881111'). */
+  /** Teléfono normalizado a E.164 (ej: '+541155555555'). */
   phone: string;
-  /** Prefijo de país del teléfono (ej: '+506', '+1', '+52'). */
+  /** Prefijo de país del teléfono (ej: '+54', '+1', '+52'). */
   phone_country_prefix: string;
 }
 
@@ -143,17 +143,17 @@ export interface LeadSession {
   form_load_to_submit_ms: number;
   /** Resolución de pantalla "1920x1080". */
   screen_resolution: string | null;
-  /** Timezone IANA del navegador (ej: "America/Costa_Rica"). */
+  /** Timezone IANA del navegador (ej: "America/Argentina/Buenos_Aires"). */
   timezone: string | null;
   /**
    * Locale completo del navegador (navigator.language).
-   * Ej: "es-CR", "en-US", "pt-BR".
+   * Ej: "es-AR", "en-US", "pt-BR".
    */
   locale: string | null;
   /**
    * Código ISO 3166-1 alpha-2 del país inferido del browser.
    * Se obtiene combinando timezone y locale (sin servicios externos).
-   * Ej: "CR", "MX", "US", "ES". Null si no se pudo determinar.
+   * Ej: "AR", "MX", "US", "ES". Null si no se pudo determinar.
    */
   country: string | null;
   /**

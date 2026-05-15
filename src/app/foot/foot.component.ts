@@ -32,7 +32,7 @@ export class FootComponent implements OnInit, OnDestroy {
   showForm = true;
 
   /**
-   * Visibilidad de la sección "Nuestra Oferta" (Estrategia/Desarrollo/Diseño/Contenido).
+   * Visibilidad de la sección "Nuestra oferta" (Estrategia/Desarrollo/Diseño/Contenido).
    * Ocultada para que el formulario tome todo el espacio horizontal disponible.
    * El bloque se conserva en el HTML por si en el futuro se reactiva.
    */

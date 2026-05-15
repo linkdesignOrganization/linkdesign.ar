@@ -168,7 +168,7 @@ export class SoftwareComponent implements OnInit, AfterViewInit, OnDestroy {
       "@type": "Country",
       "name": "Costa Rica"
     };
-    const faqEntries = [1, 2, 3, 4, 5, 6].map((item) => ({
+    const faqEntries = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => ({
       "@type": "Question",
       "name": t(`SOFTWARE.PAGE_COPY.FAQ.Q${item}`),
       "acceptedAnswer": {
