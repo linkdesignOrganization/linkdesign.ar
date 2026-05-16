@@ -108,7 +108,7 @@ export class HomecorporateComponent implements OnInit, OnDestroy {
             "@type": "Organization",
             "@id": "https://linkdesign.cr/#organization"
           },
-          "areaServed": "Costa Rica",
+          "areaServed": "Argentina",
           "url": "https://linkdesign.cr/corporate"
         },
         {
@@ -120,7 +120,7 @@ export class HomecorporateComponent implements OnInit, OnDestroy {
             "@type": "Organization",
             "@id": "https://linkdesign.cr/#organization"
           },
-          "areaServed": "Costa Rica",
+          "areaServed": "Argentina",
           "url": "https://linkdesign.cr/corporate"
         },
         {
@@ -132,7 +132,7 @@ export class HomecorporateComponent implements OnInit, OnDestroy {
             "@type": "Organization",
             "@id": "https://linkdesign.cr/#organization"
           },
-          "areaServed": "Costa Rica",
+          "areaServed": "Argentina",
           "url": "https://linkdesign.cr/corporate"
         },
         {
@@ -144,7 +144,7 @@ export class HomecorporateComponent implements OnInit, OnDestroy {
             "@type": "Organization",
             "@id": "https://linkdesign.cr/#organization"
           },
-          "areaServed": "Costa Rica",
+          "areaServed": "Argentina",
           "url": "https://linkdesign.cr/corporate"
         }
       ]

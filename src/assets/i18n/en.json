@@ -140,8 +140,8 @@
       "EMAIL_LABEL": "email:"
     },
     "HERO": {
-      "TITLE_LINE1": "Your CRM, ERP, or management system,",
-      "TITLE_LINE2": "built to fit your operation",
+      "TITLE_LINE1": "Custom software built around your operation.",
+      "TITLE_LINE2": "CRM, ERP, and management systems.",
       "SUBTITLE_LINE1": "You don't adapt your company to the software.",
       "SUBTITLE_LINE2": "We build the software around how your operation already works.",
       "CTA_CONTACT": "Send message",
@@ -507,6 +507,8 @@
       },
       "COMMON": {
         "NO_WORDPRESS": "No WordPress",
+        "NO_TIENDANUBE": "No TiendaNube",
+        "NO_WIX": "No Wix",
         "NO_PLUGINS": "No plugins",
         "NO_SLOW_SITES": "No slow sites",
         "NO_LIMITS": "No limits",
@@ -590,6 +592,7 @@
       "TRASH": "trash icon",
       "LOGO_ANGULAR": "Angular logo",
       "LOGO_MONGODB": "MongoDB logo",
+      "LOGO_TYPESCRIPT": "TypeScript logo",
       "LOGO_NODE": "Node.js logo",
       "LOGO_ANALYTICS": "Analytics logo",
       "LOGO_AZURE": "Azure logo",
@@ -620,6 +623,11 @@
       "CARD_IMAGE_ALT": "This is an illustrative image of the site for {{name}}",
       "LOGO_ALT": "This is the logo for {{name}}",
       "VIEW_LIVE": "View live site",
+      "ARIA": {
+        "SECTION": "Corporate projects carousel",
+        "PREV": "Previous project",
+        "NEXT": "Next project"
+      },
       "PROJECTS": {
         "ASEMBIS": {
           "DESCRIPTION": "A medical clinic specialized in accessible, high-quality services. Our digital strategy focused on highlighting its range of services and social commitment."

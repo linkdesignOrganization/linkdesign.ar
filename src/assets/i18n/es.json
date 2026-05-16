@@ -104,7 +104,7 @@
     "TITLE_LINE2": "trabajar hoy",
     "EXPECT_MESSAGE": "Esperamos tu mensaje",
     "WHATSAPP_CHAT": "Mandar WhatsApp",
-    "SCHEDULE_MEETING": "Pedir reunión",
+    "SCHEDULE_MEETING": "Agendar reunión",
     "OFFER_TITLE": "Nuestra oferta",
     "STRATEGY": "Estrategia",
     "RESEARCH": "Investigación",
@@ -140,13 +140,13 @@
       "EMAIL_LABEL": "e-mail:"
     },
     "HERO": {
-      "TITLE_LINE1": "Tu CRM, ERP o sistema de gestión,",
-      "TITLE_LINE2": "construido a la medida de tu operación",
+      "TITLE_LINE1": "Software a medida construido alrededor de tu operación.",
+      "TITLE_LINE2": "CRM, ERP y sistemas de gestión.",
       "SUBTITLE_LINE1": "No adaptás tu empresa al software.",
       "SUBTITLE_LINE2": "Construimos el software alrededor de cómo ya funciona tu operación.",
       "CTA": "Evaluar mi caso",
       "CTA_CONTACT": "Mandar mensaje",
-      "CTA_MEETING": "Pedir reunión"
+      "CTA_MEETING": "Agendar reunión"
     },
     "CTA_QUOTE": "Cotizar software",
     "ABOUT": {
@@ -471,7 +471,7 @@
       "WEB_OFFER": "Oferta web",
       "PROJECTS": "Proyectos",
       "CONTACT": "Contacto",
-      "EXPLORE": "Explora",
+      "EXPLORE": "Explorá",
       "CREATIVE_DEV": "Desarrollo Creativo",
       "SOFTWARE_DEV": "Desarrollo de Software",
       "START_TODAY": "Comencemos a trabajar hoy",
@@ -488,7 +488,7 @@
     "HOME": {
       "HERO": {
         "LINE1": "Hey, nosotros nos encargamos de",
-        "LINE2": "su nuevo",
+        "LINE2": "tu nuevo",
         "BADGE": "sitio web"
       },
       "OPTIONS": {
@@ -507,11 +507,13 @@
       },
       "COMMON": {
         "NO_WORDPRESS": "No WordPress",
+        "NO_TIENDANUBE": "No TiendaNube",
+        "NO_WIX": "No Wix",
         "NO_PLUGINS": "No plugins",
         "NO_SLOW_SITES": "No sitios lentos",
-        "NO_LIMITS": "No límites",
+        "NO_LIMITS": "Sin límites",
         "NO_TEMPLATES": "No plantillas",
-        "NO_LIMITED_SITES": "No sitios limitados",
+        "NO_LIMITED_SITES": "No límites",
         "NO_OUTDATED": "No desactualizaciones",
         "NO_RECYCLED": "No reciclados",
         "NO_OUTDATED_DESIGNS": "No diseños anticuados"
@@ -519,66 +521,66 @@
       "TECH": {
         "BADGE": "Las mejores tecnologías",
         "PARAGRAPH_PREFIX": "En",
-        "PARAGRAPH_SUFFIX": "creamos soluciones únicas y adaptadas a tu negocio, utilizando las herramientas tecnológicas más avanzadas del mercado. Tu proyecto es único, y así lo desarrollamos."
+        "PARAGRAPH_SUFFIX": "creamos soluciones únicas y adaptadas a tu negocio con herramientas tecnológicas de primer nivel. Cada proyecto es distinto, y por eso lo desarrollamos a medida."
       },
       "EXPERIENCE": {
         "BADGE": "Para todos los dispositivos",
-        "PARAGRAPH": "Sabemos que la mayoría de los usuarios que navega por internet lo hace desde su celular. Por eso, optimizamos nuestros diseños para que se vean impecables en dispositivos móviles, sin descuidar la experiencia en computadoras.",
+        "PARAGRAPH": "Sabemos que gran parte de las personas navega desde el celular. Por eso, optimizamos nuestros diseños para que se vean impecables en dispositivos móviles, sin descuidar la experiencia en computadoras.",
         "CARD_USER_LINE1": "Priorizamos al",
         "CARD_USER_LINE2": "usuario",
-        "CARD_CUSTOM": "Desarrollamos a la medida",
+        "CARD_CUSTOM": "Desarrollamos a medida",
         "CARD_RESULT_LINE1": "Garantizamos",
         "CARD_RESULT_LINE2": "el resultado"
       },
       "DESIGN": {
         "BADGE": "Diseños únicos por proyecto",
         "PARAGRAPH_PART1": "Aquí, la creatividad y la funcionalidad se combinan para destacar lo mejor de tu marca. Cada sitio lo creamos desde cero, adaptándonos a tus necesidades.",
-        "PARAGRAPH_PART2_PREFIX": "Olvídate de plantillas genéricas y plataformas de terceros:",
+        "PARAGRAPH_PART2_PREFIX": "Sin plantillas genéricas ni plataformas de terceros:",
         "PARAGRAPH_PART2_STRONG": "cada diseño es exclusivo",
-        "PARAGRAPH_PART2_SUFFIX": ", pensado para todos los dispositivos y alineado en tu mercado."
+        "PARAGRAPH_PART2_SUFFIX": ", pensado para todos los dispositivos y alineado con tu mercado."
       },
       "OFFER": {
         "TITLE": "Tenemos las soluciones",
         "COMMON": {
-          "INCLUDES_TITLE": "Lo que obtienes",
+          "INCLUDES_TITLE": "Qué incluye",
           "UNIQUE_MODERN": "Diseño único y moderno",
           "CONTACT_OPTIMIZATION": "Optimización de contacto",
           "DOMAIN": "Dominio",
           "CLOUD_INTEGRATION": "Integración en la nube",
-          "CONTINUOUS_ADVICE": "Asesoría continua y personalizada",
+          "CONTINUOUS_ADVICE": "Asesoramiento continuo y personalizado",
           "UX_UI": "Principios UX-UI"
         },
         "CARDS": {
           "LANDING": {
             "TITLE": "Landing page dedicada",
-            "DESCRIPTION": "Contar quienes somos en un sitio web pequeño puede ser una herramienta ideal para profesionales independientes, emprendedores, eventos o para cualquiera que necesite presencia en la web.",
+            "DESCRIPTION": "Página web compacta enfocada en una propuesta concreta. Ideal para profesionales independientes, eventos, lanzamientos o campañas puntuales. Diseño claro y foco en la conversión.",
             "NO_TEMPLATES": "Sin uso de plantillas prediseñadas",
-            "ONE_PAGE_SCROLL": "Solo una página para hacer scroll",
-            "FIVE_SECTIONS": "5 secciones dedicadas a información",
-            "FAST_DELIVERY": "Tiempo de entregas reducidos",
+            "ONE_PAGE_SCROLL": "Una sola página con scroll",
+            "FIVE_SECTIONS": "5 secciones de contenido clave",
+            "FAST_DELIVERY": "Tiempos de entrega reducidos",
             "DOMAIN_INCLUDED": "incluido"
           },
           "CORPORATE": {
             "TITLE": "Sitio corporativo",
-            "DESCRIPTION": "Sabemos que las pymes, medianas y grandes empresas tienen necesidades distintas. Por eso, desarrollamos sitios web que se ajusten a cada requerimiento y que están pensados estratégicamente para su propio mercado.",
-            "TREND_DESIGN": "Diseño adaptado a las últimas tendencias de tu mercado",
-            "UNLIMITED_PAGES": "Extensión ilimitada de páginas y secciones"
+            "DESCRIPTION": "Sitio web institucional con múltiples secciones para empresas consolidadas. Estructura y contenido pensados estratégicamente para representar tu negocio y generar confianza desde el primer clic.",
+            "TREND_DESIGN": "Diseño alineado con las tendencias de tu mercado",
+            "UNLIMITED_PAGES": "Páginas y secciones sin límite"
           },
           "ECOMMERCE": {
-            "TITLE": "E-Commerce",
-            "DESCRIPTION": "Tu tienda online es una herramienta fundamental que, sin duda, hará crecer tu negocio. Pero es clave que esté creada a la medida de tus potenciales clientes y que, a futuro, pueda seguir evolucionando.",
-            "TREND_DESIGN": "Diseño adaptado a las últimas tendencias para tu mercado",
+            "TITLE": "E-commerce",
+            "DESCRIPTION": "Tienda online a medida con catálogo, carrito, pagos integrados y panel de gestión propio. Construida para escalar con tu negocio sin las restricciones de una plantilla.",
+            "TREND_DESIGN": "Diseño alineado con las tendencias de tu mercado",
             "UNLIMITED_PRODUCTS": "Cantidad de productos ilimitada",
             "CHECKOUT_OPTIMIZATION": "Optimización del flujo de compra",
             "PRODUCT_CATEGORIZATION": "Categorización de productos",
             "INVENTORY_PLATFORM": "Plataforma de administración de inventario"
           },
           "APPS": {
-            "TITLE": "Apps e Internal web app",
-            "DESCRIPTION": "Las aplicaciones web y móviles son especialmente útiles para resolver desafíos cotidianos. Gracias a la tecnología actual, podemos agilizar procesos, solucionar problemas y hacer crecer tu negocio.",
-            "BEST_SOLUTION": "Ideamos la mejor solución para tu necesidad",
-            "LATEST_TECH": "Aprovechamiento de las últimas tecnologías",
-            "SCALABLE_APPS": "Aplicaciones creadas con capacidad de escalabilidad"
+            "TITLE": "Apps y sistemas internos",
+            "DESCRIPTION": "Aplicaciones web y móviles que ordenan la operación interna de tu empresa. Conectamos procesos, equipos y datos en un sistema propio que evoluciona con el negocio.",
+            "BEST_SOLUTION": "Ideamos la mejor solución para tu caso",
+            "LATEST_TECH": "Uso de las últimas tecnologías",
+            "SCALABLE_APPS": "Aplicaciones pensadas para escalar"
           }
         }
       },
@@ -590,6 +592,7 @@
       "TRASH": "ícono de basura",
       "LOGO_ANGULAR": "logo de Angular",
       "LOGO_MONGODB": "logo de MongoDB",
+      "LOGO_TYPESCRIPT": "logo de TypeScript",
       "LOGO_NODE": "logo de Node.js",
       "LOGO_ANALYTICS": "logo de Analytics",
       "LOGO_AZURE": "logo de Azure",
@@ -604,11 +607,11 @@
       "DECORATION": "ilustración decoración"
     },
     "GLITCH": {
-      "COMMENT_TAGLINE": "Si tu marca está buscando algo diferente a lo corporativo",
-      "COMMENT_EXPLORE": "Explora nuestro",
+      "COMMENT_TAGLINE": "Si tu marca busca algo distinto a lo corporativo",
+      "COMMENT_EXPLORE": "Explorá nuestro",
       "COMMENT_WEBLAB": "Web Lab",
-      "TAGLINE": "Si lo que buscas es diferente",
-      "SUBTITLE": "Explora nuestros servicios especializados",
+      "TAGLINE": "Si buscás algo diferente",
+      "SUBTITLE": "Explorá nuestros servicios especializados",
       "DEV_LINE1": "Desarrollo",
       "DEV_LINE2": "Creativo",
       "SOFTWARE_LINE1": "Desarrollo de",
@@ -620,6 +623,11 @@
       "CARD_IMAGE_ALT": "Esta es una imagen ilustrativa del sitio de {{name}}",
       "LOGO_ALT": "Este es el logo de {{name}}",
       "VIEW_LIVE": "Ver sitio en vivo",
+      "ARIA": {
+        "SECTION": "Carrusel de proyectos corporativos",
+        "PREV": "Proyecto anterior",
+        "NEXT": "Siguiente proyecto"
+      },
       "PROJECTS": {
         "ASEMBIS": {
           "DESCRIPTION": "Clínica médica especializada en servicios accesibles y de alta calidad. Nuestra estrategia digital estuvo enfocada en destacar su variedad de servicios y su compromiso social."
@@ -640,7 +648,7 @@
           "DESCRIPTION": "Consultora especializada en soluciones estratégicas financieras. Nuestro trabajo digital resaltó su experiencia, precisión y capacidad para ofrecer asesorías que impulsan la toma de decisiones inteligentes."
         },
         "NANO": {
-          "DESCRIPTION": "Expertos en aromatización y aromaterapia. A través de nuestra estrategia digital, enfocamos en su variedad de productos, accesibilidad y servicio al cliente excepcional."
+          "DESCRIPTION": "Expertos en aromatización y aromaterapia. A través de nuestra estrategia digital, pusimos el foco en su variedad de productos, su accesibilidad y su servicio al cliente."
         },
         "PSICOYNG": {
           "DESCRIPTION": "Clínica especializada en psicología, orientada a facilitar el acceso a servicios profesionales de forma clara y confiable. Desarrollamos un sitio web funcional, moderno y centrado en la experiencia del usuario."
@@ -667,7 +675,7 @@
           "DESCRIPTION": "Haus no solo es una experiencia, es un pequeño vistazo a la exclusividad que la marca ofrece. Diseñamos un recorrido digital que refleja su estilo sofisticado y su ubicación privilegiada, permitiendo que futuros compradores imaginen su vida ahí desde el primer momento."
         },
         "ESPACIOCR": {
-          "DESCRIPTION": "ESPACIOCR es un estudio de arquitectura enfocado en crear espacios contemporaneos, funcionales y sostenibles para distintos sectores. Nuestro trabajo digital resalto su propuesta de valor, su enfoque en la excelencia y su capacidad para transformar ideas en ambientes unicos y significativos."
+          "DESCRIPTION": "ESPACIOCR es un estudio de arquitectura enfocado en crear espacios contemporáneos, funcionales y sostenibles para distintos sectores. Nuestro trabajo digital resaltó su propuesta de valor, su enfoque en la excelencia y su capacidad para transformar ideas en ambientes únicos y significativos."
         },
         "PUNTOCERO": {
           "DESCRIPTION": "Punto Cero gestiona mantenimiento HVAC por suscripción para empresas en toda España. Su propuesta combina revisiones programadas, evidencia fotográfica y reportes claros por sede, permitiendo mayor continuidad operativa y mejor control de costos."
@@ -681,24 +689,24 @@
       }
     },
     "SEO": {
-      "TITLE": "Desarrollo Web Corporativo | LINK DESIGN Costa Rica",
-      "DESCRIPTION": "Sitios corporativos, e-commerce y landing pages a medida. Diseño moderno, rendimiento y escalabilidad para empresas en Costa Rica.",
-      "KEYWORDS": "desarrollo web corporativo, sitios corporativos, e-commerce, landing pages, diseño web, costa rica"
+      "TITLE": "Desarrollo web corporativo | LINK DESIGN Argentina",
+      "DESCRIPTION": "Sitios corporativos, e-commerce y landing pages a medida para empresas en Argentina. Diseño moderno, rendimiento y escalabilidad.",
+      "KEYWORDS": "desarrollo web corporativo, sitios corporativos, e-commerce, landing pages, diseño web, argentina"
     },
     "SCHEMA": {
-      "PAGE_NAME": "Desarrollo Web Corporativo | LINK DESIGN Costa Rica",
-      "PAGE_DESCRIPTION": "Sitios corporativos, e-commerce y landing pages a medida. Diseño moderno, rendimiento y escalabilidad para empresas en Costa Rica.",
-      "IN_LANGUAGE": "es-CR",
+      "PAGE_NAME": "Desarrollo web corporativo | LINK DESIGN Argentina",
+      "PAGE_DESCRIPTION": "Sitios corporativos, e-commerce y landing pages a medida para empresas en Argentina. Diseño moderno, rendimiento y escalabilidad.",
+      "IN_LANGUAGE": "es-AR",
       "BREADCRUMB_HOME": "Inicio",
       "BREADCRUMB_CORPORATE": "Corporativo",
       "SERVICE_LANDING_NAME": "Landing page dedicada",
-      "SERVICE_LANDING_DESCRIPTION": "Landing page para emprendedores, eventos o quienes necesiten una presencia web pequeña.",
+      "SERVICE_LANDING_DESCRIPTION": "Landing page para emprendedores, eventos o proyectos que necesiten una presencia web acotada.",
       "SERVICE_CORPORATE_NAME": "Sitio corporativo",
       "SERVICE_CORPORATE_DESCRIPTION": "Páginas web para pymes y empresas, adaptadas a sus necesidades y mercado.",
-      "SERVICE_ECOMMERCE_NAME": "E-Commerce",
+      "SERVICE_ECOMMERCE_NAME": "E-commerce",
       "SERVICE_ECOMMERCE_DESCRIPTION": "Tiendas online escalables y enfocadas en la experiencia de compra.",
-      "SERVICE_APPS_NAME": "Apps e Internal web app",
-      "SERVICE_APPS_DESCRIPTION": "Aplicaciones web y móviles a medida para resolver necesidades específicas."
+      "SERVICE_APPS_NAME": "Apps y sistemas internos",
+      "SERVICE_APPS_DESCRIPTION": "Aplicaciones web y móviles a medida para resolver necesidades concretas."
     }
   },
   "SPLITHOME": {

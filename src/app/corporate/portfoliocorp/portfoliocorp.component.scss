@@ -1,13 +1,117 @@
-.title-portfolio {
-  font-size: 35pt;
-  line-height: 1.1;
+:host {
+  display: block;
+  --portfolio-slide-width: min(23rem, calc((100vw - 2rem) / 3.18));
 }
 
-.bg_card {
-  background-image: linear-gradient(to left top, #161616, #202020, #2b2b2b, #363637, #414242);
+.portfolio-section {
+  width: 100%;
+}
+
+.portfolio-title {
+  width: 100%;
+}
+
+.portfolio-carousel-shell {
+  width: 100%;
+}
+
+.portfolio-splide {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-splide:not(.is-initialized) .splide__track {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.65rem 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.portfolio-splide:not(.is-initialized) .splide__list {
+  display: flex;
+  gap: 1rem;
+  padding-inline: 0;
+}
+
+.portfolio-splide:not(.is-initialized) .splide__slide {
+  flex: 0 0 var(--portfolio-slide-width);
+  scroll-snap-align: center;
+}
+
+.portfolio-splide:not(.is-initialized) .portfolio-controls,
+.portfolio-splide:not(.is-initialized) .splide__pagination {
+  display: none;
+}
+
+.portfolio-controls {
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  position: static;
+}
+
+.portfolio-arrow {
+  position: static;
+  transform: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #874FE8;
+  background-color: #874FE8;
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 8px 18px rgba(135, 79, 232, 0.2);
+  transition: transform 0.22s ease, background-color 0.22s ease, border-color 0.22s ease,
+    box-shadow 0.22s ease, opacity 0.22s ease;
+}
+
+.portfolio-arrow:hover,
+.portfolio-arrow:focus-visible {
+  transform: translateY(-2px);
+  background-color: #6f39d8;
+  border-color: #6f39d8;
+  box-shadow: 0 12px 22px rgba(111, 57, 216, 0.28);
+}
+
+.portfolio-arrow:disabled {
+  cursor: default;
+  opacity: 0.35;
+  transform: none;
+  background-color: #d8c6f7;
+  border-color: #d8c6f7;
+  box-shadow: none;
+}
+
+:host ::ng-deep .portfolio-splide .splide__track {
+  order: 2;
+  padding-block: 0.65rem 1.6rem;
+}
+
+:host ::ng-deep .portfolio-splide .splide__list {
+  align-items: stretch;
+  box-sizing: border-box;
+  padding-inline: 0;
+}
+
+:host ::ng-deep .portfolio-splide .splide__slide {
+  height: auto;
+  display: flex;
+}
+
+:host ::ng-deep .portfolio-splide .splide__slide > article {
+  width: 100%;
+  max-width: none;
+  height: 100%;
 }
 
 .portfolio-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
@@ -15,6 +119,30 @@
 .portfolio-card:focus-within {
   transform: translateY(-6px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.portfolio-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.portfolio-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.portfolio-card-copy {
+  flex: 1 1 auto;
+}
+
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
 }
 
 .card-media-link {
@@ -28,9 +156,13 @@
 }
 
 .portfolio-logo {
-  width: 100%;
-  max-width: 180px;
+  width: auto;
+  max-width: 118px;
+  max-height: 38px;
   height: auto;
+  object-fit: contain;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .badge-industry {
@@ -41,4 +173,52 @@
   padding: 0.42rem 0.95rem;
   border-radius: 999px;
   line-height: 1;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1035px) {
+  :host {
+    --portfolio-slide-width: min(33rem, calc((100vw - 1.5rem) / 2.16));
+  }
+
+  :host ::ng-deep .portfolio-splide .splide__track {
+    padding-block: 0.6rem 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :host {
+    --portfolio-slide-width: 86vw;
+  }
+
+  .portfolio-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .portfolio-card-header {
+    gap: 0.55rem;
+  }
+
+  .portfolio-logo {
+    max-width: 104px;
+    max-height: 34px;
+  }
+
+  .badge-industry {
+    padding: 0.38rem 0.82rem;
+    font-size: 0.72rem;
+  }
+
+  :host ::ng-deep .portfolio-splide .splide__track {
+    padding-block: 0.55rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-card,
+  .portfolio-arrow {
+    transition: none;
+  }
 }
