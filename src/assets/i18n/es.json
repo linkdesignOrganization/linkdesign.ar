@@ -65,22 +65,22 @@
       "VIEW_LIVE": "Ver sitio en vivo",
       "PROJECTS": {
         "EVOKE": {
-          "DESCRIPTION": "Evoke definitivamente es un claro ejemplo de cómo se puede crear un sitio que comunique calidad, destreza, arte y profesionalismo. Un sitio web minimalista, pero con la fuerza necesaria para destacarse del resto y representar su visión creativa."
+          "DESCRIPTION": "Marca creativa con foco en arte, calidad y oficio aplicado. Diseñamos un sitio minimalista que deja espacio a sus piezas y comunica su visión sin saturar con texto innecesario."
         },
         "UGA": {
-          "DESCRIPTION": "Trabajar con Uga ha sido una experiencia tan divertida como sus propios shows. El proyecto nació de la necesidad de reunir todo su contenido en un solo lugar, y terminó convirtiéndose en un sitio web que no solo es funcional, sino también tan entretenido como él."
+          "DESCRIPTION": "Personaje y creador de contenido con shows reconocidos y público fiel. Construimos un sitio que reúne todo su material en un solo lugar y refleja su tono entretenido sin perder funcionalidad."
         },
         "GONOW": {
-          "DESCRIPTION": "Go Now no es solo un sitio más de venta de ATVs, es un muestrario de las aventuras que se pueden vivir con estos vehículos. Quisimos construir algo divertido, fuerte y visualmente atractivo que ayudara a la marca a sobresalir en un mercado lleno de competencia."
+          "DESCRIPTION": "Empresa de venta y experiencias con ATVs orientada a turismo aventura. Construimos un sitio visualmente fuerte que comunica el catálogo, la marca y la energía de las aventuras posibles con sus vehículos."
         },
         "MAGENTA": {
-          "DESCRIPTION": "Magenta no es simplemente una agencia de experiencia de marca; es un equipo que respira creatividad. Nuestro objetivo fue crear un sitio que mostrara su capacidad para transformar ideas y potenciar marcas, manteniendo un diseño limpio y con una personalidad muy propia."
+          "DESCRIPTION": "Agencia de experiencia de marca con foco en creatividad aplicada a proyectos reales. Diseñamos un sitio limpio con personalidad propia que muestra su capacidad para transformar ideas en proyectos concretos."
         },
         "ONIGIRI": {
-          "DESCRIPTION": "Onigiri va mucho más allá del sushi. Su cocina cuenta historias, y quisimos capturar esa esencia en un sitio web que refleja su amor por la gastronomía japonesa. Una experiencia digital moderna y auténtica que muestra por qué disfrutan tanto lo que hacen."
+          "DESCRIPTION": "Restaurante de gastronomía japonesa con propuesta amplia más allá del sushi tradicional. Construimos un sitio moderno y auténtico que cuenta la historia detrás de cada plato y refleja el amor por el oficio."
         },
         "XCELERATE": {
-          "DESCRIPTION": "Xcelerate es energía pura, y desde el inicio quisimos que eso se sintiera en su sitio web. Creamos una plataforma que transmite su enfoque en la transformación física y mental, mostrando un ambiente moderno, motivador y alineado con su espíritu innovador."
+          "DESCRIPTION": "Centro de entrenamiento enfocado en transformación física y mental con metodología propia. Desarrollamos una plataforma moderna y motivadora que refleja la energía del lugar y comunica los programas activos."
         }
       }
     },
@@ -622,6 +622,9 @@
       "TITLE_LINE2": "últimos trabajos",
       "CARD_IMAGE_ALT": "Esta es una imagen ilustrativa del sitio de {{name}}",
       "LOGO_ALT": "Este es el logo de {{name}}",
+      "VISIT_SITE": "Visitar sitio",
+      "READ_MORE": "Leer más",
+      "READ_LESS": "Leer menos",
       "VIEW_LIVE": "Ver sitio en vivo",
       "ARIA": {
         "SECTION": "Carrusel de proyectos corporativos",
@@ -630,61 +633,61 @@
       },
       "PROJECTS": {
         "ASEMBIS": {
-          "DESCRIPTION": "Clínica médica especializada en servicios accesibles y de alta calidad. Nuestra estrategia digital estuvo enfocada en destacar su variedad de servicios y su compromiso social."
+          "DESCRIPTION": "Clínica médica con servicios accesibles y compromiso social fuerte. Construimos un sitio que ordena su variedad de prestaciones y deja clara la propuesta para cada perfil de paciente."
         },
         "AAEC": {
-          "DESCRIPTION": "AAEC es la voz del in-house counsel en Centroamérica. Diseñamos una experiencia digital que conecta a sus miembros, impulsa el liderazgo regional y comunica oportunidades, networking y alianzas estratégicas."
+          "DESCRIPTION": "Asociación de abogados in-house corporativos. Construimos una plataforma que conecta a sus miembros, facilita el networking y comunica oportunidades, alianzas y eventos relevantes para el sector."
         },
         "AMAG": {
-          "DESCRIPTION": "Marca de diseño de moda con inspiración en la naturaleza, la mujer y la historia. Nuestra colaboración digital resaltó su creatividad y expansión en el mercado de la moda."
+          "DESCRIPTION": "Marca de diseño de moda inspirada en naturaleza, mujer e historia. Diseñamos un sitio que da espacio a su universo visual y acompaña su crecimiento en el mercado de moda autoral."
         },
         "TIERRAFERTIL": {
-          "DESCRIPTION": "Líderes en producción y distribución de Zacate de calidad. Enfatizamos su adaptabilidad y enfoque en satisfacer variadas necesidades de clientes a través de nuestra estrategia digital."
+          "DESCRIPTION": "Productora y distribuidora de césped de calidad para distintos perfiles de cliente. Construimos un sitio que ordena su oferta por uso y refleja su capacidad de adaptación a cada proyecto."
         },
         "CEWTEC": {
-          "DESCRIPTION": "Líderes en seguridad de la información y transformación digital. Resaltamos su rol como socio estratégico de instituciones clave, impulsando su crecimiento con soluciones innovadoras y eficientes."
+          "DESCRIPTION": "Empresa especializada en seguridad de la información y transformación digital para instituciones. Desarrollamos un sitio que comunica su rol como socio técnico estratégico y los servicios concretos que ofrece a cada cliente."
         },
         "CEFSA": {
-          "DESCRIPTION": "Consultora especializada en soluciones estratégicas financieras. Nuestro trabajo digital resaltó su experiencia, precisión y capacidad para ofrecer asesorías que impulsan la toma de decisiones inteligentes."
+          "DESCRIPTION": "Consultora financiera especializada en asesoramiento estratégico para empresas. Diseñamos un sitio que comunica su experiencia, su precisión metodológica y los tipos de proyecto que acompañan a cada cliente."
         },
         "NANO": {
-          "DESCRIPTION": "Expertos en aromatización y aromaterapia. A través de nuestra estrategia digital, pusimos el foco en su variedad de productos, su accesibilidad y su servicio al cliente."
+          "DESCRIPTION": "Marca especializada en aromatización y aromaterapia con catálogo amplio. Construimos un sitio que organiza su variedad de productos, simplifica la búsqueda y refleja la cercanía con el cliente."
         },
         "PSICOYNG": {
-          "DESCRIPTION": "Clínica especializada en psicología, orientada a facilitar el acceso a servicios profesionales de forma clara y confiable. Desarrollamos un sitio web funcional, moderno y centrado en la experiencia del usuario."
+          "DESCRIPTION": "Clínica especializada en psicología con foco en accesibilidad y claridad para el paciente. Desarrollamos un sitio funcional que facilita encontrar profesional, agendar sesión y entender el proceso desde el primer contacto."
         },
         "PROMACA": {
-          "DESCRIPTION": "Empresa costarricense con más de 30 años de experiencia en la producción de harinas y sémolas de maíz y arroz. Nuestro diseño web destaca su trayectoria, calidad y compromiso con el sector alimentario."
+          "DESCRIPTION": "Empresa con más de 30 años produciendo harinas y sémolas de maíz y arroz. Diseñamos un sitio que comunica su trayectoria, su capacidad productiva y el rigor que aplican en cada lote."
         },
         "IMPERIO": {
-          "DESCRIPTION": "Imperio es una marca líder en Costa Rica con más de 55 años de experiencia, una empresa 100% costarricense dedicada a la producción de alimentos esenciales que forman parte del día a día en los hogares del país."
+          "DESCRIPTION": "Marca alimentaria con más de 55 años produciendo alimentos básicos para el hogar. Diseñamos un sitio que comunica su trayectoria, su catálogo amplio y su identidad sin pretensiones."
         },
         "TUPSA": {
-          "DESCRIPTION": "Empresa de transporte interurbano comprometida con la calidad y comodidad de sus pasajeros. Desarrollamos una presencia digital que refleja su puntualidad, cobertura y facilidad de acceso a la información."
+          "DESCRIPTION": "Empresa de transporte interurbano enfocada en puntualidad y comodidad del pasajero. Desarrollamos un sitio que muestra rutas, horarios y opciones de pasaje con información clara y al alcance del usuario."
         },
         "PASTO_ARCA": {
-          "DESCRIPTION": "Plataforma de tutorías en línea que ofrece educación personalizada. Resaltamos su comodidad y flexibilidad, promoviendo su modelo de aprendizaje innovador a un público joven."
+          "DESCRIPTION": "Plataforma de tutorías online con clases personalizadas para distintos niveles. Desarrollamos un sitio que comunica su flexibilidad horaria y atrae al perfil joven que busca aprender con un mentor real."
         },
         "CIMED": {
-          "DESCRIPTION": "CIMED, centro privado de mediación y conciliación. Destacamos su compromiso con la cultura de paz y soluciones pacíficas mediante procesos accesibles y efectivos."
+          "DESCRIPTION": "Centro privado de mediación y conciliación con foco en soluciones pacíficas y procesos claros. Construimos un sitio que explica el proceso paso a paso y facilita el primer contacto sin fricción."
         },
         "ESCRITORIO": {
-          "DESCRIPTION": "Despacho contable con amplia experiencia y ética profesional. Nuestra estrategia digital destacó su enfoque en la calidad y el servicio personalizado al cliente."
+          "DESCRIPTION": "Despacho contable con experiencia profunda y ética profesional sólida. Construimos un sitio que transmite confianza, ordena los servicios por tipo de cliente y hace fácil llegar a una primera consulta."
         },
         "HAUS": {
-          "DESCRIPTION": "Haus no solo es una experiencia, es un pequeño vistazo a la exclusividad que la marca ofrece. Diseñamos un recorrido digital que refleja su estilo sofisticado y su ubicación privilegiada, permitiendo que futuros compradores imaginen su vida ahí desde el primer momento."
+          "DESCRIPTION": "Desarrollo inmobiliario boutique en ubicación privilegiada para perfiles exigentes. Diseñamos una experiencia digital sofisticada que muestra cada unidad, recorre el entorno y permite al comprador imaginar su día a día ahí."
         },
         "ESPACIOCR": {
-          "DESCRIPTION": "ESPACIOCR es un estudio de arquitectura enfocado en crear espacios contemporáneos, funcionales y sostenibles para distintos sectores. Nuestro trabajo digital resaltó su propuesta de valor, su enfoque en la excelencia y su capacidad para transformar ideas en ambientes únicos y significativos."
+          "DESCRIPTION": "Estudio de arquitectura enfocado en espacios contemporáneos, funcionales y sostenibles. Diseñamos un sitio que da espacio a su portfolio visual y explica el método con el que llevan cada proyecto."
         },
         "PUNTOCERO": {
-          "DESCRIPTION": "Punto Cero gestiona mantenimiento HVAC por suscripción para empresas en toda España. Su propuesta combina revisiones programadas, evidencia fotográfica y reportes claros por sede, permitiendo mayor continuidad operativa y mejor control de costos."
+          "DESCRIPTION": "Empresa de mantenimiento HVAC por suscripción para clientes corporativos multisede. Construimos una plataforma que ordena las visitas programadas, registra evidencia fotográfica y entrega reportes claros por sede."
         },
         "ALTURARAIZ": {
-          "DESCRIPTION": "Altura Raiz es un estudio de diseño arquitectónico y construcción que integra concepto, documentación técnica, gestión de obra y ejecución bajo una sola dirección. Su enfoque combina alcance claro, presupuesto trazable y coordinación técnica para proyectos residenciales y comerciales de alto estándar."
+          "DESCRIPTION": "Estudio que integra diseño arquitectónico, documentación técnica, gestión de obra y ejecución bajo una sola dirección. Diseñamos un sitio que refleja su método de alcance claro, presupuesto trazable y coordinación técnica."
         },
         "OWLING": {
-          "DESCRIPTION": "Owling es una plataforma de tutorías en línea pensada para conectar estudiantes y profesores de forma clara y cercana. Diseñamos un sitio que transmite confianza y dinamismo, resaltando su flexibilidad y el valor de un aprendizaje personalizado."
+          "DESCRIPTION": "Plataforma de tutorías online que conecta estudiantes con profesores de forma clara y cercana. Desarrollamos un sitio que transmite confianza, refleja la flexibilidad del modelo y facilita encontrar mentor."
         }
       }
     },

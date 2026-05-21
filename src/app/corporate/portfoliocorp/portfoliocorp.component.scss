@@ -51,11 +51,12 @@
   justify-content: center;
   gap: 1rem;
   margin-bottom: 0.6rem;
-  position: static;
+  position: relative;
+  z-index: 2500;
 }
 
 .portfolio-arrow {
-  position: static;
+  position: relative;
   transform: none;
   width: 44px;
   height: 44px;
@@ -64,6 +65,7 @@
   background-color: #874FE8;
   color: #fff;
   opacity: 1;
+  z-index: 2501;
   box-shadow: 0 8px 18px rgba(135, 79, 232, 0.2);
   transition: transform 0.22s ease, background-color 0.22s ease, border-color 0.22s ease,
     box-shadow 0.22s ease, opacity 0.22s ease;
@@ -112,6 +114,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 27.5rem;
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
@@ -123,8 +126,9 @@
 
 .portfolio-card-body {
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
+  flex: 1 1 auto;
+  gap: 1rem;
 }
 
 .portfolio-card-header {
@@ -132,17 +136,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.7rem;
-}
-
-.portfolio-card-copy {
-  flex: 1 1 auto;
-}
-
-.portfolio-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  width: fit-content;
 }
 
 .card-media-link {
@@ -157,8 +150,8 @@
 
 .portfolio-logo {
   width: auto;
-  max-width: 118px;
-  max-height: 38px;
+  max-width: 152px;
+  max-height: 48px;
   height: auto;
   object-fit: contain;
   flex: 0 1 auto;
@@ -177,9 +170,57 @@
   flex-shrink: 0;
 }
 
+.portfolio-card-text {
+  line-height: 1.55;
+}
+
+.portfolio-card-actions {
+  display: flex;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.portfolio-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 40px;
+  padding: 0.58rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+  width: 100%;
+}
+
+.portfolio-action-btn:hover,
+.portfolio-action-btn:focus-visible {
+  transform: translateY(-1px);
+}
+
+.portfolio-action-btn--primary {
+  background-color: #111111;
+  border-color: #111111;
+  color: #ffffff;
+  box-shadow: 0 10px 18px rgba(17, 17, 17, 0.14);
+}
+
+.portfolio-action-btn--primary:hover,
+.portfolio-action-btn--primary:focus-visible {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
 @media (max-width: 1035px) {
   :host {
     --portfolio-slide-width: min(33rem, calc((100vw - 1.5rem) / 2.16));
+  }
+
+  .portfolio-card {
+    min-height: 26.25rem;
   }
 
   :host ::ng-deep .portfolio-splide .splide__track {
@@ -202,13 +243,27 @@
   }
 
   .portfolio-logo {
-    max-width: 104px;
-    max-height: 34px;
+    max-width: 132px;
+    max-height: 42px;
   }
 
   .badge-industry {
     padding: 0.38rem 0.82rem;
     font-size: 0.72rem;
+  }
+
+  .portfolio-card {
+    min-height: 24.75rem;
+  }
+
+  .portfolio-card-actions {
+    padding-top: 1rem;
+  }
+
+  .portfolio-action-btn {
+    min-height: 38px;
+    padding: 0.55rem 0.78rem;
+    font-size: 0.82rem;
   }
 
   :host ::ng-deep .portfolio-splide .splide__track {

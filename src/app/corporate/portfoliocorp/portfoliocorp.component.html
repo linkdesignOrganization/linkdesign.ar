@@ -23,7 +23,7 @@
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide" *ngFor="let Project of projects">
-            <article class="card light-blue-bg border-0 rounded-5 p-4 portfolio-card h-100">
+            <article class="card light-blue-bg border-0 rounded-5 p-4 portfolio-card">
               <a class="card-media-link" [href]="Project.link" target="_blank" rel="noopener">
                 <picture>
                   <source *ngIf="Project.cover.webp" [srcset]="Project.cover.webp.srcset || Project.cover.webp.src"
@@ -43,19 +43,15 @@
                   <span class="badge rounded-pill badge-industry">{{ Project.industry }}</span>
                 </div>
 
-                <div class="portfolio-card-copy">
-                  <p class="text hk-regular gray pt-2 mb-0">{{ Project.descriptionKey | translate }}</p>
-                </div>
+                <p class="text hk-regular gray mb-0 portfolio-card-text">{{ Project.descriptionKey | translate }}</p>
 
-                <a class="roboto black text cursorp mt-4 portfolio-link" [href]="Project.link" target="_blank"
-                  rel="noopener">
-                  {{ 'CORPORATE.PORTFOLIO.VIEW_LIVE' | translate }}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-cursor-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
-                  </svg>
-                </a>
+                <div class="portfolio-card-actions">
+                  <a class="portfolio-action-btn portfolio-action-btn--primary hk-semibold" [href]="Project.link"
+                    target="_blank" rel="noopener">
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                    <span>{{ 'CORPORATE.PORTFOLIO.VISIT_SITE' | translate }}</span>
+                  </a>
+                </div>
               </div>
             </article>
           </li>
